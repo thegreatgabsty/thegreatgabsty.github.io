@@ -289,7 +289,7 @@
 	width:330px;
 	/*border-style:solid;*/
 	/*margin:190px -135px 0px -135px;*/
-	margin:0% -16% 0% -16%;
+	margin:0% -18% 0% -16%;
 	/*bottom:25%;*/
 	-webkit-transform:rotate(270deg);
 	font-family:"GTPM-Regular";
@@ -352,39 +352,32 @@
 }
 
 /*TABLET*/
-@media only screen and (min-width: 401px) and (max-width: 960px) {
 
-	#all-work-list {
-	width:60%;
-	margin-left:5%;
-	/*border-style:solid;*/
-}
-	.project-date {
-	margin:0% -30% 0% -30%;
-}
-	#bbc-date {
-			margin-top:10%;
-		}
-	#retro-date {
-			margin-top:16%;
-		}
-	#poles-date {
-			margin-top:16%;
-		}
-}
-}
 
 
 /*LARGE DESKTOP*/
 @media only screen and (min-width : 1921px) {
+
+	#work-nav {
+	width:12%;
+	height:10%;
+	/*border-style:solid;*/
+	margin-left:18.5%;
+}
 
 	#all-work-list {
 	width:60%;
 	margin-left:2%;
 	/*border-style:solid;*/
 }
+	.project-title-image {
+		width:70%;
+		height:100%;
+		margin-left:0%;
+		/*border-style:solid;*/
+	}
 	.project-date {
-	margin:0% -11% 0% -12%;
+	margin:0% -12% 0% -12%;
 }
 	#bbc-date {
 			margin-top:26%;
