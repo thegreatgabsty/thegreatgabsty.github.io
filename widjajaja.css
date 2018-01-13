@@ -84,7 +84,7 @@
 	}
 
 	hr.style2 {
-		width:210px;
+		max-width:210px;
 		border-top:4px solid black;
 		color:black;
 		align-content:left;
@@ -92,7 +92,7 @@
 		margin:0px 20px 0px 0px;
 	}
 	hr.style3 {
-		width:1000px;
+		max-width:1000px;
 		border-top:4px solid black;
 		color:black;
 		align-content:left;
