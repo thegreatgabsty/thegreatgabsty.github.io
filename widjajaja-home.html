@@ -8,8 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<title>Gabrielle Widjaja Design</title>
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<link rel="stylesheet" href="widjajaja.css" type="text/css">
+	
+	<script type="text/javascript" src="jquery-3.1.1.js"></script> 
 	<script type="text/javascript" src="widjajaja.js"></script>
 	
 
@@ -41,94 +44,55 @@
 				<img id="instagram" src="images/instagram.png"></a>
 			<a href="https://dribbble.com/widjajaja">
 				<img id="dribbble" src="images/dribbble.svg"></a>
-			<a href="https://behance.net/thegreatgabsty">
+			<a href="https://behance.net/widjajaja">
 				<img id="behance" src="images/behance.svg"></a>
 		</div>
+
+		<button class="hamburger">&#9776;</button>
+		<button class="cross">&#735;</button>
+
+		<div class="hamburger-menu">
+			<ul>
+				<a href="widjajaja-home.html" class="active"><li>home</li></a>
+				<a href="widjajaja-work.html"><li>work</li></a>
+				<a href="#"><li>about</li></a>
+				<a href="#"><li>instagram</li></a>
+				<a href="#"><li>dribbble</li></a>
+				<a href="#"><li>behance</li></a>
+			</ul>
+		</div>
+
+
 	</div>
 
 	<!-- END HEADER -->
 
 	<div id="recent">
-		<h1>latest</h1>
 		<hr class="style1">
 	</div>
 
-<!-- CAROUSEL -->
-
-<!-- SLIDE 1 -->
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner" role="listbox">
-    
-    <div class="carousel-item active">
-    	<div class="preview-box">
-	    	<div id="rotate1">
-	    		<p>sept 2017</p>
-	    	</div>
-    		<div class="title-image">
-	    		<h2 class="project-title">retro renaissance</h2>
-	    		<img id="archive" src="images/carousel/archive-title.png">
-    		</div>
-    		<div>
-    			<p class="description">how do we make sense of the<br>overwhelming amount of stuff<br>on the internet?</p>
-    			<p class="category">RISD<br>print, animation, video
-    			</p>
-    		</div>
-    	</div>
-    </div>
-
-<!-- SLIDE 2 -->
-    <div class="carousel-item">
-    	<div class="preview-box">
-    		<div id="rotate2">
-	    		<p>june - august 2017</p>
-	    	</div>
-    		<div class="title-image">
-    			<h2 class="project-title">bbc worldwide</h2>
-    			<img id="drwho" src="images/carousel/drwho.png">
-    		</div>
-    		<div>
-    			<p class="description">a recap of my 2017 summer<br>internship at the bbc worldwide<br>in the new york city office!</p>
-    			<p class="category">INTERNSHIP<br>print, digital, animation</p>
-    		</div>
-      	</div>
-    </div>
-
-<!-- SLIDE 3 -->
-    <div class="carousel-item">
-      <div class="preview-box">
-      		<div id="rotate3">
-	    		<p>oct 2017</p>
-	    	</div>
-    		<div class="title-image">
-    			<h2 class="project-title">between two poles</h2>
-    			<img id="two-poles" src="images/carousel/abstract-remnants.png">
-    		</div>
-    		<div>
-    			<p class="description">a project about placemaking.</p>
-    			<p class="category">RISD<br>print, installation</p>
-    		</div>
-      	</div>
-    </div>
-
-  </div>
-
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-
-
-
 
 	<!-- MAIN -->
+	<div id="home-body">
 
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+		<div id="home-main">
+
+			<div id="home-description">
+				<p>Gabrielle Widjaja goes to the <span style="color:red;">Rhode Island School of Design.</span><br><br>She is a <span style="color:red;">capricorn,</span> loves <span style="color:red;">Amazon Prime,</span> and prefers <span style="color:red;">window seats.</span></p>
+				<p id="home-contact">(925) 922 9646<br>gwidjaja@risd.edu</p>
+			</div>
+
+			<img id="home-picture" src="images/home/riceboy.png">
+
+		</div>
+
+		
+
+
+			
+	</div>
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 

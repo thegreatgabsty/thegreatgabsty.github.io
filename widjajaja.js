@@ -1,16 +1,19 @@
-var modal = document.getElementById('myModal');
-var img = document.getElementById("bbcwow");
-var span = document.getElementsByClassName("close")[0];
-img.onclick= function() {
-	modal.style.display = "block";
-	console.log("hello");
-}
-span.onclick = function() {
-	modal.style.display = "none";
-}
+$(document).ready(function() {
 
-window.onclick = function(event) {
-	if (event.target == modal) {
-		modal.style.display = "none";
-	}
-}
+	$( ".cross" ).hide();
+	$( ".hamburger-menu").hide();
+	console.log("hello world");
+	$( ".hamburger").click(function() {
+		$(".hamburger-menu").slideToggle("slow",function() {
+			$( ".hamburger").hide();
+			$( ".cross").show();
+		});
+	});
+
+	$( ".cross").click(function() {
+		$(".hamburger-menu").slideToggle("slow", function() {
+			$(".cross").hide();
+			$(".hamburger").show();
+		});
+	})
+})
