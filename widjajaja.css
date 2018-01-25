@@ -399,10 +399,20 @@
 .project-module p {
 	font-family:"GTPM-Light";
 	font-size:14px;
-	padding:0px 0px 0px 20px;
+	padding:0px 20px 0px 20px;
 	width:40%;
 
 }
+
+.fullBleedImg {
+	width:100%;
+	height:100%;
+}
+.halfPageImg {
+	width:60%;
+	height:60%;
+}
+
 .footer {
 	/*border-style:solid;*/
 	display:flex;
@@ -411,10 +421,11 @@
 	margin:20px 0px 50px 0px;
 }
 .footer-project {
-	margin-left:30%;
+	margin-left:25%;
 }
 .footer-description {
 	margin-left:10%;
+	font-family:"GTPM-RegularItalic";
 }
 
 
@@ -469,14 +480,7 @@
 
 /*RETRO RENAISSANCE*/
 
-.fullBleedImg {
-	width:100%;
-	height:100%;
-}
-.halfPageImg {
-	width:60%;
-	height:60%;
-}
+
 #strange {
 	float:right;
 }
@@ -486,6 +490,72 @@
 }
 #zineDetailCarousel {
 	width:60%;
+}
+
+
+/*BETWEEN TWO POLES*/
+
+#StickerCarousel {
+	width:60%;
+}
+#sticker1 {
+	max-width:45%;
+	margin:auto;
+}
+#sticker3 {
+	width:57%;
+	margin:auto;
+}
+#sticker4 {
+	width:74%;
+	margin:auto;
+}
+#sticker5 {
+	width:61%;
+	margin:auto;
+}
+#sticker6 {
+	width:61%;
+	margin:auto;
+}
+#sticker7 {
+	width:58.5%;
+	margin:auto;
+}
+#sticker8 {
+	width:44.5%;
+	margin:auto;
+}
+#info1 {
+	width:29%;
+	height:29%;
+	border-style:solid;
+	margin-right:10px;
+}
+#info2 {
+	width:29%;
+	height:29%;
+	border-style:solid;
+}
+#MockupCarousel {
+	width:60%;
+}
+#InstallCarousel {
+	width:100%;
+}
+#doc1 {
+	width:29%;
+	height:29%;
+	margin-right:10px;
+}
+#doc2 {
+	width:29%;
+	height:29%;
+}
+.doc {
+	width:30%;
+	height:30%;
+	margin-right:10px;
 }
 
 
