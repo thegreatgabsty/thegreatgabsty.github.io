@@ -161,6 +161,14 @@
 		padding:0;
 		margin:0px 0px 0px 20px;
 	}
+	hr.lamei-line {
+		width:55%;
+		border-top:4px solid black;
+		color:black;
+		align-content:left;
+		padding:0;
+		margin:0px 0px 0px 20px;
+	}
 
 /*-----HOME BODY-----*/
 
@@ -320,6 +328,9 @@
 		}
 		#nyt-date {
 			margin-top:33%;
+		}
+		#lamei-date {
+			margin-top:27%;
 		}
 
 .project-img {
@@ -577,7 +588,7 @@ hr.footerstyle {
 	margin-right:10px;
 }
 
-/*NEW YORK TIMES*/
+/*-----NEW YORK TIMES-----*/
 
 #nytCarousel {
 	width:60%;
@@ -587,6 +598,31 @@ hr.footerstyle {
 }
 #nyt2 {
 	border-style:solid;
+}
+
+
+/*-----LA MEI HOT POT-----*/
+
+#menuCarousel {
+	width:50%;
+}
+#lameiDescription {
+	margin-left:10%;
+}
+#menu1 {
+	width:79.5%;
+	height:79.5%;
+	margin:auto;
+}
+#menu3 {
+	width:90%;
+	height:90%;
+	margin:auto;
+}
+.drinks {
+	width:50%;
+	height:50%;
+	padding:0px 10px 10px 0px;
 }
 
 
@@ -924,6 +960,7 @@ hr.style5 {
 
 
 /*RETRO MOBILE*/
+
 hr.retro-line {
 		width:12%;
 		border-top:3px solid black;
@@ -1004,6 +1041,38 @@ hr.nyt-line {
 #nyt2 {
 	border-style:solid;
 	border-width:1px;
+}
+
+/*LAMEI MOBILE*/
+
+hr.lamei-line {
+		width:23%;
+		border-top:3px solid black;
+		color:black;
+		align-content:left;
+		padding:0;
+		margin:0px 0px 0px 8px;
+}
+#menuCarousel {
+	width:100%;
+}
+#lameiDescription {
+	margin-left:0;
+}
+#menu1 {
+	width:79.5%;
+	height:79.5%;
+	margin:auto;
+}
+#menu3 {
+	width:90%;
+	height:90%;
+	margin:auto;
+}
+.drinks {
+	width:49%;
+	height:49%;
+	padding:0px 10px 10px 0px;
 }
 
 
