@@ -84,7 +84,7 @@
 
 
 
-/*-----LINE BREAK-----*/
+									/*----------LINE BREAK----------*/
 
 #recent {
 	display:flex;
@@ -136,6 +136,22 @@
 		color:black;
 		align-content:left;
 		margin:0px 20px 0px 20px;
+	}
+	hr.style6 {
+		width:18%;
+		border-top:4px solid black;
+		color:black;
+		align-content:left;
+		padding:0;
+		margin:0px 20px 0px 0px;
+	}
+	hr.retro-line {
+		width:36%;
+		border-top:4px solid black;
+		color:black;
+		align-content:left;
+		padding:0;
+		margin:0px 0px 0px 20px;
 	}
 
 /*-----HOME BODY-----*/
@@ -366,16 +382,13 @@
 
 								/*----------ALL PROJECTS----------*/
 
-#project-page {
+.project-page {
 	/*border-style:solid;*/
 	width:70%;
 	margin:0px 0px 0px 20%;
+	padding:30px 0px 0px 0px;
 
 }
-
-
-/*-----BBC-----*/
-
 .project-module {
 	display:flex;
 	flex-direction:row;
@@ -390,6 +403,25 @@
 	width:40%;
 
 }
+.footer {
+	/*border-style:solid;*/
+	display:flex;
+	flex-direction:row;
+	font-family:"GTPM-Regular";
+	margin:20px 0px 50px 0px;
+}
+.footer-project {
+	margin-left:30%;
+}
+.footer-description {
+	margin-left:10%;
+}
+
+
+
+/*-----BBC-----*/
+
+
 
 #ss-life {
 	/*border-style:solid;*/
@@ -435,6 +467,27 @@
 	height:60%;
 }
 
+/*RETRO RENAISSANCE*/
+
+.fullBleedImg {
+	width:100%;
+	height:100%;
+}
+.halfPageImg {
+	width:60%;
+	height:60%;
+}
+#strange {
+	float:right;
+}
+
+#videoDescription {
+	margin-top:30px;
+}
+#zineDetailCarousel {
+	width:60%;
+}
+
 
 
 
@@ -450,6 +503,8 @@
 								/*----------RESPONSIVE----------*/
 
 /*MOBILE*/
+
+
 @media only screen and (max-width: 400px) {
 
 
@@ -545,13 +600,14 @@
 				color: red;
 			}
 
-/*WORK PAGE*/
+/*----------WORK PAGE MOBILE----------*/
 #recent {
 	display:flex;
 	flex-direction:row;
 	justify-content: flex-start;
 	align-items:center;
 	padding-left:20px;
+	margin:15px 0px 15px 0px;
 	font-family: "GTPM-Bold";
 	font-size:10px;
 	/*border-style:solid;*/
@@ -563,8 +619,8 @@
 	}
 
 	hr.style1 {
-		width:1200px;
-		border-top:4px solid black;
+		width:95%;
+		border-top:3px solid black;
 		color:black;
 		align-content:left;
 	}
@@ -605,7 +661,7 @@
 	margin-right:auto;
 }
 
-/*PROJECT LIST*/
+/*PROJECT LIST MOBILE*/
 
 .project {
 	width:100%;
@@ -650,6 +706,141 @@
 	height:auto;
 }
 
+/*----------ALL PROJECTS MOBILE----------*/
+
+.project-page {
+	/*border-style:solid;*/
+	width:100%;
+	margin:0px 0px 30px 0px;
+	padding:0;
+}
+.project-module {
+	display:block;
+	margin:0;
+	flex-wrap:wrap;
+}
+.project-module p {
+
+	font-family:"GTPM-Light";
+	font-size:12px;
+	padding:20px 20px 0px 20px;
+	width:100%;
+
+}
+.footer {
+	/*border-style:solid;*/
+	display:block;
+	font-family:"GTPM-Regular";
+	font-size:12px;
+	margin:20px 0px 50px 0px;
+	padding:0px 20px 0px 20px;
+	text-align:center;
+}
+.footer-project {
+	margin-left:0%;
+}
+.footer-description {
+	margin-left:0%;
+}
+
+
+/*BBC*/
+hr.style6 {
+		display:none;
+	}
+hr.style4 {
+		width:10%;
+		border-top:3px solid black;
+		color:black;
+		align-content:left;
+		margin:0px 8px 0px 8px;
+	}
+hr.style5 {
+		width:22%;
+		border-top:3px solid black;
+		color:black;
+		align-content:left;
+		margin:0px 0px 0px 8px;
+	}
+
+
+#ss-life {
+	/*border-style:solid;*/
+	width:100%;
+	height:auto;
+	margin:0px 0px 0px 0px;
+}
+.carousel-item active {
+	width:100%;
+	height:20%;
+}
+.giftguide {
+	width:100%;
+	height:100%;
+}
+.recycling {
+	width:100%;
+	height:100%;
+}
+#carouselExampleControls {
+	width:100%;
+}
+#recycling-carousel {
+	width:100%;
+}
+.portrait {
+	width:52%;
+	height:52%;
+	margin:auto;
+}
+#sticker {
+	width:79%;
+	height:79%;
+	margin:auto;
+}
+
+.ss {
+	width:100%;
+	height:100%;
+	margin:0px 0px 20px 0px;
+}
+#invitation {
+	width:100%;
+	height:100%;
+}
+
+
+
+
+/*RETRO MOBILE*/
+hr.retro-line {
+		width:12%;
+		border-top:3px solid black;
+		color:black;
+		align-content:left;
+		padding:0;
+		margin:0px 0px 0px 8px;
+	}
+.halfPageImg {
+	width:100%;
+	height:100%;
+}
+#zineDetailCarousel {
+	width:100%;
+}
+iframe {
+	width:100%;
+}
+#retroFooterLine {
+	margin-left:10px;
+}
+
+
+
+
+
+
+
 }
 
 /*TABLET*/
@@ -685,6 +876,14 @@ hr.style5 {
 		color:black;
 		align-content:left;
 		margin:0px 20px 0px 20px;
+	}
+hr.retro-line {
+		width:48%;
+		border-top:4px solid black;
+		color:black;
+		align-content:left;
+		padding:0;
+		margin:0px 0px 0px 20px;
 	}
 
 	#work-nav {
@@ -742,6 +941,7 @@ hr.style5 {
 	/*height:100px;*/
 	margin:30px 0px 0px 20%;
 }
+
 
 
 
