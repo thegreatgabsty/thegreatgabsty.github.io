@@ -169,6 +169,38 @@
 		padding:0;
 		margin:0px 0px 0px 20px;
 	}
+	hr.paik-line {
+		width:50%;
+		border-top:4px solid black;
+		color:black;
+		align-content:left;
+		padding:0;
+		margin:0px 0px 0px 15px;
+	}
+	hr.sentiment-line {
+		width:64%;
+		border-top:4px solid black;
+		color:black;
+		align-content:left;
+		padding:0;
+		margin:0px 0px 0px 15px;
+	}
+	hr.moon-line {
+		width:55%;
+		border-top:4px solid black;
+		color:black;
+		align-content:left;
+		padding:0;
+		margin:0px 0px 0px 15px;
+	}
+	hr.stamps-line {
+		width:69%;
+		border-top:4px solid black;
+		color:black;
+		align-content:left;
+		padding:0;
+		margin:0px 0px 0px 15px;
+	}
 
 /*-----HOME BODY-----*/
 
@@ -237,6 +269,7 @@
 	height:10%;
 	/*border-style:solid;*/
 	margin-left:18.5%;
+	margin-right:2%;
 }
 #worknavbar {
 	list-style-type:none;
@@ -310,11 +343,11 @@
 	width:330px;
 	/*border-style:solid;*/
 	/*margin:190px -135px 0px -135px;*/
-	margin:0% -18% 0% -16%;
+	margin:0% -18% 0% -22%;
 	/*bottom:25%;*/
 	-webkit-transform:rotate(270deg);
 	font-family:"GTPM-Regular";
-	font-size:1.2vw;
+	font-size:20px;
 	color:red;
 }
 		#bbc-date {
@@ -331,6 +364,21 @@
 		}
 		#lamei-date {
 			margin-top:27%;
+		}
+		#paik-date {
+			margin-top:27%;
+		}
+		#hack2017-date {
+			margin-top:33%;
+		}
+		#sentiment-date {
+			margin-top:36%;
+		}
+		#moon-date {
+			margin-top:28%;
+		}
+		#stamps-date {
+			margin-top:30%;
 		}
 
 .project-img {
@@ -441,6 +489,7 @@
 	flex-direction:row;
 	font-family:"GTPM-Regular";
 	margin:20px 0px 50px 0px;
+	justify-content:space-between;
 }
 hr.footerstyle {
 		width:100%;
@@ -451,10 +500,10 @@ hr.footerstyle {
 	}
 
 .footer-project {
-	margin-left:25%;
+	/*margin-left:25%;*/
 }
 .footer-description {
-	margin-left:10%;
+	/*margin-left:10%;*/
 	font-family:"GTPM-RegularItalic";
 }
 
@@ -624,6 +673,54 @@ hr.footerstyle {
 	height:50%;
 	padding:0px 10px 10px 0px;
 }
+
+/*-----PAIK NAM JUNE-----*/
+
+.paikposters {
+	width:23%;
+	height:23%;
+	margin:0px 10px 10px 0px;
+	border-style:solid;
+	border-width:1px;
+}
+
+/*-----HACK2017-----*/
+
+.banners2017 {
+	width:100%;
+	height:100%;
+	margin-bottom:20px;
+}
+#hacklogo2017 {
+	width:15%;
+	height:15%;
+	margin-right:5%;
+}
+
+/*-----SENTIMENT-----*/
+
+.sentiment {
+	width:47%;
+	height:47%;
+	margin:0px 20px 20px 0px;
+}
+
+
+/*-----GOODNIGHT MOON-----*/
+
+#moonCarousel {
+	width:100%;
+
+}
+
+/*-----STAMPS-----*/
+
+.stamps {
+	width:30%;
+	height:30%;
+	margin:0px 20px 20px 0px;
+}
+
 
 
 
@@ -1043,6 +1140,8 @@ hr.nyt-line {
 	border-width:1px;
 }
 
+
+
 /*LAMEI MOBILE*/
 
 hr.lamei-line {
@@ -1076,6 +1175,68 @@ hr.lamei-line {
 }
 
 
+/*PAIK NAM JUNE MOBILE*/
+
+hr.paik-line {
+		width:10%;
+		border-top:3px solid black;
+		color:black;
+		align-content:left;
+		padding:0;
+		margin:0px 0px 0px 8px;
+	}
+.paikposters {
+	width:48%;
+	height:48%;
+	margin:0px 5px 5px 0px;
+	border-style:solid;
+	border-width:1px;
+}
+
+/*SENTIMENT MOBILE*/
+.sentiment {
+	width:45%;
+	height:45%;
+	margin:0px 10px 10px 0px;
+}
+hr.sentiment-line {
+		width:38%;
+		border-top:3px solid black;
+		color:black;
+		align-content:left;
+		padding:0;
+		margin:0px 0px 0px 8px;
+	}
+
+
+/*GOODNIGHT MOON MOBILE*/
+
+hr.moon-line {
+		width:20%;
+		border-top:3px solid black;
+		color:black;
+		align-content:left;
+		padding:0;
+		margin:0px 0px 0px 8px;
+	}
+
+/*STAMPS MOBILE*/
+
+hr.stamps-line {
+		width:46%;
+		border-top:3px solid black;
+		color:black;
+		align-content:left;
+		padding:0;
+		margin:0px 0px 0px 8px;
+	}
+.stamps {
+	width:46%;
+	height:46%;
+	margin:0px 10px 10px 0px;
+}
+
+
 
 
 
@@ -1105,24 +1266,86 @@ hr.lamei-line {
 }
 
 
-/*LARGE DESKTOP*/
-@media only screen and (min-width : 1921px) {
+										/*----------LARGE DESKTOP----------*/
+@media only screen and (min-width : 1919px) {
 
-
-hr.style5 {
-		width:50%;
+hr.style3 {
+		width:95%;
 		border-top:4px solid black;
 		color:black;
 		align-content:left;
 		margin:0px 20px 0px 20px;
 	}
+hr.style4 {
+		width:13.5%;
+		border-top:4px solid black;
+		color:black;
+		align-content:left;
+		margin:0px 15px 0px 15px;
+}
+hr.style5 {
+		width:62%;
+		border-top:4px solid black;
+		color:black;
+		align-content:left;
+		margin:0px 20px 0px 20px;
+	}
+
 hr.retro-line {
-		width:48%;
+		width:58%;
+		border-top:4px solid black;
+		color:black;
+		align-content:left;
+		padding:0;
+		margin:0px 0px 0px 15px;
+}
+hr.nyt-line {
+		width:55%;
 		border-top:4px solid black;
 		color:black;
 		align-content:left;
 		padding:0;
 		margin:0px 0px 0px 20px;
+}
+hr.lamei-line {
+		width:63%;
+		border-top:4px solid black;
+		color:black;
+		align-content:left;
+		padding:0;
+		margin:0px 0px 0px 20px;
+}
+hr.paik-line {
+		width:58%;
+		border-top:4px solid black;
+		color:black;
+		align-content:left;
+		padding:0;
+		margin:0px 0px 0px 15px;
+}
+hr.sentiment-line {
+		width:68%;
+		border-top:4px solid black;
+		color:black;
+		align-content:left;
+		padding:0;
+		margin:0px 0px 0px 15px;
+}
+hr.moon-line {
+		width:62%;
+		border-top:4px solid black;
+		color:black;
+		align-content:left;
+		padding:0;
+		margin:0px 0px 0px 15px;
+	}
+hr.stamps-line {
+		width:71%;
+		border-top:4px solid black;
+		color:black;
+		align-content:left;
+		padding:0;
+		margin:0px 0px 0px 15px;
 	}
 
 	#work-nav {
@@ -1160,7 +1383,9 @@ hr.retro-line {
 }
 	.project-date {
 	margin:0% -13% 0% -13%;
+	font-size:24px;
 }
+
 	#bbc-date {
 			margin-top:22%;
 		}
@@ -1169,6 +1394,27 @@ hr.retro-line {
 		}
 	#poles-date {
 			margin-top:30%;
+		}
+	#nyt-date {
+			margin-top:36%;
+		}
+	#lamei-date {
+			margin-top:30%;
+		}
+	#paik-date {
+			margin-top:30%;
+		}
+	#hack2017-date {
+			margin-top:36%;
+		}
+	#sentiment-date {
+			margin-top:39%;
+		}
+	#moon-date {
+			margin-top:31%;
+		}
+	#stamps-date {
+			margin-top:32%;
 		}
 }
 

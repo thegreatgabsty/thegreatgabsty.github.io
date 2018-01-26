@@ -16,6 +16,11 @@ $(document).ready(function() {
 			$(".hamburger").show();
 		});
 	})
+
+	$("#all-work-list").jScroll();	
+
+
+
 })
 
 
