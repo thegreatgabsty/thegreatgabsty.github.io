@@ -742,7 +742,7 @@ hr.footerstyle {
 /*MOBILE*/
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (min-device-width:375px) and (max-device-width:736px) {
 
 
 	#header {
