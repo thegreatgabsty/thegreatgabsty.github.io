@@ -17,11 +17,14 @@ $(document).ready(function() {
 		});
 	})
 
-	$("#all-work-list").jScroll();	
+
 
 
 
 })
+$(function() {
+    $('body').removeClass('fade-out');
+});
 
 
 
