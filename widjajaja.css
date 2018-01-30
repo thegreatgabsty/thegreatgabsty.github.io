@@ -259,6 +259,11 @@ body.fade-out {
 	
 }
 
+button {
+	border:none;
+	background:transparent;
+}
+
 
 
 							/*----------WORK WORK WORK WORK WORK----------*/
@@ -950,13 +955,15 @@ hr.footerstyle {
 
 	#workbody {
 	width:100%;
-	margin-top:20px;
+	margin:20px 0px 0px 0px;
 	/*border-style:solid;*/
-	display:flex;
-	flex-direction:row;
-	padding:0px;
+	display:block;
+	padding:none;
 }
 #work-nav {
+	display:none;
+}
+#worknavbar {
 	display:none;
 }
 
@@ -965,7 +972,10 @@ hr.footerstyle {
 	/*border-style:solid;*/
 	margin-left:auto;
 	margin-right:auto;
+	/*background:blue;*/
 }
+
+
 
 /*PROJECT LIST MOBILE*/
 
@@ -974,6 +984,7 @@ hr.footerstyle {
 	/*border-style:solid;*/
 	display:block;
 	margin-bottom:5%;
+	/*background:red;*/
 }
 .project-title-image {
 	width:100%;
