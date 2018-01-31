@@ -24,6 +24,13 @@ $(document).ready(function() {
 })
 $(function() {
     $('body').removeClass('fade-out');
+
+// var myLazyLoad = new LazyLoad();
+$("img.lazy").lazyload({effect : "fadeIn"});
+
+window.fadeIn = function(obj) {
+    $(obj).fadeIn(1000);
+}
 });
 
 
