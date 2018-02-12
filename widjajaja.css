@@ -280,7 +280,14 @@ body.fade-out {
 	width:60%;
 	height:60%;
 	margin-left:3%;
+
+	-webkit-animation: fadein 2s; 
 	
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 button {
@@ -480,6 +487,7 @@ button {
 #profile-pic {
 	width:50%;
 	height:50%;
+	-webkit-animation: fadein 2s;
 }
 #about-blurb {
 	/*border-style:solid;*/
@@ -487,6 +495,7 @@ button {
 	padding:10px 10px 10px 30px;
 	font-family:"GTPM-Light";
 	font-size:16px;
+	-webkit-animation: fadein 2s;
 }
 #about-blurb a {
 	text-decoration:none;
