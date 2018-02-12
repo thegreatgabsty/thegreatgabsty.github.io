@@ -32,15 +32,15 @@ $(function() {
 //     $(obj).fadeIn(1000);
 // }
 
-$(function() {
-        $('.lazy').Lazy();
-        scrollDirection: 'vertical',
-        effect: 'fadein',
-        visibleOnly: true,
-        onError: function(element) {
-        console.log('error loading ' + element.data('src'));
-        }
-    });
+// $(function() {
+//         $('.lazy').Lazy();
+//         scrollDirection: 'vertical',
+//         effect: 'fadein',
+//         visibleOnly: true,
+//         onError: function(element) {
+//         console.log('error loading ' + element.data('src'));
+//         }
+//     });
 });
 
 
