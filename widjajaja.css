@@ -217,6 +217,22 @@ body.fade-out {
 		padding:0;
 		margin:0px 0px 0px 15px;
 	}
+	hr.paws-line {
+		width:45%;
+		border-top:4px solid black;
+		color:black;
+		align-content:left;
+		padding:0;
+		margin:0px 0px 0px 15px;
+	}
+	hr.kvsh-line {
+		width:56%;
+		border-top:4px solid black;
+		color:black;
+		align-content:left;
+		padding:0;
+		margin:0px 0px 0px 15px;
+	}
 
 /*-----HOME BODY-----*/
 
@@ -502,6 +518,11 @@ button {
 
 }
 
+.project-module a {
+	text-decoration:none;
+	color:red;
+}
+
 .fullBleedImg {
 	width:100%;
 	height:100%;
@@ -765,8 +786,57 @@ hr.footerstyle {
 }
 .project-page h2 {
 	font-family: "GTPM-Bold";
-	font-size:20px;
+	font-size:32px;
 	margin:auto;
+}
+.spot-process {
+	width:80%;
+	height:80%;
+	margin:auto;
+}
+
+/*-----PAWS-----*/ 
+
+#care4animalsCarousel {
+	width:60%;
+}
+#wireframeCarousel {
+	width:60%;
+	border-style:solid;
+	border-width:1px;
+}
+#adopt-hifi {
+	width:80%;
+	height:80%;
+	border-style:solid;
+	border-width:1px;
+}
+
+/*-----KVSH-----*/
+
+#kvshSketchCarousel {
+	width:40%;
+}
+.hideas {
+	width:33%;
+	height:33%;
+	padding:0px 10px 10px 0px;
+	/*border-style: solid;*/
+}
+.hideas-big {
+	width:50%;
+	height:50%;
+	padding:0px 10px 10px 0px;
+	/*border-style: solid;*/
+}
+#hideas-description {
+	margin-top:50px;
+}
+
+.final-kvsh {
+	width:48%;
+	height:48%;
+	padding:0px 15px 15px 0px;
 }
 
 
@@ -1077,6 +1147,7 @@ hr.footerstyle {
 	width:100%;
 
 }
+
 .footer {
 	/*border-style:solid;*/
 	display:block;
@@ -1382,7 +1453,12 @@ hr.stamps-line {
 }
 
 
+
+
+
 										/*----------LARGE DESKTOP----------*/
+
+
 @media only screen and (min-width : 1919px) {
 
 hr.style2 {
@@ -1465,6 +1541,14 @@ hr.moon-line {
 	}
 hr.stamps-line {
 		width:71%;
+		border-top:4px solid black;
+		color:black;
+		align-content:left;
+		padding:0;
+		margin:0px 0px 0px 15px;
+	}
+hr.paws-line {
+		width:55%;
 		border-top:4px solid black;
 		color:black;
 		align-content:left;

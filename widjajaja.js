@@ -26,11 +26,21 @@ $(function() {
     $('body').removeClass('fade-out');
 
 // var myLazyLoad = new LazyLoad();
-$("img.lazy").lazyload({effect : "fadeIn"});
+// $("img.lazy").lazyload({effect : "fadeIn"});
 
-window.fadeIn = function(obj) {
-    $(obj).fadeIn(1000);
-}
+// window.fadeIn = function(obj) {
+//     $(obj).fadeIn(1000);
+// }
+
+$(function() {
+        $('.lazy').Lazy();
+        scrollDirection: 'vertical',
+        effect: 'fadein',
+        visibleOnly: true,
+        onError: function(element) {
+        console.log('error loading ' + element.data('src'));
+        }
+    });
 });
 
 
