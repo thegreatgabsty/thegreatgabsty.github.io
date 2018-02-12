@@ -373,7 +373,7 @@ button {
 	color:red;
 }
 		#bbc-date {
-			margin-top:20%;
+			margin-top:25%;
 		}
 		#retro-date {
 			margin-top:26%;
@@ -401,6 +401,9 @@ button {
 		}
 		#stamps-date {
 			margin-top:30%;
+		}
+		#paws-date {
+			margin-top:29%;
 		}
 
 .project-img {
@@ -745,6 +748,27 @@ hr.footerstyle {
 	height:30%;
 	margin:0px 20px 20px 0px;
 }
+
+/*-----SPOT CASE STUDY-----*/
+#fullBleedModule {
+	width:100%;
+}
+#sketchCarousel {
+	width:60%;
+	height:60%;
+	margin:auto;
+}
+.spot-branding {
+	width:60%;
+	height:60%;
+	margin:auto;
+}
+.project-page h2 {
+	font-family: "GTPM-Bold";
+	font-size:20px;
+	margin:auto;
+}
+
 
 
 
