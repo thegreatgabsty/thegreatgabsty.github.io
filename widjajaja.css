@@ -328,11 +328,17 @@ button {
 		}
 		#worknavbar a.active {
 			color:red;
+			text-decoration:none;
 		}
 		#worknavbar a:hover {
 			color:red;
 			text-decoration:none;
 		}
+
+.design {
+	display:block;
+}
+
 
 #all-work-list {
 	width:60%;

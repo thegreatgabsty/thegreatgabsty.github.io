@@ -21,9 +21,11 @@ $(document).ready(function() {
 
 
 
-})
+
+
 $(function() {
     $('body').removeClass('fade-out');
+})
 
 // var myLazyLoad = new LazyLoad();
 // $("img.lazy").lazyload({effect : "fadeIn"});
@@ -41,7 +43,40 @@ $(function() {
 //         console.log('error loading ' + element.data('src'));
 //         }
 //     });
-});
+
+document.getElementById("all").onclick = function() {
+	
+};
+
+document.getElementById("uiux").onclick = function() {
+	
+};
+
+
+var navbar = document.getElementById("work-nav");
+var category = navbar.getElementsByClassName("worknavbar");
+
+// for (var i=0; i<category.length; i++) {
+// 	category[i].addEventListener("click", function() {
+// 		var current = document.getElementsByClassName("active");
+// 		// current.classList.remove("active");
+// 		current[0].className = current[0].className.replace("active", "");
+// 		this.classList += " active";
+// 		console.log("lmao");
+// 	});
+// } 
+
+var selector = '#work-nav a';
+
+$(selector).on('click', function() {
+	$(selector).removeClass('active');
+	$(this).addClass('active');
+})
+
+})
+
+
+
 
 
 
