@@ -233,6 +233,14 @@ body.fade-out {
 		padding:0;
 		margin:0px 0px 0px 15px;
 	}
+	hr.okay-line {
+		width:58%;
+		border-top:4px solid black;
+		color:black;
+		align-content:left;
+		padding:0;
+		margin:0px 0px 0px 15px;
+	}
 
 /*-----HOME BODY-----*/
 
@@ -433,6 +441,9 @@ button {
 		}
 		#paws-date {
 			margin-top:29%;
+		}
+		#okay-date {
+			margin-top:28%;
 		}
 
 .project-img {
