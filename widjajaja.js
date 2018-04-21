@@ -44,13 +44,13 @@ $(function() {
 //         }
 //     });
 
-document.getElementById("all").onclick = function() {
+// document.getElementById("all").onclick = function() {
 	
-};
+// };
 
-document.getElementById("uiux").onclick = function() {
+// document.getElementById("uiux").onclick = function() {
 	
-};
+// };
 
 
 var navbar = document.getElementById("work-nav");
@@ -73,10 +73,85 @@ $(selector).on('click', function() {
 	$(this).addClass('active');
 })
 
+//nav menu
+
+//buttons
+
+var Main = document.getElementById('main');
+var Other = document.getElementById('other');
+var Sketchbook = document.getElementById('sketchbook');
+
+
+//pages 
+var MainPage = document.getElementById('all-work-list');
+var OtherPage = document.getElementById('other_page');
+var SketchbookPage = document.getElementById('sketchbook_page');
+
+
+//MAIN TRIGGER
+
+
+
+$(Main).click(function() {
+
+	MainPage.style.visibility = "visible";
+	MainPage.style.left = "18%";
+	OtherPage.style.visibility = "hidden";
+	OtherPage.style.left = "100%";
+	SketchbookPage.style.visibility = "hidden";
+	SketchbookPage.style.left = "100%";
+	console.log("main clicked");
+	
+
+});
+
+//OTHER TRIGGER
+
+
+
+$(Other).click(function() {
+
+	OtherPage.style.visibility = "visible";
+	OtherPage.style.left = "18%";
+	MainPage.style.visibility = "hidden";
+	MainPage.style.left = "100%";
+	SketchbookPage.style.visibility = "hidden";
+	SketchbookPage.style.left = "100%";
+
+});
+
+//SKETCHBOOK TRIGGER
+
+$(Sketchbook).click(function() {
+	
+	SketchbookPage.style.visibility = "visible";
+	SketchbookPage.style.left = "18%";
+	MainPage.style.visibility = "hidden";
+	MainPage.style.left = "100%";
+	OtherPage.style.visibility = "hidden";
+	OtherPage.style.left = "100%";
+});
+
+
+//PHOTOS
+var category = document.getElementsByClassName(".etc-category");
+var pics = document.getElementsByClassName(".etc-category").getElementsByTagName("img");
+
+$(category).hover(
+	function() {
+		$(this.getElementsByTagName("img").style.opacity = "50%");
+	}, function() {
+		$(this.getElementsByTagName("img").style.opacity = "100%");
+	}
+);
 
 
 
 
+
+
+
+	
 
 })
 
