@@ -19,6 +19,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<link rel="stylesheet" href="widjajaja.css" type="text/css">
 	
+	<script type="text/javascript" src="ScrollMagic.js"></script>
 	<script type="text/javascript" src="jquery-3.1.1.js"></script> 
 	<script type="text/javascript" src="jquery.lazy.min.js"></script>
 		<script type="text/javascript" src="jquery.lazy.plugins.min.js"></script>
@@ -82,14 +83,21 @@
 
 	<div id="recent">
 		<!-- <hr class="style2"> -->
-		<h1>work</h1>
-		<hr class="style3">
+		<a href="#"><h1 id="work-header">work</h1></a>
+		<hr class="hr1 trans--grow">
+		<h1 class="page-title" id="okay-title"><span style="color:red;">THE OKAY CLUB</span></h1>
+		<hr class="hr2" id="okay-hr">
+		<h1 class="page-title" id="spot-title"><span style="color:red;">CASE STUDY: SPOT</span></h1>
+		<hr class="hr2" id="spot-hr">
+		<!-- style3 -->
 	</div>
 
 	<!-- WORK BODY -->
 	
 	<div id="workbody">
-		
+
+
+		<div id="all-work-page">
 
 		<div id="work-nav">
 			<ul id="worknavbar">
@@ -107,167 +115,168 @@
 		</div>
 		
 		<div id="work-pages">
+		
 
-		<div id="all-work-list">
+				<div id="all-work-list">
 
-		<!-- OKAY -->
-      		<div id="project-okay" class="project hvr-grow">
-	    		
-	    			<a href="projects/okay/okay.html"><p class="project-title">THE OKAY CLUB</p></a>
-					<a href="projects/okay/okay.html"><img class="project-img" src="projects/okay/images/bike.png"></a>
-	    		
-	    			<p class="project-category">brand identity design</p>
-      		</div>
-
-
-		<!-- SPOT -->
-      		<div id="project-spot" class="project hvr-grow uiux">
-	    		
-	    			<a href="projects/spot/spot.html"><p class="project-title">CASE STUDY : spot</p></a>
-	    			<a href="projects/spot/spot.html"><img class="project-img" src="projects/spot/spot-A.jpg"></a>
-	    		
-	    			<p class="project-category">UI/UX design</p>
-	    		
-      		</div>
-
-      	<!-- PAWS -->
-      		<div id="project-paws" class="project hvr-grow uiux">
-	    		
-	    		
-	    			<a href="projects/paws/paws.html"><p class="project-title">care4animals redesign</p></a>
-	    			<a href="projects/paws/paws.html"><img class="project-img" src="projects/paws/paws.png"></a>
-	    		
-	    			<p class="project-category">UI/UX design, web design</p>
-      		</div>
-
-		<!-- HACK 2017 -->
-      		<div id="project-hack2017" class="project hvr-grow design">
-	    		
-		    	
-	    			<a href="projects/hack2017/hack2017.html"><p class="project-title">hack@brown 2017</p></a>
-	    			<a href="projects/hack2017/hack2017.html"><img class="project-img" src="projects/hack2017/hack2017.png"></a>
-	    		
-	    			<p class="project-category">print, digital, web design</p>
-	    		
-      		</div>
-
-      		<!-- KVSH -->
-      		<div id="project-kvsh" class="project hvr-grow design">
-	    		
-	    			<a href="projects/kvsh/kvsh.html"><p class="project-title">KVSH chocolate</p></a>
-	    			<a href="projects/kvsh/kvsh.html"><img class="project-img" src="projects/kvsh/kvsh-green.png"></a>
-	    		
-	    			<p class="project-category">brand identity, packaging design</p>
-	    		
-      		</div>
-
-			<!-- BBC WORLDWIDE -->
-			<div id="project-bbc" class="project hvr-grow design">
-	    		
-	    			<a href="projects/bbc/bbc.html"><p class="project-title">bbc worldwide</p></a>
-	    			<a href="projects/bbc/bbc.html"><img id="bbcwow" class="project-img" src="projects/bbc/images/ss/life.png"></a>
-	    
-	    			<p class="project-category">INTERNSHIP</p>
-      		</div>
-
-      		<!-- RETRO RENAISSANCE -->
-      		<div id="project-retro" class="project hvr-grow motion">
-	    		
-	    		
-	    			<a href="projects/retro/retro.html"><p class="project-title">retro renaissance</p></a>
-	    			<a href="projects/retro/retro.html"><img class="project-img" src="images/carousel/archive-title.png"></a>
-	    		
-	    			<p class="project-category">print, digital, animation</p>
-	    	
-      		</div>
+					<!-- OKAY -->
+						<div id="project-okay" class="project hvr-grow">
+							
+								
+								<a href="#"><img class="project-img" id="okay-cover" src="projects/okay/images/bike.jpg"></a>
+								<a href="#"><p class="project-title">THE OKAY CLUB</p></a>
+								<p class="project-category">brand identity design</p>
+						</div>
 
 
-      		<!-- BETWEEN TWO POLES -->
-      		<div id="project-poles" class="project hvr-grow design">
-	    		
-	    			<a href="projects/twopoles/twopoles.html"><p class="project-title">between two poles</p></a>
-	    			<a href="projects/twopoles/twopoles.html"><img class="project-img" src="images/poles/feet.jpg"></a>
-	    	
-	    			<p class="project-category">RISD<br>print, installation</p>
-	    	
-      		</div>
+					<!-- SPOT -->
+						<div id="project-spot" class="project hvr-grow uiux">
+							
+								
+								<a href="#"><img class="project-img" id="spot-cover" src="projects/spot/process/spot-process.jpg"></a>
+								<a href="#"><p class="project-title">CASE STUDY : spot</p></a>
+								<p class="project-category">UI/UX design</p>
+							
+						</div>
 
-      		<!-- NEW YORK TIMES-->
-      		<div id="project-nyt" class="project hvr-grow design">
-	    		
-	    			<a href="projects/nyt/nyt.html"><p class="project-title">new york times mockup</p></a>
-	    			<a href="projects/nyt/nyt.html"><img class="project-img" src="projects/nyt/toc.png"></a>
-	
-	    			<p class="project-category">typography, editorial design</p>
-      		</div>
+					<!-- PAWS -->
+						<div id="project-paws" class="project hvr-grow uiux">
+							
+							
+								
+								<a href="projects/paws/paws.html"><img class="project-img" src="projects/paws/paws.png"></a>
+								<a href="projects/paws/paws.html"><p class="project-title">care4animals redesign</p></a>
+								<p class="project-category">UI/UX design, web design</p>
+						</div>
 
-      		<!-- LA MEI-->
-      		<div id="project-lamei" class="project hvr-grow design">
-	    		
-	    			<a href="projects/lamei/lamei.html"><p class="project-title">la mei hot pot</p></a>
-	    			<a href="projects/lamei/lamei.html"><img class="project-img" src="projects/lamei/images/lamei.jpg"></a>
-	  
-	    			<p class="project-category">RISD<br>typography, system design</p>
-	    		
-      		</div>
+					<!-- HACK 2017 -->
+						<div id="project-hack2017" class="project hvr-grow design">
+							
+							
+								
+								<a href="projects/hack2017/hack2017.html"><img class="project-img" src="projects/hack2017/hack2017.jpg"></a>
+								<a href="projects/hack2017/hack2017.html"><p class="project-title">hack@brown 2017</p></a>
+								<p class="project-category">print, digital, web design</p>
+							
+						</div>
 
-      		<!-- SENTIMENT -->
-      		<div id="project-sentiment" class="project hvr-grow design">
-	    		
-	    			<a href="projects/sentiment/sentiment.html"><p class="project-title">sentiment</p></a>
-	    			<a href="projects/sentiment/sentiment.html"><img class="project-img" src="projects/sentiment/blue.jpg"></a>
-	
-	    			<p class="project-category">RISD<br>color, packaging design</p>
-	    	
-      		</div>
+						<!-- KVSH -->
+						<div id="project-kvsh" class="project hvr-grow design">
+							
+								
+								<a href="projects/kvsh/kvsh.html"><img class="project-img" src="projects/kvsh/kvsh-green.png"></a>
+								<a href="projects/kvsh/kvsh.html"><p class="project-title">KVSH chocolate</p></a>
+								<p class="project-category">brand identity, packaging design</p>
+							
+						</div>
 
-      		<!-- PAIK NAM JUNE -->
-      		<div id="project-paik" class="project hvr-grow design">
-	    		
-	    			<a href="projects/paik/paik.html"><p class="project-title">exhibition posters</p></a>
-	    			<a href="projects/paik/paik.html"><img class="project-img" src="projects/paik/images/paik1.jpg"></a>
-	    		
-	    			<p class="project-category">RISD<br>typography, poster design</p>
-	    	
-      		</div>
+						<!-- BBC WORLDWIDE -->
+						<div id="project-bbc" class="project hvr-grow design">
+							
+								
+								<a href="projects/bbc/bbc.html"><img id="bbcwow" class="project-img" src="projects/bbc/images/ss/life.jpg"></a>
+								<a href="projects/bbc/bbc.html"><p class="project-title">bbc worldwide</p></a>
+								<p class="project-category">internship</p>
+						</div>
 
-      		<!-- GOODNIGHT MOON -->
-      		<!-- <div id="project-moon" class="project design">
-	    		<div id="moon-date" class="project-date">
-		    		<p>april 2017</p>
-		    	</div>
-	    		<div class="project-title-image">
-	    			<a href="projects/moon/moon.html"><p class="project-title">goodnight, moon</p></a>
-	    			<a href="projects/moon/moon.html"><img class="project-img" src="projects/moon/goodnightmoon.jpg"></a>
-	    		</div>
-	    		<div class="project-details">
-	    			<p class="project-description">not a children's book.</p>
-	    			<p class="project-category">RISD<br>color, book design, illustration</p>
-	    		</div>
-      		</div> -->
+						<!-- RETRO RENAISSANCE -->
+						<div id="project-retro" class="project hvr-grow motion">
+							
+							
+								
+								<a href="projects/retro/retro.html"><img class="project-img" src="images/carousel/archive-title.png"></a>
+								<a href="projects/retro/retro.html"><p class="project-title">retro renaissance</p></a>
+								<p class="project-category">print, digital, animation</p>
+						
+						</div>
 
-      		<!-- STAMPS -->
-      		<!-- <div id="project-stamps" class="project design">
-	    		<div id="stamps-date" class="project-date">
-		    		<p>april 2017</p>
-		    	</div>
-	    		<div class="project-title-image">
-	    			<a href="projects/stamps/stamps.html"><p class="project-title">fruity</p></a>
-	    			<a href="projects/stamps/stamps.html"><img class="project-img" src="projects/stamps/fruit.png"></a>
-	    		</div>
-	    		<div class="project-details">
-	    			<p class="project-description">fruit roll-ups.</p>
-	    			<p class="project-category">RISD<br>color, illustration</p>
-	    		</div>
-      		</div> -->
 
-      		<!-- <hr class="footerstyle"> -->
-	
-		<div class="footer">
-			
-		</div>
+						<!-- BETWEEN TWO POLES -->
+						<div id="project-poles" class="project hvr-grow design">
+							
+								
+								<a href="projects/twopoles/twopoles.html"><img class="project-img" src="images/poles/feet.jpg"></a>
+								<a href="projects/twopoles/twopoles.html"><p class="project-title">between two poles</p></a>
+								<p class="project-category">print, installation</p>
+						
+						</div>
 
-		</div>
+						<!-- NEW YORK TIMES-->
+						<div id="project-nyt" class="project hvr-grow design">
+							
+								
+								<a href="projects/nyt/nyt.html"><img class="project-img" src="projects/nyt/toc.jpg"></a>
+								<a href="projects/nyt/nyt.html"><p class="project-title">new york times mockup</p></a>
+								<p class="project-category">typography, editorial design</p>
+						</div>
+
+						<!-- LA MEI-->
+						<div id="project-lamei" class="project hvr-grow design">
+							
+								
+								<a href="projects/lamei/lamei.html"><img class="project-img" src="projects/lamei/images/lamei.jpg"></a>
+								<a href="projects/lamei/lamei.html"><p class="project-title">la mei hot pot</p></a>
+								<p class="project-category">typography, system design</p>
+							
+						</div>
+
+						<!-- SENTIMENT -->
+						<div id="project-sentiment" class="project hvr-grow design">
+							
+								
+								<a href="projects/sentiment/sentiment.html"><img class="project-img" src="projects/sentiment/blue-2.jpg"></a>
+								<a href="projects/sentiment/sentiment.html"><p class="project-title">sentiment</p></a>
+								<p class="project-category">color, packaging design</p>
+						
+						</div>
+
+						<!-- PAIK NAM JUNE -->
+						<div id="project-paik" class="project hvr-grow design">
+							
+								
+								<a href="projects/paik/paik.html"><img class="project-img" src="projects/paik/images/paik1.jpg"></a>
+								<a href="projects/paik/paik.html"><p class="project-title">exhibition posters</p></a>
+								<p class="project-category">typography, poster design</p>
+						
+						</div>
+
+						<!-- GOODNIGHT MOON -->
+						<!-- <div id="project-moon" class="project design">
+							<div id="moon-date" class="project-date">
+								<p>april 2017</p>
+							</div>
+							<div class="project-title-image">
+								<a href="projects/moon/moon.html"><p class="project-title">goodnight, moon</p></a>
+								<a href="projects/moon/moon.html"><img class="project-img" src="projects/moon/goodnightmoon.jpg"></a>
+							</div>
+							<div class="project-details">
+								<p class="project-description">not a children's book.</p>
+								<p class="project-category">RISD<br>color, book design, illustration</p>
+							</div>
+						</div> -->
+
+						<!-- STAMPS -->
+						<!-- <div id="project-stamps" class="project design">
+							<div id="stamps-date" class="project-date">
+								<p>april 2017</p>
+							</div>
+							<div class="project-title-image">
+								<a href="projects/stamps/stamps.html"><p class="project-title">fruity</p></a>
+								<a href="projects/stamps/stamps.html"><img class="project-img" src="projects/stamps/fruit.png"></a>
+							</div>
+							<div class="project-details">
+								<p class="project-description">fruit roll-ups.</p>
+								<p class="project-category">RISD<br>color, illustration</p>
+							</div>
+						</div> -->
+
+						<hr class="footerstyle">
+				
+					<div class="footer">
+						
+					</div>
+
+					</div>
 
 			<!-- ETC -->
 			<div id="other_page">
@@ -309,13 +318,92 @@
 			<div id="sketchbook_page">
 
 			</div>
+
+			<!-- OKAY -->
+			<div id="sketchbook_page">
+
+			</div>
 			
 
 		</div>
-		<!-- END ALL WORK LIST -->
+		<!-- END WORK PAGES -->
 
 
-	
+		</div>
+		<!-- END ALL-WORK-PAGE -->
+
+
+
+
+
+
+
+		<!-- ALL FULL PROJECTS -->
+
+
+		<!-- THE OKAY CLUB -->
+		<div class="project-page" id="okay-project">
+				<div class="project-overview">
+					<div class="overview-module" id="okayP1">
+						<p><span style="color:red;">This project was created for Design For Good at RISD under the instruction of Annalisa Oswald during Wintersession 2018.</span><br><br>The Okay Club 
+						is a fictional non-profit organization that I designed which supports the intersectionality
+						of mental health.</p>
+					</div>
+					<div class="overview-module" id="okayP2">
+						<p>Website loading animation created in After Effects.</p>
+					</div>
+					<div class="overview-module" id="okayP3">
+							<p>Ok, it’s time. Well, I guess the time was 11 days ago. But I was busy. Doing what you ask? None of your business, that’s what. But now it’s time. Time for what you ask? Time to write an insanely long review of what Ueno got up to in 2017. So that’s what I’m doing. Right now. This is it. The one you are reading.
+
+									Ok, that’s enough of an intro. Let’s go!</p>
+					</div>
+				</div>
+				<div class="project-body" id="okay-body">
+					<img class="fullBleedImg imggg" src="projects/okay/images/bike.jpg">
+					<img class="halfBleedImg imggg" id="bikeee" src="projects/okay/images/animation.gif">
+					<img class="fullBleedImg imggg" src="projects/okay/images/info1.png">
+					<img class="fullBleedImg imggg" src="projects/okay/images/info2.png">
+					<img class="fullBleedImg imggg" src="projects/okay/images/info3.png">
+
+				</div>
+
+		</div>
+
+		<!-- SPOT -->
+		<div class="project-page" id="spot-project">
+				<div class="project-overview">
+					<div class="overview-module" id="spotP1">
+						<p><span style="color:red;">This project was created for Design For Good at RISD under the instruction of Annalisa Oswald during Wintersession 2018.</span><br><br>The Okay Club 
+						is a fictional non-profit organization that I designed which supports the intersectionality
+						of mental health.</p>
+					</div>
+					<div class="overview-module" id="spotP2">
+						<p>Website loading animation created in After Effects.</p>
+					</div>
+					<div class="overview-module" id="spotP3">
+							<p>Ok, it’s time. Well, I guess the time was 11 days ago. But I was busy. Doing what you ask? None of your business, that’s what. But now it’s time. Time for what you ask? Time to write an insanely long review of what Ueno got up to in 2017. So that’s what I’m doing. Right now. This is it. The one you are reading.
+
+									Ok, that’s enough of an intro. Let’s go!</p>
+					</div>
+				</div>
+				<div class="project-body" id="spot-body">
+					<img class="fullBleedImg" src="projects/spot/process/spot-process.jpg">
+					<img class="fullBleedImg" src="projects/spot/process/spot-process3.png">
+					<img class="fullBleedImg" src="projects/spot/process/spot-process7.png">
+					<img class="fullBleedImg" src="projects/spot/process/spot-process8.png">
+					<img class="fullBleedImg" src="projects/spot/process/spot-process10.png">
+
+				</div>
+
+		</div>
+
+
+
+
+
+
+
+
 
 	</div>
 	<!-- END WORK BODY -->

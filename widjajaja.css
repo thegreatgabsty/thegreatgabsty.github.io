@@ -101,11 +101,16 @@ body.fade-out {
 	align-items:center;
 	padding-left:35px;
 	font-family: "GTPM-Bold";
-	/*border-style:solid;*/
+	/* border-style:solid; */
+	position:relative;
+	overflow:hidden;
 }
 #recent a {
 	text-decoration:none;
 	color:black;
+}
+#recent h1 {
+	font-size:35px;
 }
 
 	hr.style1 {
@@ -309,6 +314,11 @@ button {
 
 /*NAVIGATION*/
 
+/* #work-header {
+
+} */
+
+/* ----------CONTAINS EVERYTHING!!! ----------*/
 #workbody {
 	width:100%;
 	height:77vh;
@@ -325,11 +335,26 @@ button {
 		#workbody a {
 			text-decoration: none;
 		}
+/* END EVERYTHING */
+
+
+
+
+/* CONTAINS ALL WORK SUMMARY */
+#all-work-page {
+	width:100%;
+	/* border-style:solid; */
+	position:absolute;
+	color:blue;
+	right:0%;
+	transition-duration: 0.4s;
+}
 
 
 #work-nav {
 	width:12%;
 	margin-top:2%;
+	position:absolute;
 	
 }
 #worknavbar {
@@ -355,13 +380,12 @@ button {
 #work-pages {
 	display:flex;
 	flex-direction:row;
-	width:79vw;
+	width:98vw;
 	height:76vh;
-	display:relative;
+	display:absolute;
 	/* border-style:solid; */
 	color:yellow;
-	margin:0% 0% 0% 8%;
-	width:100%;
+	margin:0% 0% 0% 0%;
 	overflow:hidden;
 }
 
@@ -386,7 +410,7 @@ button {
 
 						.project {
 							width:40%;
-							height:500px;
+							height:80%;
 							/* border-style:solid; */
 							/* -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 									animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
@@ -408,11 +432,14 @@ button {
 							font-size:20px;
 							line-height:0.5;
 							color:red;
+							text-align: center;
+							margin-top:4%;
 						}
 						.project-details {
 							width:100%;
 							/* height:100%; */
 							border-style:solid;
+							
 						}
 						.project-description {
 							/* margin-top:10%; */
@@ -421,13 +448,14 @@ button {
 							/*border-style:solid;*/
 							font-size:1vw;
 							/* padding-left:15px; */
+							
 						}
 
 						.project-category {
 							font-family:"GTPM-Regular";
-							/* margin-top:50px; */
-							font-size:1vw;
-							/* padding-left:15px; */
+							margin-top:-2%;
+							font-size:14px;
+							text-align:center;
 						}
 
 
@@ -642,14 +670,120 @@ button {
 
 
 								/*----------ALL PROJECTS----------*/
+								.trans--grow{
+									-webkit-transition: width .4s ease-out; /* For Safari 3.1 to 6.0 */
+									transition: width .4s  ease-out;
+									width : 0%;
+								  }
+								  .grow{
+									width:90%;
+								  }
+								  .shrink {
+									  width:10%;
+								  }
+								.hr1 {
+									position:absolute;
+									margin:0% 0% 0% 7%;
+									border-top:4px solid black;
+									align-content:left;
+									padding:0;
+								}
+								.hr2 {
+									position:absolute;
+									margin: 0% 0% 0% 10%;
+									border-top:4px solid black;
+									left:100%;
+									align-content:left;
+									padding:0;
+								}
+											#okay-hr {
+												width:60vw;
+												transition-duration: 0.4s;
+												transition-timing-function: ease-out;
+											}
+											#spot-hr {
+												width:60vw;
+												transition-duration: 0.4s;
+												transition-timing-function: ease-out;
+											}
+
+								.page-title {
+									position:absolute;
+									margin:0% 0% 0% 17%;
+									left:100%;
+									transition-duration: 0.4s;
+								}
+
 
 .project-page {
-	/*border-style:solid;*/
-	width:70%;
-	margin:0px 0px 0px 20%;
-	padding:30px 0px 0px 0px;
-
+	/* border-style:solid; */
+	/* margin:0px 0px 0px 20%; */
+	/* padding:30px 0px 0px 0px; */
+	width:100%;
+	position:absolute;
+	color:blue;
+	transition-duration: 0.4s;
 }
+	#okay-project {
+		left:100%;
+	}
+	#spot-project {
+		left:100%;
+	}
+
+.project-overview {
+	width:15%;
+	height:200px;
+	margin:2% 0% 0% 20%;
+	position:absolute;
+	font-family:"GTPM-Regular";
+	font-size:13px;
+	color:black;
+	/* border-style:solid; */
+}
+					.overview-module {
+						position:absolute;
+						display:none;
+						transition-duration: 0.4s;
+					}
+								#okayP1 {
+									display:block;
+									/* z-index:1; */
+								}
+								#spotP1 {
+									display:block;
+									/* z-index:1; */
+								}
+					
+
+.project-body {
+	position:absolute;
+	width:60%;
+	height:73vh;
+	/* border-style:solid; */
+	margin:2% 0% 0% 38%;
+	padding:0% 10% 0% 0%;
+	overflow-y:scroll;
+	
+}
+			.fullBleedImg {
+				width:100%;
+				height:auto;
+				margin:0% 0% 5% 0%;
+			}
+			.halfBleedImg {
+				display:block;
+				width:60%;
+				height:auto;
+				margin-left:auto;
+				margin-right:auto;
+				margin-bottom:5%;
+			}
+
+
+
+
+
 .project-module {
 	display:flex;
 	flex-direction:row;
@@ -670,14 +804,7 @@ button {
 	color:red;
 }
 
-.fullBleedImg {
-	width:100%;
-	height:100%;
-}
-.halfPageImg {
-	width:60%;
-	height:60%;
-}
+
 
 .footer {
 	/*border-style:solid;*/
@@ -1176,7 +1303,7 @@ hr.footerstyle {
 
 }
 	#recent h1 {
-		font-size:20px;
+		font-size:18px;
 	}
 
 	hr.style1 {

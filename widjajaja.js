@@ -133,27 +133,152 @@ $(Sketchbook).click(function() {
 });
 
 
-//PHOTOS
-var category = document.getElementsByClassName(".etc-category");
-var pics = document.getElementsByClassName(".etc-category").getElementsByTagName("img");
-
-$(category).hover(
-	function() {
-		$(this.getElementsByTagName("img").style.opacity = "50%");
-	}, function() {
-		$(this.getElementsByTagName("img").style.opacity = "100%");
-	}
-);
 
 
+// -------------------- FULL PROJECTS
+
+//PROJECT BUTTONS
+
+var BackToWork = document.getElementById('work-header');
+var Okay = document.getElementById('okay-cover');
+var Spot = document.getElementById('spot-cover')
+
+//PROJECT PAGES
+var AllWorkPage = document.getElementById('all-work-page');
+var OkayProject = document.getElementById('okay-project');
+var SpotProject = document.getElementById('spot-project');
 
 
+//PROJECT TITLES 
+var OkayTitle = document.getElementById('okay-title');
+var SpotTitle = document.getElementById('spot-title');
 
+
+//PROJECT HR
+var OkayHR = document.getElementById('okay-hr');
+var SpotHR = document.getElementById('spot-hr');
+
+
+// PROJECT TRIGGERS
+
+// OKAY
+
+			$(Okay).click(function() {
+				AllWorkPage.style.right = "100%";
+				AllWorkPage.style.visibility = "hidden";
+				OkayProject.style.left = "0%";
+				OkayProject.style.visibility = "visible";
+				$('.trans--grow').addClass('shrink');
+				$('.trans--grow').removeClass('grow');
+				OkayTitle.style.left = "3%";
+				OkayHR.style.left = "29%";
+			});
+
+			
+
+
+			$("#okay-body").scroll(function() {
+				var okayP1 = document.getElementById('okayP1');
+				var okayP2 = document.getElementById('okayP2');
+
+				var scrollOkay = $("#okay-body").scrollTop();
+					console.log(scrollOkay);
+						if ( scrollOkay < 400) {
+							okayP1.style.display = "block"; 
+						} else {
+							okayP1.style.display = "none";
+						}
+
+						if (scrollOkay > 400 && scrollOkay < 900) {
+							okayP2.style.display = "block";
+						} else {
+							okayP2.style.display = "none";
+						}
+						if (scrollOkay > 900 && scrollOkay < 1500) {
+							okayP3.style.display = "block";
+						} else {
+							okayP3.style.display = "none";
+						}
+
+			});
+
+// SPOT
+			$(Spot).click(function() {
+				AllWorkPage.style.right = "100%";
+				AllWorkPage.style.visibility = "hidden";
+				SpotProject.style.left = "0%";
+				SpotProject.style.visibility = "visible";
+				$('.trans--grow').addClass('shrink');
+				$('.trans--grow').removeClass('grow');
+				SpotTitle.style.left = "3%";
+				SpotHR.style.left = "32%";
+			});
+
+			$("#spot-body").scroll(function() {
+				// var spotP1 = document.getElementById('spotP1');
+				// var spotP2 = document.getElementById('spotP2');
+
+				var scrollSpot = $("#spot-body").scrollTop();
+					// console.log(scrollOkay);
+						if ( scrollSpot < 400) {
+							spotP1.style.display = "block"; 
+						} else {
+							spotP1.style.display = "none";
+						}
+
+						if (scrollSpot > 400 && scrollSpot < 900) {
+							spotP2.style.display = "block";
+						} else {
+							spotP2.style.display = "none";
+						}
+						if (scrollSpot > 900 && scrollSpot < 1500) {
+							spotP3.style.display = "block";
+						} else {
+							spotP3.style.display = "none";
+						}
+
+			});
+
+			// BACK TO WORK
+
+			$(BackToWork).click(function() {
+				AllWorkPage.style.right = "0%";
+				AllWorkPage.style.visibility = "visible";
+
+				OkayProject.style.left = "100%";
+				OkayProject.style.visibility = "hidden";
+				SpotProject.style.left = "100%";
+				SpotProject.style.visibility = "hidden";
+
+				$('.trans--grow').addClass('grow');
+				$('.trans--grow').removeClass('shrink');
+				
+				OkayTitle.style.left = "100%";
+				OkayHR.style.left = "100%";
+				SpotTitle.style.left = "100%";
+				SpotHR.style.left = "100%";
+
+			});
 
 
 	
 
 })
+
+
+setTimeout(function(){
+        $('.trans--grow').addClass('grow');
+	}, 275);
+	
+
+	
+	
+
+
+
+
+
+
 
 
 
