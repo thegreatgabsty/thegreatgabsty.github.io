@@ -110,7 +110,7 @@ body.fade-out {
 	color:black;
 }
 #recent h1 {
-	font-size:35px;
+	font-size:30px;
 }
 
 	hr.style1 {
@@ -392,7 +392,7 @@ button {
 			/*----------PROJECT LIST----------*/
 
 			#all-work-list {
-				position:absolute;
+				position:relative;
 				width:80vw;
 				height:75vh;
 				padding:3% 0px 0px 3%;
@@ -405,7 +405,11 @@ button {
 				transition-duration: 0.4s;
 				visibility:visible;
 				left:18%;
+				transition: .5s ease-out;
+				
 			}
+
+			
 					
 
 						.project {
@@ -461,13 +465,9 @@ button {
 
 						.project-img {
 							width:100%;
-							/* box-shadow:2px 2px 20px 5px grey; */
-							/* height:auto; */
+							/* box-shadow:2px 2px 10px 3px #8c8c8c; */
+							
 						}
-
-						/* .project-img:hover {
-							margin: -.5% 0% 0% 0%;
-						} */
 
 
 
@@ -532,6 +532,7 @@ button {
 				color:red;
 				display:flex;
 				flex-direction:row;
+				transition:.5s ease-out;
 			}
 				
 				.etc-category {
@@ -565,7 +566,7 @@ button {
 						margin:13% 0% 0% -13%;
 					}
 					#category-3 {
-						margin:5% 0% 0% -5%;
+						margin:8% 0% 0% -5%;
 					}
 				.etc-category-img {
 					/* border-style:solid; */
@@ -591,15 +592,16 @@ button {
 			
 
 			#sketchbook_page {
-				width:100px;
-				height:100px;
+				/* width:100px; */
+				/* height:100px; */
 				margin-left:0%;
+				font-family: "GTPM-Regular";
 				position:absolute;
-				border-style:solid;
+				/* border-style:solid; */
 				visibility:hidden;
-				color:blue;
+				color:black;
 				left:100%;
-				transition-duration: 0.4s;
+				transition-duration: 0.5s;
 			}
 
 
@@ -679,11 +681,11 @@ button {
 									width:90%;
 								  }
 								  .shrink {
-									  width:10%;
+									  width:12%;
 								  }
 								.hr1 {
 									position:absolute;
-									margin:0% 0% 0% 7%;
+									margin:0% 0% 0% 6%;
 									border-top:4px solid black;
 									align-content:left;
 									padding:0;
@@ -702,9 +704,22 @@ button {
 												transition-timing-function: ease-out;
 											}
 											#spot-hr {
-												width:60vw;
+												width:80vw;
 												transition-duration: 0.4s;
 												transition-timing-function: ease-out;
+												margin:0% 0% 0% 0%;
+											}
+											#paws-hr {
+												width:80vw;
+												transition-duration: 0.4s;
+												transition-timing-function: ease-out;
+												margin:0% 0% 0% 0%;
+											}
+											#hack2018-hr {
+												width:80vw;
+												transition-duration: 0.4s;
+												transition-timing-function: ease-out;
+												margin:0% 0% 0% 0%;
 											}
 
 								.page-title {
@@ -713,6 +728,26 @@ button {
 									left:100%;
 									transition-duration: 0.4s;
 								}
+
+.disappear {
+	opacity: 0;
+	transition: opacity 1s ease-in;
+}
+.reappear {
+	opacity:1;
+	transition: opacity 0.5s ease-in;
+}
+.away {
+	/* left:100%; */
+	opacity:0;
+	transition: opacity 0.2s;
+}
+.return {
+	/* left:18%; */
+	opacity:1;
+	/* transition: opacity 0.2s; */
+}
+											
 
 
 .project-page {
@@ -727,17 +762,23 @@ button {
 	#okay-project {
 		left:100%;
 	}
+	#hack2018-project {
+		left:100%;
+	}
 	#spot-project {
+		left:100%;
+	}
+	#paws-project {
 		left:100%;
 	}
 
 .project-overview {
-	width:15%;
+	width:25%;
 	height:200px;
-	margin:2% 0% 0% 20%;
+	margin:2% 0% 0% 72%;
 	position:absolute;
-	font-family:"GTPM-Regular";
-	font-size:13px;
+	font-family:"GTPM-Light";
+	font-size:14px;
 	color:black;
 	/* border-style:solid; */
 }
@@ -750,19 +791,46 @@ button {
 									display:block;
 									/* z-index:1; */
 								}
+								#hack2018P1 {
+									display:block;
+									/* z-index:1; */
+								}
 								#spotP1 {
 									display:block;
 									/* z-index:1; */
 								}
+								#pawsP1 {
+									display:block;
+									/* z-index:1; */
+								}
+								
 					
 
 .project-body {
 	position:absolute;
-	width:60%;
+	width:97%;
 	height:73vh;
 	/* border-style:solid; */
-	margin:2% 0% 0% 38%;
-	padding:0% 10% 0% 0%;
+	margin:2% 0% 0% 2%;
+	padding:0% 35% 0% 0%;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	
+}
+			#hack2018-body {
+				background-image: url("projects/hack2018/background2.png");
+				background-repeat: no-repeat;
+				background-position: 95% 100%;
+				background-size: 25%;
+
+			}
+.project-body-style2 {
+	position:absolute;
+	width:97%;
+	height:73vh;
+	/* border-style:solid; */
+	margin:2% 0% 0% 2%;
+	padding:0% 5% 0% 0%;
 	overflow-y:scroll;
 	
 }
@@ -778,6 +846,10 @@ button {
 				margin-left:auto;
 				margin-right:auto;
 				margin-bottom:5%;
+			}
+			.shadow {
+				box-shadow:2px 2px 10px 5px #c4c4c4;
+				margin-left:2%;
 			}
 
 
@@ -1398,6 +1470,7 @@ hr.footerstyle {
 .project-img {
 	width:100%;
 	height:auto;
+	
 }
 
 /*----------ALL PROJECTS MOBILE----------*/
