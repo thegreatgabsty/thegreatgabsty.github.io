@@ -167,6 +167,7 @@ var PawsProject = document.getElementById('paws-project');
 //PROJECT TITLES 
 var OkayTitle = document.getElementById('okay-title');
 var Hack2018Title = document.getElementById('hack2018-title');
+var Hack2017Title = document.getElementById('hack2017-title');
 var SpotTitle = document.getElementById('spot-title');
 var PawsTitle = document.getElementById('paws-title');
 
@@ -174,6 +175,7 @@ var PawsTitle = document.getElementById('paws-title');
 //PROJECT HR
 var OkayHR = document.getElementById('okay-hr');
 var Hack2018HR = document.getElementById('hack2018-hr');
+var Hack2017HR = document.getElementById('hack2017-hr');
 var SpotHR = document.getElementById('spot-hr');
 var PawsHR = document.getElementById('paws-hr');
 
@@ -183,13 +185,11 @@ var PawsHR = document.getElementById('paws-hr');
 // OKAY
 
 			$(Okay).click(function() {
-				// AllWorkPage.style.visibility = "hidden";
-				AllWorkPage.style.right = "100%";
+				
+				$("#all-work-page").removeClass('return-left').addClass('away-left');
 
-				$("#all-work-page").addClass('disappear').removeClass('reappear');
-				OkayProject.style.left = "0%";
-				OkayProject.style.visibility = "visible";
-				$("#okay-project").removeClass('disappear').addClass('reappear');
+				$("#okay-project").removeClass('project-away').addClass('project-return');
+
 				$('.trans--grow').addClass('shrink');
 				$('.trans--grow').removeClass('grow');
 				OkayTitle.style.left = "4%";
@@ -273,10 +273,11 @@ var PawsHR = document.getElementById('paws-hr');
 
 // HACK@BROWN 2018
 			$(Hack2018).click(function() {
-				AllWorkPage.style.right = "100%";
-				AllWorkPage.style.visibility = "hidden";
-				Hack2018Project.style.left = "0%";
-				Hack2018Project.style.visibility = "visible";
+
+				$("#all-work-page").removeClass('return-left').addClass('away-left');
+
+				$("#hack2018-project").removeClass('project-away').addClass('project-return');
+
 				$('.trans--grow').addClass('shrink');
 				$('.trans--grow').removeClass('grow');
 				Hack2018Title.style.left = "4%";
@@ -284,8 +285,6 @@ var PawsHR = document.getElementById('paws-hr');
 			});
 
 			$("#hack2018-body").scroll(function() {
-				// var spotP1 = document.getElementById('spotP1');
-				// var spotP2 = document.getElementById('spotP2');
 
 				var scrollHack2018 = $("#hack2018-body").scrollTop();
 					// console.log(scrollOkay);
@@ -310,106 +309,116 @@ var PawsHR = document.getElementById('paws-hr');
 						} else {
 							hack2018P4.style.display = "none";
 						}
+						if (scrollHack2018 > 2500 && scrollHack2018 < 3200) {
+							hack2018P5.style.display = "block";
+						} else {
+							hack2018P5.style.display = "none";
+						}
+						if (scrollHack2018 > 3200 && scrollHack2018 < 3700) {
+							hack2018P6.style.display = "block";
+						} else {
+							hack2018P6.style.display = "none";
+						}
+						if (scrollHack2018 > 3700 && scrollHack2018 < 4300) {
+							hack2018P7.style.display = "block";
+						} else {
+							hack2018P7.style.display = "none";
+						}
+						if (scrollHack2018 > 4300 && scrollHack2018 < 4700) {
+							hack2018P8.style.display = "block";
+						} else {
+							hack2018P8.style.display = "none";
+						}
+						if (scrollHack2018 > 4700 && scrollHack2018 < 5400) {
+							hack2018P9.style.display = "block";
+						} else {
+							hack2018P9.style.display = "none";
+						}
+						if (scrollHack2018 > 5400 && scrollHack2018 < 5700) {
+							hack2018P10.style.display = "block";
+						} else {
+							hack2018P10.style.display = "none";
+						}
+
 
 			});
 
-// SPOT
-			$(Spot).click(function() {
-				AllWorkPage.style.right = "100%";
-				AllWorkPage.style.visibility = "hidden";
-				SpotProject.style.left = "0%";
-				SpotProject.style.visibility = "visible";
+
+//HACK@BROWN 2017
+
+			$("#hack2017-cover").click(function() {
+
+				$("#all-work-page").removeClass('return-left').addClass('away-left');
+				$("#hack2017-project").removeClass('project-away').addClass('project-return');
+
 				$('.trans--grow').addClass('shrink');
 				$('.trans--grow').removeClass('grow');
-				SpotTitle.style.left = "3.5%";
-				SpotHR.style.left = "27%";
+				Hack2017Title.style.left = "4%";
+				Hack2017HR.style.left = "39%";
 			});
 
-			$("#spot-body").scroll(function() {
-				// var spotP1 = document.getElementById('spotP1');
-				// var spotP2 = document.getElementById('spotP2');
+			$("#hack2017-body").scroll(function() {
 
-				var scrollSpot = $("#spot-body").scrollTop();
+				var scrollHack2017 = $("#hack2017-body").scrollTop();
 					// console.log(scrollOkay);
-						if ( scrollSpot < 400) {
-							spotP1.style.display = "block"; 
+						if ( scrollHack2017 < 500) {
+							hack2017P1.style.display = "block"; 
 						} else {
-							spotP1.style.display = "none";
+							hack2017P1.style.display = "none";
 						}
-
-						if (scrollSpot > 400 && scrollSpot < 900) {
-							spotP2.style.display = "block";
+						if ( scrollHack2017 > 500 && scrollHack2017 < 2400) {
+							hack2017P2.style.display = "block"; 
 						} else {
-							spotP2.style.display = "none";
+							hack2017P2.style.display = "none";
 						}
-						if (scrollSpot > 900 && scrollSpot < 1500) {
-							spotP3.style.display = "block";
+						if ( scrollHack2017 > 2400 && scrollHack2017 < 3000) {
+							hack2017P3.style.display = "block"; 
 						} else {
-							spotP3.style.display = "none";
+							hack2017P3.style.display = "none";
 						}
-
-			});
-
-// PAWS
-			$(Paws).click(function() {
-				AllWorkPage.style.right = "100%";
-				AllWorkPage.style.visibility = "hidden";
-				PawsProject.style.left = "0%";
-				PawsProject.style.visibility = "visible";
-				$('.trans--grow').addClass('shrink');
-				$('.trans--grow').removeClass('grow');
-				PawsTitle.style.left = "3.5%";
-				PawsHR.style.left = "50%";
-			});
-
-			$("#paws-body").scroll(function() {
-				// var spotP1 = document.getElementById('spotP1');
-				// var spotP2 = document.getElementById('spotP2');
-
-				var scrollPaws = $("#paws-body").scrollTop();
-					// console.log(scrollOkay);
-						if ( scrollPaws < 400) {
-							pawsP1.style.display = "block"; 
+						if ( scrollHack2017 > 3000 && scrollHack2017 < 3600) {
+							hack2017P4.style.display = "block"; 
 						} else {
-							pawsP1.style.display = "none";
+							hack2017P4.style.display = "none";
 						}
-
-						if (scrollPaws > 400 && scrollPaws < 900) {
-							pawsP2.style.display = "block";
+						if ( scrollHack2017 > 3600 && scrollHack2017 < 4200) {
+							hack2017P5.style.display = "block"; 
 						} else {
-							pawsP2.style.display = "none";
+							hack2017P5.style.display = "none";
 						}
-						if (scrollPaws > 900 && scrollPaws < 1500) {
-							pawsP3.style.display = "block";
+						if ( scrollHack2017 > 4200 && scrollHack2017 < 5300) {
+							hack2017P6.style.display = "block"; 
 						} else {
-							pawsP3.style.display = "none";
+							hack2017P6.style.display = "none";
+						}
+						if ( scrollHack2017 > 5300 && scrollHack2017 < 6800) {
+							hack2017P7.style.display = "block"; 
+						} else {
+							hack2017P7.style.display = "none";
+						}
+						if ( scrollHack2017 > 6800 && scrollHack2017 < 7300) {
+							hack2017P8.style.display = "block"; 
+						} else {
+							hack2017P8.style.display = "none";
 						}
 
 			});
+
+
 
 // BACK TO WORK RESET
 
 			$(BackToWork).click(function() {
-				AllWorkPage.style.right = "0%";
-				AllWorkPage.style.visibility = "visible";
-				$("#all-work-page").removeClass('disappear').addClass('reappear');
+				$("#all-work-page").removeClass('away-left').addClass('return-left');
 
-				OkayProject.style.left = "100%";
-				OkayProject.style.visibility = "hidden";
 				$("#okay-body").scrollTop(0);
-				$("#okay-project").removeClass('reappear').addClass('disappear');
+				$("#okay-project").removeClass('project-return').addClass('project-away');
 
-				Hack2018Project.style.left = "100%";
-				Hack2018Project.style.visibility = "hidden";
+				$("#hack2018-project").removeClass('project-return').addClass('project-away');
 				$("#hack2018-body").scrollTop(0);
-				
-				SpotProject.style.left = "100%";
-				SpotProject.style.visibility = "hidden";
-				$("#spot-body").scrollTop(0);
-				
-				PawsProject.style.left = "100%";
-				PawsProject.style.visibility = "hidden";
-				$("#paws-body").scrollTop(0);
+
+				$("#hack2017-project").removeClass('project-return').addClass('project-away');
+				$("#hack2018-body").scrollTop(0);
 
 				$('.trans--grow').addClass('grow');
 				$('.trans--grow').removeClass('shrink');
@@ -419,6 +428,9 @@ var PawsHR = document.getElementById('paws-hr');
 
 				Hack2018Title.style.left = "100%";
 				Hack2018HR.style.left = "100%";
+
+				Hack2017Title.style.left = "100%";
+				Hack2017HR.style.left = "100%";
 				
 				SpotTitle.style.left = "100%";
 				SpotHR.style.left = "100%";

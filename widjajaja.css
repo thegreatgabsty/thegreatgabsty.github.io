@@ -314,9 +314,12 @@ button {
 
 /*NAVIGATION*/
 
-/* #work-header {
-
-} */
+#work-header {
+	color:black;
+}
+#work-header:hover {
+	color:red;
+}
 
 /* ----------CONTAINS EVERYTHING!!! ----------*/
 #workbody {
@@ -346,8 +349,8 @@ button {
 	/* border-style:solid; */
 	position:absolute;
 	color:blue;
-	right:0%;
-	transition-duration: 0.4s;
+	/* right:0%; */
+	transition-duration: 0.5s;
 }
 
 
@@ -403,7 +406,7 @@ button {
 				flex-wrap:wrap;
 				overflow-y:scroll;
 				transition-duration: 0.4s;
-				visibility:visible;
+				/* visibility:visible; */
 				left:18%;
 				transition: .5s ease-out;
 				
@@ -414,7 +417,7 @@ button {
 
 						.project {
 							width:40%;
-							height:80%;
+							height:30vw;
 							/* border-style:solid; */
 							/* -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 									animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
@@ -433,7 +436,7 @@ button {
 
 						.project-title {
 							font-family:"GTPM-Regular";
-							font-size:20px;
+							font-size: 20px;
 							line-height:0.5;
 							color:red;
 							text-align: center;
@@ -446,7 +449,7 @@ button {
 							
 						}
 						.project-description {
-							/* margin-top:10%; */
+							margin:0% 0% 0% 0%;
 							font-family:"GTPM-Regular";
 							/*font-size:14px;*/
 							/*border-style:solid;*/
@@ -673,8 +676,8 @@ button {
 
 								/*----------ALL PROJECTS----------*/
 								.trans--grow{
-									-webkit-transition: width .4s ease-out; /* For Safari 3.1 to 6.0 */
-									transition: width .4s  ease-out;
+									-webkit-transition: width .5s ease-out; /* For Safari 3.1 to 6.0 */
+									transition: width .5s  ease-out;
 									width : 0%;
 								  }
 								  .grow{
@@ -700,7 +703,7 @@ button {
 								}
 											#okay-hr {
 												width:60vw;
-												transition-duration: 0.4s;
+												transition-duration: 0.5s;
 												transition-timing-function: ease-out;
 											}
 											#spot-hr {
@@ -717,7 +720,14 @@ button {
 											}
 											#hack2018-hr {
 												width:80vw;
-												transition-duration: 0.4s;
+												transition-duration: 0.5s;
+												transition-timing-function: ease-out;
+												margin:0% 0% 0% 0%;
+											}
+
+											#hack2017-hr {
+												width:80vw;
+												transition-duration: 0.5s;
 												transition-timing-function: ease-out;
 												margin:0% 0% 0% 0%;
 											}
@@ -726,17 +736,10 @@ button {
 									position:absolute;
 									margin:0% 0% 0% 17%;
 									left:100%;
-									transition-duration: 0.4s;
+									transition:0.5s ease-out;
 								}
 
-.disappear {
-	opacity: 0;
-	transition: opacity 1s ease-in;
-}
-.reappear {
-	opacity:1;
-	transition: opacity 0.5s ease-in;
-}
+
 .away {
 	/* left:100%; */
 	opacity:0;
@@ -746,6 +749,15 @@ button {
 	/* left:18%; */
 	opacity:1;
 	/* transition: opacity 0.2s; */
+}
+
+.away-left {
+	opacity:0;
+	right:100%;
+}
+.return-left {
+	opacity:1;
+	right:0%;
 }
 											
 
@@ -760,10 +772,12 @@ button {
 	transition-duration: 0.4s;
 }
 	#okay-project {
-		left:100%;
+		/* left:100%; */
+		transition:0.5s;
 	}
 	#hack2018-project {
-		left:100%;
+		/* left:100%; */
+		transition:0.5s;
 	}
 	#spot-project {
 		left:100%;
@@ -771,6 +785,16 @@ button {
 	#paws-project {
 		left:100%;
 	}
+
+					/* PROJECT ANIMATIONS */
+					.project-away {
+						left:100%;
+						opacity:0;
+					}
+					.project-return {
+						left:0%;
+						opacity:1;
+					}
 
 .project-overview {
 	width:25%;
@@ -792,6 +816,10 @@ button {
 									/* z-index:1; */
 								}
 								#hack2018P1 {
+									display:block;
+									/* z-index:1; */
+								}
+								#hack2017P1 {
 									display:block;
 									/* z-index:1; */
 								}
@@ -817,13 +845,24 @@ button {
 	overflow-x:hidden;
 	
 }
+
+/* PROJECTS WITH STATIC BACKGROUND IMAGES */
+
+
 			#hack2018-body {
 				background-image: url("projects/hack2018/background2.png");
 				background-repeat: no-repeat;
 				background-position: 95% 100%;
-				background-size: 25%;
-
+				background-size: 20%;
 			}
+			#hack2017-body {
+				background-image: url("projects/hack2017/images/logo.jpg");
+				background-repeat: no-repeat;
+				background-position: 95% 100%;
+				background-size: 10%;
+			}
+
+
 .project-body-style2 {
 	position:absolute;
 	width:97%;
