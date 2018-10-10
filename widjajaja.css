@@ -418,9 +418,6 @@ button {
 						.project {
 							width:40%;
 							height:30vw;
-							/* border-style:solid; */
-							/* -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-									animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
 							margin: 0% 7% 0% 0%;
 						}
 						.project-title-image {
@@ -732,6 +729,25 @@ button {
 												margin:0% 0% 0% 0%;
 											}
 
+											#pidan-hr {
+												width:80vw;
+												transition-duration: 0.5s;
+												transition-timing-function: ease-out;
+												margin:0% 0% 0% 0%;
+											}
+											#trips-hr {
+												width:80vw;
+												transition-duration: 0.5s;
+												transition-timing-function: ease-out;
+												margin:0% 0% 0% 0%;
+											}
+											#kvsh-hr {
+												width:80vw;
+												transition-duration: 0.5s;
+												transition-timing-function: ease-out;
+												margin:0% 0% 0% 0%;
+											}
+
 								.page-title {
 									position:absolute;
 									margin:0% 0% 0% 17%;
@@ -779,11 +795,8 @@ button {
 		/* left:100%; */
 		transition:0.5s;
 	}
-	#spot-project {
-		left:100%;
-	}
-	#paws-project {
-		left:100%;
+	#pidan-project {
+		transition:0.5s
 	}
 
 					/* PROJECT ANIMATIONS */
@@ -813,23 +826,24 @@ button {
 					}
 								#okayP1 {
 									display:block;
-									/* z-index:1; */
 								}
 								#hack2018P1 {
 									display:block;
-									/* z-index:1; */
 								}
 								#hack2017P1 {
 									display:block;
-									/* z-index:1; */
 								}
 								#spotP1 {
 									display:block;
-									/* z-index:1; */
 								}
-								#pawsP1 {
+								#pidanP1 {
 									display:block;
-									/* z-index:1; */
+								}
+								#tripsP1 {
+									display:block;
+								}
+								#kvshP1 {
+									display:block;
 								}
 								
 					
@@ -862,6 +876,13 @@ button {
 				background-size: 10%;
 			}
 
+			#pidan-body {
+				background-image: url("projects/pidan/background.png");
+				background-repeat: no-repeat;
+				background-position: 95% 100%;
+				background-size: 10%;
+			}
+
 
 .project-body-style2 {
 	position:absolute;
@@ -889,6 +910,10 @@ button {
 			.shadow {
 				box-shadow:2px 2px 10px 5px #c4c4c4;
 				margin-left:2%;
+			}
+			.shadow2 {
+				box-shadow:2px 2px 30px #c4c4c4;
+				/* margin-left:2%; */
 			}
 
 
