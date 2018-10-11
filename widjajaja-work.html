@@ -19,6 +19,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<link rel="stylesheet" href="widjajaja.css" type="text/css">
 	
+	<script type="text/javascript" src="ScrollMagic.js"></script>
 	<script type="text/javascript" src="jquery-3.1.1.js"></script> 
 	<script type="text/javascript" src="jquery.lazy.min.js"></script>
 		<script type="text/javascript" src="jquery.lazy.plugins.min.js"></script>
@@ -32,6 +33,14 @@
 <!-- BODY -->
 
 <body>
+
+		<div id="dvNotify" class="notification">
+				<label>This website is currently undergoing some changes; please excuse the bugs!</label>
+				<a href="#" id="btnClose">[x]</a>
+			  </div>
+			  <!-- <div style="text-align:center;">
+				<a href="#" id="btnShow">Show Notification</a>
+			  </div> -->
 
 	<!-- HEADER -->
 
@@ -82,257 +91,601 @@
 
 	<div id="recent">
 		<!-- <hr class="style2"> -->
-		<h1>work</h1>
-		<hr class="style3">
+		<a href="#"><h1 id="work-header">work</h1></a>
+		<hr class="hr1 trans--grow">
+
+
+		<h1 class="page-title" id="3trips-title"><span style="color:red;">THREE TRIPS</span></h1>
+		<hr class="hr2" id="trips-hr">
+
+		<h1 class="page-title" id="pidan-title"><span style="color:red;">DIY CENTURY EGGS</span></h1>
+		<hr class="hr2" id="pidan-hr">
+
+		<h1 class="page-title" id="okay-title"><span style="color:red;">THE OKAY CLUB</span></h1>
+		<hr class="hr2" id="okay-hr">
+
+		<h1 class="page-title" id="hack2018-title"><span style="color:red;">HACK@BROWN 2018</span></h1>
+		<hr class="hr2" id="hack2018-hr">
+
+		<h1 class="page-title" id="hack2017-title"><span style="color:red;">HACK@BROWN 2017</span></h1>
+		<hr class="hr2" id="hack2017-hr">
+
+		<h1 class="page-title" id="kvsh-title"><span style="color:red;">KVSH CHOCOLATE</span></h1>
+		<hr class="hr2" id="kvsh-hr">
+		
+		<!-- style3 -->
 	</div>
 
 	<!-- WORK BODY -->
+	
 	<div id="workbody">
-		
+
+
+		<div id="all-work-page" class="return-left">
 
 		<div id="work-nav">
 			<ul id="worknavbar">
 				<li>
-					<a id="all" class="worknavbar active" href="#">all work</a></li>
+					<a id="main" class="worknavbar active" href="#">projects</a></li>
 				<li>
-					<a id="design" class="worknavbar" href="#">design</a></li>
+					<a id="other" class="worknavbar" href="#">etc</a></li>
 				<li>
-					<a id="uiux" class="worknavbar" href="#">ui/ux</a></li>
-				<li>
-					<a id="illustration" class="worknavbar" href="#">illustration</a></li>
-				<li>
-					<a id="motion" class="worknavbar" href="#">motion</a></li>
+					<a id="sketchbook" class="worknavbar" href="#">sketchbook</a></li>
 			</ul>
 		</div>
+		
+		
+		
+		
+		<div id="work-pages">
+		
 
-		<div id="all-work-list">
+				<div id="all-work-list">
 
-		<!-- OKAY -->
-      		<div id="project-okay" class="project uiux">
-	    		<div id="okay-date" class="project-date">
-		    		<p>jan 2018</p>
-		    	</div>
-	    		<div class="project-title-image">
-	    			<a href="projects/okay/okay.html"><p class="project-title">THE OKAY CLUB</p></a>
-	    			<a href="projects/okay/okay.html"><img class="project-img" src="projects/okay/images/bike.png"></a>
-	    		</div>
-	    		<div class="project-details">
-	    			<p class="project-description">an effort to support marginalized communities fighting mental illness.</p>
-	    			<p class="project-category">RISD<br>brand identity design</p>
-	    		</div>
-      		</div>
+					<!-- 3 TRIPS -->
+					<div id="project-3trips" class="project hvr-grow">
+								
+						<a href="#"><img class="project-img shadow2" id="3trips-cover" src="projects/3trips/3trips-cover-2.jpg"></a>
+						<a href="#"><p class="project-title">THREE TRIPS</p></a>
+						<p class="project-category">infographic, data visualization</p>
+					</div>
 
+					<!-- PIDAN -->
+					<div id="project-pidan" class="project hvr-grow">
+								
+							<a href="#"><img class="project-img shadow2" id="pidan-cover" src="projects/pidan/pidancover.png"></a>
+							<a href="#"><p class="project-title">DIY CENTURY EGGS</p></a>
+							<p class="project-category">infographic</p>
+					</div>
+					
+					
+					<!-- OKAY -->
+						<div id="project-okay" class="project hvr-grow">
+							
+								
+								<a href="#"><img class="project-img shadow2" id="okay-cover" src="projects/okay/images/bike.jpg"></a>
+								<a href="#"><p class="project-title">THE OKAY CLUB</p></a>
+								<p class="project-category">brand identity design</p>
+						</div>
 
-		<!-- SPOT -->
-      		<div id="project-spot" class="project uiux">
-	    		<div id="hack2017-date" class="project-date">
-		    		<p>nov 2017</p>
-		    	</div>
-	    		<div class="project-title-image">
-	    			<a href="projects/spot/spot.html"><p class="project-title">CASE STUDY : spot</p></a>
-	    			<a href="projects/spot/spot.html"><img class="project-img" src="projects/spot/spot-A.jpg"></a>
-	    		</div>
-	    		<div class="project-details">
-	    			<p class="project-description">an app to help college students stay informed about campus activities, events, and extracurriculars.</p>
-	    			<p class="project-category">RISD<br>UI/UX design</p>
-	    		</div>
-      		</div>
-
-      	<!-- PAWS -->
-      		<div id="project-paws" class="project uiux">
-	    		<div id="paws-date" class="project-date">
-		    		<p>nov 2017</p>
-		    	</div>
-	    		<div class="project-title-image">
-	    			<a href="projects/paws/paws.html"><p class="project-title">care4animals redesign</p></a>
-	    			<a href="projects/paws/paws.html"><img class="project-img" src="projects/paws/paws.png"></a>
-	    		</div>
-	    		<div class="project-details">
-	    			<p class="project-description">redesigning a pet adoption website to increase adoption rates.</p>
-	    			<p class="project-category">BROWN UNIVERSITY<br>UI/UX design, web design</p>
-	    		</div>
-      		</div>
-
-		<!-- HACK 2017 -->
-      		<div id="project-hack2017" class="project design">
-	    		<div id="hack2017-date" class="project-date">
-		    		<p>oct 2016 - feb 2017</p>
-		    	</div>
-	    		<div class="project-title-image">
-	    			<a href="projects/hack2017/hack2017.html"><p class="project-title">hack@brown 2017</p></a>
-	    			<a href="projects/hack2017/hack2017.html"><img class="project-img" src="projects/hack2017/hack2017.png"></a>
-	    		</div>
-	    		<div class="project-details">
-	    			<p class="project-description">design work for the annual hackathon at Brown University.</p>
-	    			<p class="project-category">EXTRACURRICULAR<br>print, digital, web design</p>
-	    		</div>
-      		</div>
-
-      		<!-- KVSH -->
-      		<div id="project-kvsh" class="project design">
-	    		<div id="paws-date" class="project-date">
-		    		<p>jan 2018</p>
-		    	</div>
-	    		<div class="project-title-image">
-	    			<a href="projects/kvsh/kvsh.html"><p class="project-title">KVSH chocolate</p></a>
-	    			<a href="projects/kvsh/kvsh.html"><img class="project-img" src="projects/kvsh/kvsh-green.png"></a>
-	    		</div>
-	    		<div class="project-details">
-	    			<p class="project-description">designing packaging for chocolate!</p>
-	    			<p class="project-category">RISD<br>brand identity, packaging design</p>
-	    		</div>
-      		</div>
-
-			<!-- BBC WORLDWIDE -->
-			<div id="project-bbc" class="project design">
-	    		<div id="bbc-date" class="project-date">
-		    		<p>june - august 2017</p>
-		    	</div>
-	    		<div class="project-title-image">
-	    			<a href="projects/bbc/bbc.html"><p class="project-title">bbc worldwide</p></a>
-	    			<a href="projects/bbc/bbc.html"><img id="bbcwow" class="project-img" src="projects/bbc/images/ss/life.png"></a>
-	    		</div>
-	    		<div class="project-details">
-	    			<p class="project-description">work from a summer internship 2017 at the bbc worldwide in the new york city office!</p>
-	    			<p class="project-category">INTERNSHIP<br>print, digital, animation</p>
-	    		</div>
-      		</div>
-
-      		<!-- RETRO RENAISSANCE -->
-      		<div id="project-retro" class="project motion">
-	    		<div id="retro-date" class="project-date">
-		    		<p>sept 2017</p>
-		    	</div>
-	    		<div class="project-title-image">
-	    			<a href="projects/retro/retro.html"><p class="project-title">retro renaissance</p></a>
-	    			<a href="projects/retro/retro.html"><img class="project-img" src="images/carousel/archive-title.png"></a>
-	    		</div>
-	    		<div class="project-details">
-	    			<p class="project-description">how do we make sense of the overwhelming amount of stuff on the internet?</p>
-	    			<p class="project-category">RISD<br>print, digital, animation</p>
-	    		</div>
-      		</div>
+					<!-- HACK@BROWN 2018 -->
+					<div id="project-hack2018" class="project hvr-grow uiux">
+							
+								
+							<a href="#"><img class="project-img shadow2" id="hack2018-cover" src="projects/hack2018/hack2018.png"></a>
+							<a href="#"><p class="project-title">HACK@BROWN 2018</p></a>
+							<p class="project-category">print, digital, web design</p>
+						
+					</div>
 
 
-      		<!-- BETWEEN TWO POLES -->
-      		<div id="project-poles" class="project design">
-	    		<div id="poles-date" class="project-date">
-		    		<p>oct 2017</p>
-		    	</div>
-	    		<div class="project-title-image">
-	    			<a href="projects/twopoles/twopoles.html"><p class="project-title">between two poles</p></a>
-	    			<a href="projects/twopoles/twopoles.html"><img class="project-img" src="images/poles/feet.jpg"></a>
-	    		</div>
-	    		<div class="project-details">
-	    			<p class="project-description">how does place lead to story? this is an exercise in placemaking.</p>
-	    			<p class="project-category">RISD<br>print, installation</p>
-	    		</div>
-      		</div>
 
-      		<!-- NEW YORK TIMES-->
-      		<div id="project-nyt" class="project design">
-	    		<div id="nyt-date" class="project-date">
-		    		<p>sept 2017</p>
-		    	</div>
-	    		<div class="project-title-image">
-	    			<a href="projects/nyt/nyt.html"><p class="project-title">new york times mockup</p></a>
-	    			<a href="projects/nyt/nyt.html"><img class="project-img" src="projects/nyt/toc.png"></a>
-	    		</div>
-	    		<div class="project-details">
-	    			<p class="project-description">typographic exercise: a fake new york times article and table of contents.</p>
-	    			<p class="project-category">RISD<br>typography, editorial design</p>
-	    		</div>
-      		</div>
+					<!-- HACK 2017 -->
+						<div id="project-hack2017" class="project hvr-grow design">
+								
+								<a href="#"><img class="project-img shadow2" id="hack2017-cover" src="projects/hack2017/hack2017.jpg"></a>
+								<a href="#"><p class="project-title">HACK@BROWN 2017</p></a>
+								<p class="project-category">print, digital, web design</p>
+							
+						</div>
 
-      		<!-- LA MEI-->
-      		<div id="project-lamei" class="project design">
-	    		<div id="lamei-date" class="project-date">
-		    		<p>march 2016</p>
-		    	</div>
-	    		<div class="project-title-image">
-	    			<a href="projects/lamei/lamei.html"><p class="project-title">la mei hot pot</p></a>
-	    			<a href="projects/lamei/lamei.html"><img class="project-img" src="projects/lamei/images/lamei.jpg"></a>
-	    		</div>
-	    		<div class="project-details">
-	    			<p class="project-description">redesigning a local restaurant's menu system.</p>
-	    			<p class="project-category">RISD<br>typography, system design</p>
-	    		</div>
-      		</div>
+						<!-- KVSH -->
+						<div id="project-kvsh" class="project hvr-grow">
+							
+								
+								<a href="#"><img class="project-img shadow2" id="kvsh-cover" src="projects/kvsh/kvsh-green.png"></a>
+								<a href="#"><p class="project-title">KVSH CHOCOLATE</p></a>
+								<p class="project-category">brand identity, packaging design</p>
+							
+						</div>
 
-      		<!-- SENTIMENT -->
-      		<div id="project-sentiment" class="project design">
-	    		<div id="sentiment-date" class="project-date">
-		    		<p>march 2017</p>
-		    	</div>
-	    		<div class="project-title-image">
-	    			<a href="projects/sentiment/sentiment.html"><p class="project-title">sentiment</p></a>
-	    			<a href="projects/sentiment/sentiment.html"><img class="project-img" src="projects/sentiment/blue.jpg"></a>
-	    		</div>
-	    		<div class="project-details">
-	    			<p class="project-description">eat your feelings.</p>
-	    			<p class="project-category">RISD<br>color, packaging design</p>
-	    		</div>
-      		</div>
 
-      		<!-- PAIK NAM JUNE -->
-      		<div id="project-paik" class="project design">
-	    		<div id="paik-date" class="project-date">
-		    		<p>february 2016</p>
-		    	</div>
-	    		<div class="project-title-image">
-	    			<a href="projects/paik/paik.html"><p class="project-title">exhibition posters</p></a>
-	    			<a href="projects/paik/paik.html"><img class="project-img" src="projects/paik/images/paik1.jpg"></a>
-	    		</div>
-	    		<div class="project-details">
-	    			<p class="project-description">a series of posters promoting a fictional exhibition of artist Paik Nam June.</p>
-	    			<p class="project-category">RISD<br>typography, poster design</p>
-	    		</div>
-      		</div>
+						<!-- RETRO RENAISSANCE -->
+						<div id="project-retro" class="project hvr-grow motion">
+							
+								<a href="#"><img class="project-img shadow2" src="images/carousel/archive-title.png"></a>
+								<a href="#"><p class="project-title">RETRO RENAISSANCE</p></a>
+								<p class="project-category">print, digital, animation</p>
+						
+						</div>
 
-      		<!-- GOODNIGHT MOON -->
-      		<!-- <div id="project-moon" class="project design">
-	    		<div id="moon-date" class="project-date">
-		    		<p>april 2017</p>
-		    	</div>
-	    		<div class="project-title-image">
-	    			<a href="projects/moon/moon.html"><p class="project-title">goodnight, moon</p></a>
-	    			<a href="projects/moon/moon.html"><img class="project-img" src="projects/moon/goodnightmoon.jpg"></a>
-	    		</div>
-	    		<div class="project-details">
-	    			<p class="project-description">not a children's book.</p>
-	    			<p class="project-category">RISD<br>color, book design, illustration</p>
-	    		</div>
-      		</div> -->
 
-      		<!-- STAMPS -->
-      		<div id="project-stamps" class="project design">
-	    		<div id="stamps-date" class="project-date">
-		    		<p>april 2017</p>
-		    	</div>
-	    		<div class="project-title-image">
-	    			<a href="projects/stamps/stamps.html"><p class="project-title">fruity</p></a>
-	    			<a href="projects/stamps/stamps.html"><img class="project-img" src="projects/stamps/fruit.png"></a>
-	    		</div>
-	    		<div class="project-details">
-	    			<p class="project-description">fruit roll-ups.</p>
-	    			<p class="project-category">RISD<br>color, illustration</p>
-	    		</div>
-      		</div>
+						<!-- BETWEEN TWO POLES -->
+						<div id="project-poles" class="project hvr-grow design">
+							
+								
+								<a href="#"><img class="project-img shadow2" src="images/poles/feet.jpg"></a>
+								<a href="#"><p class="project-title">BETWEEN TWO POLES</p></a>
+								<p class="project-category">print, installation</p>
+						
+						</div>
 
-      		<hr class="footerstyle">
-	
-		<div class="footer">
+						<!-- NEW YORK TIMES-->
+						<!-- <div id="project-nyt" class="project hvr-grow design">
+							
+								
+								<a href="projects/nyt/nyt.html"><img class="project-img" src="projects/nyt/toc.jpg"></a>
+								<a href="projects/nyt/nyt.html"><p class="project-title">NEW YORK TIMES MOCKUP</p></a>
+								<p class="project-category">typography, editorial design</p>
+						</div> -->
+
+						<!-- LA MEI-->
+						<div id="project-lamei" class="project hvr-grow design">
+							
+								
+								<a href="#"><img class="project-img" src="projects/lamei/images/lamei.jpg"></a>
+								<a href="#"><p class="project-title">LA MEI HOT POT</p></a>
+								<p class="project-category">typography, system design</p>
+							
+						</div>
+
+						<!-- SENTIMENT -->
+						<div id="project-sentiment" class="project hvr-grow design">
+							
+								
+								<a href="#"><img class="project-img" src="projects/sentiment/blue-2.jpg"></a>
+								<a href="#"><p class="project-title">SENTIMENT CHOCOLATE</p></a>
+								<p class="project-category">color, packaging design</p>
+						
+						</div>
+
+						<!-- PAIK NAM JUNE -->
+						
+						
+
+					
+				
+
+				</div>
+				<!-- END ALL WORK LIST -->
+
+			<!-- ETC -->
+			<div id="other_page" class="away">
+				<div id="illustration" class="etc-category">
+					<p class="etc-category-title" id="category-1">ILLUSTRATION</p>
+						<div id="illustration-img" class="etc-category-img">
+							<img class="etc-img hvr-grow" src="etc/morty.jpg">
+							<img class="etc-img hvr-grow" src="etc/rice.png">
+							<img class="etc-img hvr-grow" src="etc/unity.png">
+							<img class="etc-img hvr-grow" src="etc/moon.jpg">
+							<img class="etc-img hvr-grow" src="etc/stamp.png">
+							
+						</div>
+				</div>
+				<div id="editorial" class="etc-category">
+					<p class="etc-category-title" id="category-2">EDITORIAL</p>
+						<div id="illustration-img" class="etc-category-img">
+							<img class="etc-img hvr-grow" src="etc/lexicon.jpg">
+							<img class="etc-img hvr-grow" src="etc/color.jpg">
+							<img class="etc-img hvr-grow" src="etc/harry.jpg" onmouseover="this.src='etc/harry.gif';" onmouseout="this.src='etc/harry.jpg';">
+							<img class="etc-img hvr-grow" src="etc/nsfw.jpg" onmouseover="this.src='etc/nsfw.gif';" onmouseout="this.src='etc/nsfw.jpg';">
+							<img class="etc-img hvr-grow" src="etc/goblet.jpg">
+							<img class="etc-img hvr-grow" src="etc/book.jpg">
+							<img class="etc-img hvr-grow" src="etc/40v.jpg">
+						</div>
+				</div>
+				<div id="processing" class="etc-category">
+						<p class="etc-category-title" id="category-3">OTHER</p>
+							<div id="illustration-img" class="etc-category-img">
+								<img class="etc-img hvr-grow" src="etc/lolita.png">
+								
+							</div>
+				</div>
+				
+
+			</div>
+
+
+
+			<!-- SKETCHBOOK -->
+			<div id="sketchbook_page">
+				<p>COMING SOON!</p>
+
+			</div>
+
+			<!-- OKAY -->
+			<!-- <div id="sketchbook_page">
+
+			</div> -->
 			
-		</div>
 
 		</div>
-		<!-- END ALL WORK LIST -->
+		<!-- END WORK PAGES -->
 
 
-	
+		</div>
+		<!-- END ALL-WORK-PAGE -->
+
+
+
+
+
+
+
+		<!-- ALL FULL PROJECTS -->
+
+
+		<!-- 3 TRIPS -->
+		<div class="project-page project-away" id="trips-project">
+			<div class="project-overview">
+				
+				
+				<!-- 3 TRIPS DESCRIPTION -->
+				<div class="overview-module" id="tripsP1">
+					<p><span style="color:red;">This project was created for Mapping Information at RISD under the instruction of Doug Scott during Spring 2018.</span><br><br>The Road Less Traveled is a series of infographic posters I created which visualizes three different travels that I've been on: from my college dorm to my Providence workspace, from my dorm to my hometown in California, and from my dorm to my grandpa's house in Indonesia.<br><br>In each of these posters I compare an "ideal trip" and an "actual trip" path; I have this habit of getting sidetracked and being late, which ends up being costly to me in time and money when I'm traveling. You can see just how much difference it makes in the comparisons on each poster!</p>
+				</div>
+				<div class="overview-module" id="tripsP2">
+					<p><span style="color:red;">Trip 01: Apartment to RISD Design Center</span><br><br>This was the easiest trip to visualize because it only takes 5 to 15 minutes depending on which route I take. I added details of text messages I receive, friends I run into, and music I listen to.</p>
+				</div>
+				<div class="overview-module" id="tripsP3">
+					<p><span style="color:red;">Trip 02: Providence, RI to Pleasanton, CA</span><br><br>As you can see, the more complicated my trips are, the more costly my side-tracked paths become (both in time and money). In this "less traveled" path, I end up missing a train and a plane, and spending $300+ more! Classic me.</p>
+				</div>
+				<div class="overview-module" id="tripsP4">
+					<p><span style="color:red;">Trip 03: Providence, RI to Malang, Indonesia</span><br><br>This was the most complicated travel to visualize because it is the longest trip; I also had to create a graph that showed how I spent my time at the airport (in the center).</p>
+				</div>
+				
+			</div>
+
+
+			<!-- 3 TRIPS IMAGES -->
+			<div class="project-body" id="trips-body">
+				<img class="fullBleedImg shadow" src="projects/3trips/3trips-cover-2.jpg">
+				<img class="fullBleedImg shadow" src="projects/3trips/3trips-1.png">
+				<img class="fullBleedImg shadow" src="projects/3trips/3trips-2.png">
+				<img class="fullBleedImg shadow" src="projects/3trips/3trips-3.png">
+
+			</div>
+
+	</div>
+	<!-- END 3 TRIPS -->
+
+
+		<!-- THE OKAY CLUB -->
+		<div class="project-page project-away" id="okay-project">
+				<div class="project-overview">
+					
+					
+					<!-- OKAY DESCRIPTION -->
+					<div class="overview-module" id="okayP1">
+						<p><span style="color:red;">This project was created for Design For Good at RISD under the instruction of Annalisa Oswald during Wintersession 2018.</span><br><br>The Okay Club 
+						is a fictional non-profit organization that I designed which supports the intersectionality of mental health. This entity would live primarily on digital media and provide resources and solidarity for marginalized individuals fighting mental illness--mainly people of color and lgbtq communities.</p>
+					</div>
+					<div class="overview-module" id="okayP2">
+						<p><span style="color:red;">Why is it called "The Okay Club"?</span><br><br>Often times when you’re fighting mental illness,
+							it’s hard to see things as anything better than just okay. And sometimes that’s okay.<br><br>I’m okay, you’re okay, we’re okay, together.</p>
+					</div>
+					<div class="overview-module" id="okayP3">
+							<p><span style="color:red;">Mind Map</span><br><br>The first step of brainstorming was to create a mind map of what I envisioned the brand to be like--what sort of personality and qualities it had. I narrowed down to six core traits:<br><br>CALM<br>UNIQUE<br>UNCONVENTIONAL<br>FLEXIBLE<br>EMPATHETIC<br>HOPEFUL<br><br>One challenge I faced when working on this project was making approachable work about a particularly serious topic.</p>
+					</div>
+					<div class="overview-module" id="okayP4">
+							<p><span style="color:red;">Sketches</span><br><br>I began sketching ideas for the logomark. I didn't want this brand to become kitschy or cliche (normally when you think of mental health entities, they have classic heart or brain imagery).</p>
+					</div>
+					<div class="overview-module" id="okayP5">
+							<p><span style="color:red;">Why the Bike?</span><br><br>I had a sudden epiphany of using a bike as the logomark. On an unrelated note, I had recently watched a youtube video about the self-stablization mechanism of bikes. You see, when you push a bike forward without a rider on it, the bike may sway left and right, but ultimately given it has enough momentum it will stabilize itself.<br><br>I believe the same principle applies to people. When you're dealing with depression or anxiety, you may feel like you've lost control of the situation. You may lose your way, but as long as you keep moving forward you will not falter.</p>
+					</div>
+					<div class="overview-module" id="okayP6">
+							<p><span style="color:red;">Iteration</span><br><br>I had some difficulty finding the right styling for the bike illustration and typeface, but after several attempts I finally ended up with something I was proud of.</p>
+					</div>
+					<div class="overview-module" id="okayP7">
+						<p><span style="color:red;">Final Concept</span><br><br>The final concept is a penny-farthing bicycle stylized to look like an "OK". The organic lines and typeface lend a human touch.</p>
+					</div>
+					<div class="overview-module" id="okayP8">
+						<p><span style="color:red;">Infographic</span><br><br>The last step of the assignment was to create an infographic based on data relating to our organization. I created a short booklet about mental health and marginalized communities (a quick rundown on what it means, what obstacles they face, and how we can help the cause). The bicycle is used as a metaphor throughout the book.</p>
+					</div>
+					<div class="overview-module" id="okayP9">
+						<p><span style="color:red;">Infographic</span><br><br>Example spread</p>
+					</div>
+					<div class="overview-module" id="okayP10">
+							<p><span style="color:red;">Infographic</span><br><br>Last page</p>
+					</div>
+					<div class="overview-module" id="okayP11">
+							<p><span style="color:red;">Website </span><br><br>Loading animation</p>
+					</div>
+					<div class="overview-module" id="okayP12">
+							<p><span style="color:red;">Stickers </span><br><br>Real stickers that I printed for critique</p>
+					</div>
+				</div>
+
+
+				<!-- OKAY IMAGES -->
+				<div class="project-body" id="okay-body">
+					<img class="fullBleedImg" src="projects/okay/images/bike.jpg">
+					<img class="fullBleedImg" src="projects/okay/images/triple.png">
+					<img class="fullBleedImg" src="projects/okay/images/mindmap.jpg">
+					<img class="fullBleedImg" src="projects/okay/images/sketches.png">
+					<img class="fullBleedImg" src="projects/okay/images/physics.png">
+					<img class="fullBleedImg" src="projects/okay/images/bikesss.png">
+					<img class="fullBleedImg" src="projects/okay/images/final.jpeg">
+					<img class="fullBleedImg" src="projects/okay/images/info1.png">
+					<img class="fullBleedImg" src="projects/okay/images/info2.png">
+					<img class="fullBleedImg" src="projects/okay/images/info3.png">
+					<img class="halfBleedImg" id="bikeee" src="projects/okay/images/animation.gif">
+					<img class="fullBleedImg" src="projects/okay/images/stickers.jpg">
+
+				</div>
+
+		</div>
+		<!-- END OKAY CLUB -->
+
+
+
+
+		<!-- HACK@BROWN 2018 -->
+		<div class="project-page project-away" id="hack2018-project">
+				<div class="project-overview">
+					
+					<!-- HACK@BROWN 2018 DESCRIPTION -->
+					<div class="overview-module" id="hack2018P1">
+						<p><span style="color:red;">Hack@Brown is the annual hackathon hosted by Brown University. We (the team) work to organize the event for most of the year!</span><br><br>I have been on the Hack@Brown Design team for two years now; this year I led the team, and together we made some awesome stuff!</p>
+					</div>
+					<div class="overview-module" id="hack2018P2">
+						<p><span style="color:red;">Hackathon Hackers Hack</span><br><br>Hack@Brown's mission statement is to host a hackathon that caters to beginners and newcomers--people who have never coded before.<br><br>Often times code is a rather intimidating concept to approach, so we strive to create a friendly environment that encourages people to try something new whether it's code, VR/AR or sick hardware!</p>
+					</div>
+					<div class="overview-module" id="hack2018P3">
+							<p><span style="color:red;">Hack@Brown Team Members</span><br><br>Our team works hard to deliver a fun and memorable event!</p>
+					</div>
+					<div class="overview-module" id="hack2018P4">
+							<p><span style="color:red;">Hack@Brown Design</span><br><br>The design team is tasked with designing and branding an event that is approachable and fun. Each year we do so by using cute illustrative styles and popping color palettes. We create everything from posters to apparel and nametags--anything that needs design.</p>
+					</div>
+					<div class="overview-module" id="hack2018P5">
+							<p><span style="color:red;">Style Guide 2018</span><br><br>We first brainstorm a theme, color palette, and style for each year's hackathon as a team of 6-7 people. We then use this styleguide to create the rest of our brand assets.</p>
+					</div>
+					<div class="overview-module" id="hack2018P6">
+							<p><span style="color:red;">Animation</span><br><br>This year our theme was "In the Making" and we wanted to use an organic illustration style inspired by Slack! I created this animation for the hacker dashboard that embodies the idea of growth. </p>
+					</div>
+					<div class="overview-module" id="hack2018P7">
+							<p><span style="color:red;">Hack@Brown 2018 Website</span><br><br>This was the Hack@Brown 2018 landing page which we designed, then handed off to the Development team to be constructed.<br><br>You can visit the site at <span style="color:red;">https://2018.hackatbrown.org!</span></p>
+					</div>
+					<div class="overview-module" id="hack2018P8">
+							<p><span style="color:red;">Hack@Brown 2018 Registration Form</span><br><br>We designed the registration form to be a fun process to go through. The illustrations add a short narrative.</p>
+					</div>
+					<div class="overview-module" id="hack2018P9">
+							<p><span style="color:red;">Hack@Brown 2018 Hacker Dashboard</span><br><br>I designed the Hacker Dashboard this year. When students who have applied log into their accounts they are brought to this page which shows them a checklist of things to be done.</p>
+					</div>
+					<div class="overview-module" id="hack2018P10">
+							<p><span style="color:red;">Hack@Brown 2018 Design Team!</span><br><br>None of this would have been possible without our amazing design team! I'm so thankful to be part of such a collaborative and enriching organization. :-)</p>
+					</div>
+					
+				</div>
+
+				<!-- HACK2018 IMAGES -->
+				<div class="project-body" id="hack2018-body">
+					<img class="fullBleedImg" src="projects/hack2018/hack2018.png">
+					<img class="fullBleedImg" src="projects/hack2018/event.jpg">
+					<img class="fullBleedImg" src="projects/hack2018/team2.jpg">
+					<img class="fullBleedImg" src="projects/hack2018/design2018.jpeg">
+					<img class="fullBleedImg shadow" src="projects/hack2018/style.jpg">
+					<img class="halfBleedImg" src="projects/hack2018/flower.gif">
+					<img class="fullBleedImg shadow" src="projects/hack2018/homepage.gif">
+					<img class="fullBleedImg shadow" src="projects/hack2018/application.gif">
+					<img class="fullBleedImg shadow" src="projects/hack2018/dashboard.png">
+					<img class="fullBleedImg" src="projects/hack2018/design.jpg">
+					
+
+				</div>
+
+		</div>
+
+		<!-- END HACK2018 -->
+
+
+		<!-- HACK2017 -->
+		<div class="project-page project-away" id="hack2017-project">
+				<div class="project-overview">
+					
+					
+					<!-- HACK2017 DESCRIPTION -->
+					<div class="overview-module" id="hack2017P1">
+						<p><span style="color:red;">Hack@Brown is the annual hackathon hosted by Brown University. We (the team) work to organize the event for most of the year!</span><br><br>This was my first year on the team! I joined as a sophomore at RISD.</p>
+					</div>
+					<div class="overview-module" id="hack2017P2">
+						<p><span style="color:red;">Hackathon Hackers Hack</span><br><br>Hack@Brown's mission statement is to host a hackathon that caters to beginners and newcomers--people who have never coded before.<br><br>Often times code is a rather intimidating concept to approach, so we strive to create a friendly environment that encourages people to try something new whether it's code, VR/AR or sick hardware!</p>
+					</div>
+					<div class="overview-module" id="hack2017P3">
+						<p><span style="color:red;">Hack@Brown Design</span><br><br>The design team is tasked with designing and branding an event that is approachable and fun. Each year we do so by using cute illustrative styles and popping color palettes. We create everything from posters to apparel and nametags--anything that needs design.<br><br>This is the website we designed for the 2017 Hackathon.</p>
+					</div>
+					<div class="overview-module" id="hack2017P4">
+						<p><span style="color:red;">Hack@Brown 2017 Registration Form</span><br><br>The registration form we designed follows the same theme and style of the landing page.</p>
+					</div>
+					<div class="overview-module" id="hack2017P5">
+						<p><span style="color:red;">Day-of Pamphlet</span><br><br>Informational pamphlet I designed for the actual hackathon; they were distributed to all the hackers that attended.</p>
+					</div>
+					<div class="overview-module" id="hack2017P6">
+						<p><span style="color:red;">Workshop Banners</span><br><br>Hack@Brown also hosts introductory-level tech-related workshops throughout the course of the academic school year as well as a series during the actual hackathon. I designed several Facebook banners for the events!</p>
+					</div>
+					<div class="overview-module" id="hack2017P7">
+							<p><span style="color:red;">2017 Apparel</span><br><br>These are the crewneck designs I created for this year! Sometimes I still see people wear them around campus on the daily. :-)</p>
+						</div>
+					<div class="overview-module" id="hack2017P8">
+								<p><span style="color:red;">That's a Wrap!</span><br><br>I'm beyond grateful that I've had the opportunity to be a part of such an amazing organization! I've met and worked with the most amazing human beings through Hack@Brown and together we put on such an awesome, impactful event!</p>
+							</div>
+					
+				</div>
+
+
+				<!-- HACK 2017 IMAGES -->
+				<div class="project-body" id="hack2017-body">
+					<img class="fullBleedImg" src="projects/hack2017/hack2017.png">
+					<img class="fullBleedImg" src="projects/hack2017/images/dayof3.jpg">
+					<img class="fullBleedImg" src="projects/hack2017/images/dayof2.jpg">
+					<img class="fullBleedImg" src="projects/hack2017/images/dayof1.jpg">
+					<img class="fullBleedImg shadow" src="projects/hack2017/images/HomePage.gif">
+					<img class="fullBleedImg shadow" src="projects/hack2017/images/Application.gif">
+					<img class="fullBleedImg" src="projects/hack2017/images/pamphlet.png">
+					<img class="fullBleedImg shadow" src="projects/hack2017/images/android-02.jpg">
+					<img class="fullBleedImg shadow" src="projects/hack2017/images/chrome-02.jpg">
+					<img class="fullBleedImg shadow" src="projects/hack2017/images/mixer-02.jpg">
+					<img class="fullBleedImg" src="projects/hack2017/images/apparel.jpg">
+					<img class="fullBleedImg" src="projects/hack2017/images/sweatshirt2.JPG">
+					<img class="fullBleedImg" src="projects/hack2017/images/dayof4.jpg">
+					
+
+					
+				</div>
+
+		</div>
+		<!-- END HACK2017 -->
+
+
+
+		<!-- PIDAN -->
+		<div class="project-page project-away" id="pidan-project">
+				<div class="project-overview">
+					
+					
+					<!-- PIDAN DESCRIPTION -->
+					<div class="overview-module" id="pidanP1">
+						<p><span style="color:red;">This project was created for Mapping Information at RISD under the instruction of Doug Scott during Spring 2018.</span><br><br>I created a small accordion book detailing the process of do-it-yourself Century Eggs, or Pidan in Chinese.</p>
+					</div>
+					<div class="overview-module" id="pidanP2">
+						<p><span style="color:red;">What Are Century Eggs?!</span><br><br>Century eggs are duck eggs that are fermented in a caustic mixture and left for several weeks. The yolk turns creamy and green, and the whites turn gelatinous and brown. They are certainly an acquired taste for those unfamiliar with this asian delicacy! </p>
+					</div>
+					<div class="overview-module" id="pidanP3">
+						<p><span style="color:red;">Project Prompt</span><br><br>We were instructed to choose any type of process (how orange juice is made, how airplanes are constructed, etc), and create a step-by-step visual showing the process using as few words as possible.</p>
+					</div>
+					<div class="overview-module" id="pidanP4">
+						<p><span style="color:red;">Project Egg-secution</span><br><br>I chose to show the process of making century eggs. Using mostly pictorial and iconic language I showed this process. The brown paper choice signifies the color of the egg yolk, and the use of black circular shapes represents the eggs.</p>
+					</div>
+					<div class="overview-module" id="pidanP5">
+						<p><span style="color:red;">Cover Page</span><br><br>Ideally, this DIY guide would come inside a box with all the ingredients you need pre-packaged and measured out.</p>
+					</div>
+					<div class="overview-module" id="pidanP6">
+						<p><span style="color:red;">Ingredients</span><br><br>You will need:<br><br>6 duck eggs (not included)<br>black tea<br>sea salt<br>wood ash<br>quicklime (calcium oxide)<br>rice chaff<br>mason jars<br><br>These ingredient icons are used throughout the booklet to omit the use of words.</p>
+					</div>
+					<div class="overview-module" id="pidanP7">
+						<p><span style="color:red;">Step 01</span><br><br>Pour the black tea leaves into boiling water and brew tea.</p>
+					</div>
+					<div class="overview-module" id="pidanP8">
+						<p><span style="color:red;">Step 02</span><br><br>Pour the calcium oxide, salt, and wood ash into a bowl and stir to combine.</p>
+					</div>
+					<div class="overview-module" id="pidanP9">
+						<p><span style="color:red;">Step 03</span><br><br>Combine the black tea with the mixture of calcium oxide, salt, and wood ash.</p>
+					</div>
+					<div class="overview-module" id="pidanP10">
+						<p><span style="color:red;">Step 04</span><br><br>Coat each egg in the caustic mixture.</p>
+					</div>
+					<div class="overview-module" id="pidanP11">
+						<p><span style="color:red;">Step 05</span><br><br>After coating in caustic mixture, cover each egg with rice chaff.</p>
+					</div>
+					<div class="overview-module" id="pidanP12">
+						<p><span style="color:red;">Step 06</span><br><br>Store the eggs in air-tight jars for 4-5 weeks.</p>
+					</div>
+					<div class="overview-module" id="pidanP13">
+						<p><span style="color:red;">Step 07</span><br><br>After 4-5 weeks, remove the eggs from the jars.</p>
+					</div>
+					<div class="overview-module" id="pidanP14">
+						<p><span style="color:red;">Step 08</span><br><br>Peel the eggs open; the whites should have turned gelatinous and dark and the yolk creamy and green.</p>
+					</div>
+					<div class="overview-module" id="pidanP15">
+						<p><span style="color:red;">Step 09</span><br><br>Slice the eggs in your preferred method.</p>
+					</div>
+					<div class="overview-module" id="pidanP16">
+						<p><span style="color:red;">Step 10</span><br><br>Suggested Dishes: Spicy cold tofu with century egg slices, and meat & century egg congee (porridge)</p>
+					</div>
+					<div class="overview-module" id="pidanP17">
+						<p><span style="color:red;">Back Cover & Colophon</span><br><br>Typeface is GT Pressura.<br><br>I hope you try making these delicious weird eggs!</p>
+					</div>
+					
+				</div>
+
+
+				<!-- PIDAN IMAGES -->
+				<div class="project-body" id="pidan-body">
+					<img class="fullBleedImg" src="projects/pidan/pidancover.png">
+					<img class="fullBleedImg" src="projects/pidan/cover.png">
+					<img class="fullBleedImg" src="projects/pidan/pidan2.jpg">
+					<img class="fullBleedImg" src="projects/pidan/pidan3.jpg">
+					<img class="fullBleedImg" src="projects/pidan/pidan4.jpg">
+					<img class="fullBleedImg shadow" src="projects/pidan/pidancover.jpg">
+					<img class="fullBleedImg shadow" src="projects/pidan/pidaningredients.jpg">
+					<img class="fullBleedImg shadow" src="projects/pidan/pidan01.jpg">
+					<img class="fullBleedImg shadow" src="projects/pidan/pidan02.jpg">
+					<img class="fullBleedImg shadow" src="projects/pidan/pidan03.jpg">
+					<img class="fullBleedImg shadow" src="projects/pidan/pidan04.jpg">
+					<img class="fullBleedImg shadow" src="projects/pidan/pidan05.jpg">
+					<img class="fullBleedImg shadow" src="projects/pidan/pidan06.jpg">
+					<img class="fullBleedImg shadow" src="projects/pidan/pidan07.jpg">
+					<img class="fullBleedImg shadow" src="projects/pidan/pidan08.jpg">
+					<img class="fullBleedImg shadow" src="projects/pidan/pidan09.jpg">
+					<img class="fullBleedImg shadow" src="projects/pidan/pidan10.jpg">
+					<img class="fullBleedImg shadow" src="projects/pidan/pidanback.jpg">
+					
+
+				</div>
+
+		</div>
+
+		<!-- END PIDAN -->
+
+
+
+		<!-- KVSH -->
+		<div class="project-page project-away" id="kvsh-project">
+			<div class="project-overview">
+				
+				
+				<!-- KVSH DESCRIPTION -->
+				<div class="overview-module" id="kvshP1">
+					<p><span style="color:red;">This project was created for Design for Good at RISD during Wintersession 2018.</span><br><br>For this project we were assigned to design a fun chocolate packaging. I designed a whimsical packaging for a cannibis-infused chocolate!</p>
+				</div>
+				<div class="overview-module" id="kvshP2">
+					<p><span style="color:red;">Trip 01: Apartment to RISD Design Center</span><br><br>This was the easiest trip to visualize because it only takes 5 to 15 minutes depending on which route I take. I added details of text messages I receive, friends I run into, and music I listen to.</p>
+				</div>
+				<div class="overview-module" id="kvshP3">
+					<p><span style="color:red;">Trip 02: Providence, RI to Pleasanton, CA</span><br><br>As you can see, the more complicated my trips are, the more costly my side-tracked paths become (both in time and money). In this "less traveled" path, I end up missing a train and a plane, and spending $300+ more! Classic me.</p>
+				</div>
+				<div class="overview-module" id="kvshP4">
+					<p><span style="color:red;">Trip 03: Providence, RI to Malang, Indonesia</span><br><br>This was the most complicated travel to visualize because it is the longest trip; I also had to create a graph that showed how I spent my time at the airport (in the center).</p>
+				</div>
+				
+			</div>
+
+
+			<!-- KVSH IMAGES -->
+			<div class="project-body" id="kvsh-body">
+				<img class="fullBleedImg shadow" src="projects/kvsh/kvsh-green.png">
+				<img class="fullBleedImg shadow" src="projects/3trips/3trips-1.png">
+				<img class="fullBleedImg shadow" src="projects/3trips/3trips-2.png">
+				<img class="fullBleedImg shadow" src="projects/3trips/3trips-3.png">
+
+			</div>
+
+	</div>
+	<!-- END KVSH -->
+
+
+
+
+
+
+
 
 	</div>
 	<!-- END WORK BODY -->
+	
+	
+
+	
 
 </body>
 </html>
