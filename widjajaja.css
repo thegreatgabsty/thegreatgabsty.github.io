@@ -8,6 +8,19 @@ body.fade-out {
 	opacity:0;
 	transition:none;
 }
+
+.notification {
+	background-color: red;
+	color: white;
+	font-family: "GTPM-regular";
+	font-size: 12pt;
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+	padding: 5px;
+  }
 									/*-----------HEADER----------*/
 
 #header {

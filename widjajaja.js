@@ -19,7 +19,14 @@ $(document).ready(function() {
 
 
 
-
+	$(function() {
+		$("#btnClose").click(function(evt) {
+		  $("#dvNotify").slideUp('slow');
+		});
+		$("#btnShow").click(function(evt) {
+		  $("#dvNotify").slideDown('slow');
+		});
+	  })
 
 
 
