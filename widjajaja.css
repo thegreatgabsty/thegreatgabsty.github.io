@@ -126,139 +126,7 @@ body.fade-out {
 	font-size:30px;
 }
 
-	hr.style1 {
-		width:98%;
-		border-top:4px solid black;
-		color:black;
-		align-content:left;
-		margin:25px 0px 0px 0px;
-	}
-
-	hr.style2 {
-		width:22%;
-		border-top:4px solid black;
-		color:black;
-		align-content:left;
-		padding:0;
-		margin:0px 15px 0px 0px;
-	}
-	hr.style3 {
-		width:90%;
-		border-top:4px solid black;
-		color:black;
-		align-content:left;
-		margin:0px 0px 0px 15px;
-	}
-	hr.style4 {
-		width:10%;
-		border-top:4px solid black;
-		color:black;
-		align-content:left;
-		margin:0px 15px 0px 15px;
-	}
-	hr.style5 {
-		width:57%;
-		border-top:4px solid black;
-		color:black;
-		align-content:left;
-		margin:0px 0px 0px 15px;
-	}
-	hr.style6 {
-		width:18%;
-		border-top:4px solid black;
-		color:black;
-		align-content:left;
-		padding:0;
-		margin:0px 20px 0px 0px;
-	}
-	hr.retro-line {
-		width:51%;
-		border-top:4px solid black;
-		color:black;
-		align-content:left;
-		padding:0;
-		margin:0px 0px 0px 15px;
-	}
-	hr.nyt-line {
-		width:45%;
-		border-top:4px solid black;
-		color:black;
-		align-content:left;
-		padding:0;
-		margin:0px 0px 0px 20px;
-	}
-	hr.lamei-line {
-		width:55%;
-		border-top:4px solid black;
-		color:black;
-		align-content:left;
-		padding:0;
-		margin:0px 0px 0px 20px;
-	}
-	hr.paik-line {
-		width:50%;
-		border-top:4px solid black;
-		color:black;
-		align-content:left;
-		padding:0;
-		margin:0px 0px 0px 15px;
-	}
-	hr.sentiment-line {
-		width:64%;
-		border-top:4px solid black;
-		color:black;
-		align-content:left;
-		padding:0;
-		margin:0px 0px 0px 15px;
-	}
-	hr.moon-line {
-		width:55%;
-		border-top:4px solid black;
-		color:black;
-		align-content:left;
-		padding:0;
-		margin:0px 0px 0px 15px;
-	}
-	hr.stamps-line {
-		width:69%;
-		border-top:4px solid black;
-		color:black;
-		align-content:left;
-		padding:0;
-		margin:0px 0px 0px 15px;
-	}
-	hr.spot-line {
-		width:52%;
-		border-top:4px solid black;
-		color:black;
-		align-content:left;
-		padding:0;
-		margin:0px 0px 0px 15px;
-	}
-	hr.paws-line {
-		width:45%;
-		border-top:4px solid black;
-		color:black;
-		align-content:left;
-		padding:0;
-		margin:0px 0px 0px 15px;
-	}
-	hr.kvsh-line {
-		width:56%;
-		border-top:4px solid black;
-		color:black;
-		align-content:left;
-		padding:0;
-		margin:0px 0px 0px 15px;
-	}
-	hr.okay-line {
-		width:58%;
-		border-top:4px solid black;
-		color:black;
-		align-content:left;
-		padding:0;
-		margin:0px 0px 0px 15px;
-	}
+	
 
 /*-----HOME BODY-----*/
 
@@ -320,6 +188,13 @@ button {
 	border:none;
 	background:transparent;
 }
+hr.style1 {
+	width:98%;
+	border-top:4px solid black;
+	color:black;
+	align-content:left;
+	margin:25px 0px 0px 0px;
+}
 
 
 
@@ -379,7 +254,7 @@ button {
 }
 		#worknavbar li {
 			margin-bottom:2%;
-			font-size:1vw;
+			font-size:15px;
 		}
 		#worknavbar a {
 			color:black;
@@ -452,21 +327,7 @@ button {
 							text-align: center;
 							margin-top:4%;
 						}
-						.project-details {
-							width:100%;
-							/* height:100%; */
-							border-style:solid;
-							
-						}
-						.project-description {
-							margin:0% 0% 0% 0%;
-							font-family:"GTPM-Regular";
-							/*font-size:14px;*/
-							/*border-style:solid;*/
-							font-size:1vw;
-							/* padding-left:15px; */
-							
-						}
+			
 
 						.project-category {
 							font-family:"GTPM-Regular";
@@ -478,7 +339,6 @@ button {
 
 						.project-img {
 							width:100%;
-							/* box-shadow:2px 2px 10px 3px #8c8c8c; */
 							
 						}
 
@@ -537,7 +397,7 @@ button {
 				height:75vh;
 				margin-left:0%;
 				position:absolute;
-				/* border-style:solid; */
+				border-style:solid;
 				transition-duration: 0.4s;
 				left:100%;
 				visibility:hidden;
@@ -695,6 +555,9 @@ button {
 								  }
 								  .shrink {
 									  width:12%;
+								  }
+								  .shrink2 {
+									  width:5%;
 								  }
 								.hr1 {
 									position:absolute;
@@ -858,6 +721,9 @@ button {
 								#kvshP1 {
 									display:block;
 								}
+								#ukP1 {
+									display:block;
+								}
 								
 					
 
@@ -978,298 +844,6 @@ hr.footerstyle {
 	/*margin-left:10%;*/
 	font-family:"GTPM-RegularItalic";
 }
-
-
-
-/*-----BBC-----*/
-
-
-
-#ss-life {
-	/*border-style:solid;*/
-	width:60%;
-	height:60%;
-}
-.carousel-item active {
-	width:100%;
-	height:20%;
-}
-.giftguide {
-	width:100%;
-	height:100%;
-}
-.recycling {
-	width:100%;
-	height:100%;
-}
-#carouselExampleControls {
-	width:60%;
-}
-#recycling-carousel {
-	width:60%;
-}
-.portrait {
-	width:52%;
-	height:52%;
-	margin:auto;
-}
-#sticker {
-	width:79%;
-	height:79%;
-	margin:auto;
-}
-
-.ss {
-	width:40%;
-	height:40%;
-	margin:0px 20px 30px 0px;
-}
-#invitation {
-	width:60%;
-	height:60%;
-}
-
-/*-----RETRO RENAISSANCE-----*/
-
-
-#strange {
-	float:right;
-}
-
-#videoDescription {
-	margin-top:30px;
-}
-#zineDetailCarousel {
-	width:60%;
-}
-
-
-/*-----BETWEEN TWO POLES-----*/
-
-#StickerCarousel {
-	width:60%;
-}
-#sticker1 {
-	max-width:45%;
-	margin:auto;
-}
-#sticker3 {
-	width:57%;
-	margin:auto;
-}
-#sticker4 {
-	width:74%;
-	margin:auto;
-}
-#sticker5 {
-	width:61%;
-	margin:auto;
-}
-#sticker6 {
-	width:61%;
-	margin:auto;
-}
-#sticker7 {
-	width:58.5%;
-	margin:auto;
-}
-#sticker8 {
-	width:44.5%;
-	margin:auto;
-}
-#info1 {
-	width:29%;
-	height:29%;
-	border-style:solid;
-	margin-right:10px;
-}
-#info2 {
-	width:29%;
-	height:29%;
-	border-style:solid;
-}
-#MockupCarousel {
-	width:60%;
-}
-#InstallCarousel {
-	width:100%;
-}
-#doc1 {
-	width:29%;
-	height:29%;
-	margin-right:10px;
-}
-#doc2 {
-	width:29%;
-	height:29%;
-}
-.doc {
-	width:30%;
-	height:30%;
-	margin-right:10px;
-}
-
-/*-----NEW YORK TIMES-----*/
-
-#nytCarousel {
-	width:60%;
-}
-#nyt1 {
-	border-style:solid;
-}
-#nyt2 {
-	border-style:solid;
-}
-
-
-/*-----LA MEI HOT POT-----*/
-
-#menuCarousel {
-	width:50%;
-}
-#lameiDescription {
-	margin-left:10%;
-}
-#menu1 {
-	width:79.5%;
-	height:79.5%;
-	margin:auto;
-}
-#menu3 {
-	width:90%;
-	height:90%;
-	margin:auto;
-}
-.drinks {
-	width:50%;
-	height:50%;
-	padding:0px 10px 10px 0px;
-}
-
-/*-----PAIK NAM JUNE-----*/
-
-.paikposters {
-	width:23%;
-	height:23%;
-	margin:0px 10px 10px 0px;
-	border-style:solid;
-	border-width:1px;
-}
-
-/*-----HACK2017-----*/
-
-.banners2017 {
-	width:100%;
-	height:100%;
-	margin-bottom:20px;
-}
-#hacklogo2017 {
-	width:15%;
-	height:15%;
-	margin-right:5%;
-}
-
-/*-----SENTIMENT-----*/
-
-.sentiment {
-	width:47%;
-	height:47%;
-	margin:0px 20px 20px 0px;
-}
-
-
-/*-----GOODNIGHT MOON-----*/
-
-#moonCarousel {
-	width:100%;
-
-}
-
-/*-----STAMPS-----*/
-
-.stamps {
-	width:30%;
-	height:30%;
-	margin:0px 20px 20px 0px;
-}
-
-/*-----SPOT CASE STUDY-----*/
-#fullBleedModule {
-	width:100%;
-}
-#sketchCarousel {
-	width:60%;
-	height:60%;
-	margin:auto;
-}
-.spot-branding {
-	width:60%;
-	height:60%;
-	margin:auto;
-}
-.project-page h2 {
-	font-family: "GTPM-Bold";
-	font-size:32px;
-	margin:auto;
-}
-.spot-process {
-	width:80%;
-	height:80%;
-	margin:auto;
-}
-
-/*-----PAWS-----*/ 
-
-#care4animalsCarousel {
-	width:60%;
-}
-#wireframeCarousel {
-	width:60%;
-	border-style:solid;
-	border-width:1px;
-}
-#adopt-hifi {
-	width:80%;
-	height:80%;
-	border-style:solid;
-	border-width:1px;
-}
-
-/*-----KVSH-----*/
-
-#kvshSketchCarousel {
-	width:40%;
-}
-.hideas {
-	width:33%;
-	height:33%;
-	padding:0px 10px 10px 0px;
-	/*border-style: solid;*/
-}
-.hideas-big {
-	width:50%;
-	height:50%;
-	padding:0px 10px 10px 0px;
-	/*border-style: solid;*/
-}
-#hideas-description {
-	margin-top:50px;
-}
-
-.final-kvsh {
-	width:48%;
-	height:48%;
-	padding:0px 15px 15px 0px;
-}
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1452,7 +1026,7 @@ hr.footerstyle {
 
 }
 	#recent h1 {
-		font-size:18px;
+		font-size:20px;
 	}
 
 	hr.style1 {
@@ -1596,256 +1170,6 @@ hr.footerstyle {
 }
 
 
-/*BBC*/
-hr.style6 {
-		display:none;
-	}
-hr.style4 {
-		width:10%;
-		border-top:3px solid black;
-		color:black;
-		align-content:left;
-		margin:0px 8px 0px 8px;
-	}
-hr.style5 {
-		width:25%;
-		border-top:3px solid black;
-		color:black;
-		align-content:left;
-		margin:0px 0px 0px 8px;
-	}
-
-
-
-/*BBC MOBILE*/
-
-#ss-life {
-	/*border-style:solid;*/
-	width:100%;
-	height:auto;
-	margin:0px 0px 0px 0px;
-}
-.carousel-item active {
-	width:100%;
-	height:20%;
-}
-.giftguide {
-	width:100%;
-	height:100%;
-}
-.recycling {
-	width:100%;
-	height:100%;
-}
-#carouselExampleControls {
-	width:100%;
-}
-#recycling-carousel {
-	width:100%;
-}
-.portrait {
-	width:52%;
-	height:52%;
-	margin:auto;
-}
-#sticker {
-	width:79%;
-	height:79%;
-	margin:auto;
-}
-
-.ss {
-	width:100%;
-	height:100%;
-	margin:0px 0px 20px 0px;
-}
-#invitation {
-	width:100%;
-	height:100%;
-}
-
-
-
-
-/*RETRO MOBILE*/
-
-hr.retro-line {
-		width:12%;
-		border-top:3px solid black;
-		color:black;
-		align-content:left;
-		padding:0;
-		margin:0px 0px 0px 8px;
-	}
-.halfPageImg {
-	width:100%;
-	height:100%;
-}
-#zineDetailCarousel {
-	width:100%;
-}
-iframe {
-	width:100%;
-}
-#retroFooterLine {
-	margin-left:10px;
-}
-
-/*BETWEEN TWO POLES MOBILE*/
-
-#StickerCarousel {
-	width:100%;
-}
-#info1 {
-	width:48%;
-	height:48%;
-	border-style:solid;
-	border-width:1px;
-	margin-right:5px;
-}
-#info2 {
-	width:48%;
-	height:48%;
-	border-style:solid;
-	border-width:1px;
-}
-#MockupCarousel {
-	width:100%;
-}
-#doc1 {
-	width:48%;
-	height:48%;
-	margin-right:5px;
-}
-#doc2 {
-	width:48%;
-	height:48%;
-}
-.doc {
-	width:100%;
-	height:100%;
-	margin:0px 0px 20px 0px;
-}
-
-/*NYT MOBILE*/
-
-hr.nyt-line {
-		display:none;
-		/*width:20%;
-		border-top:3px solid black;
-		color:black;
-		align-content:left;
-		padding:0;
-		margin:0px 0px 0px 20px;*/
-	}
-
-#nytCarousel {
-	width:100%;
-}
-#nyt1 {
-	border-style:solid;
-	border-width:1px;
-}
-#nyt2 {
-	border-style:solid;
-	border-width:1px;
-}
-
-
-
-/*LAMEI MOBILE*/
-
-hr.lamei-line {
-		width:23%;
-		border-top:3px solid black;
-		color:black;
-		align-content:left;
-		padding:0;
-		margin:0px 0px 0px 8px;
-}
-#menuCarousel {
-	width:100%;
-}
-#lameiDescription {
-	margin-left:0;
-}
-#menu1 {
-	width:79.5%;
-	height:79.5%;
-	margin:auto;
-}
-#menu3 {
-	width:90%;
-	height:90%;
-	margin:auto;
-}
-.drinks {
-	width:49%;
-	height:49%;
-	padding:0px 10px 10px 0px;
-}
-
-
-/*PAIK NAM JUNE MOBILE*/
-
-hr.paik-line {
-		width:10%;
-		border-top:3px solid black;
-		color:black;
-		align-content:left;
-		padding:0;
-		margin:0px 0px 0px 8px;
-	}
-.paikposters {
-	width:48%;
-	height:48%;
-	margin:0px 5px 5px 0px;
-	border-style:solid;
-	border-width:1px;
-}
-
-/*SENTIMENT MOBILE*/
-.sentiment {
-	width:45%;
-	height:45%;
-	margin:0px 10px 10px 0px;
-}
-hr.sentiment-line {
-		width:38%;
-		border-top:3px solid black;
-		color:black;
-		align-content:left;
-		padding:0;
-		margin:0px 0px 0px 8px;
-	}
-
-
-/*GOODNIGHT MOON MOBILE*/
-
-hr.moon-line {
-		width:20%;
-		border-top:3px solid black;
-		color:black;
-		align-content:left;
-		padding:0;
-		margin:0px 0px 0px 8px;
-	}
-
-/*STAMPS MOBILE*/
-
-hr.stamps-line {
-		width:46%;
-		border-top:3px solid black;
-		color:black;
-		align-content:left;
-		padding:0;
-		margin:0px 0px 0px 8px;
-	}
-.stamps {
-	width:46%;
-	height:46%;
-	margin:0px 10px 10px 0px;
-}
 
 
 
@@ -1857,24 +1181,200 @@ hr.stamps-line {
 /*TABLET*/
 @media only screen and (min-width: 401px) and (max-width: 960px) {
 
+	#descriptor {
+		width:60%;
+		font-family: "GTPM-Regular";
+		font-size:16px;
+		line-height:1.3;
+		margin:0% 0% 0% 10%;
+		/* border-style:solid; */
+		
+	}
+	#nav {
+		list-style-type: none;
+		margin:0%;
+		/* border-style:solid; */
+		width:40%;
+	}
+	#nav li {
+		font-family:"GTPM-Bold";
+		font-size:1.8vw;
+		display:inline-block;
+		margin-right:10%;
+	}
+	#social {
+		/*float:right;*/
+		width:15%;
+		right:10px;
+		/* border-style:solid; */
+	}
+
+	#workbody {
+		width:100%;
+		height:90vh;
+		/* margin-top:10px; */
+		/* padding:5px 0px 0px 0px; */
+		position:relative;
+		/* border-style:solid; */
+		color:red;
+		display:flex;
+		flex-direction:row;
+		overflow:hidden;
+	}
+
+	#all-work-page {
+		width:100%;
+		height:80vw;
+		/* border-style:solid; */
+		position:absolute;
+		color:blue;
+		/* right:0%; */
+		transition-duration: 0.5s;
+	}
+
+	#work-pages {
+		display:flex;
+		flex-direction:row;
+		width:98vw;
+		height:100vh;
+		display:absolute;
+		/* border-style:solid; */
+		color:yellow;
+		margin:0% 0% 0% 0%;
+		overflow:hidden;
+	}
+
 	#all-work-list {
-	width:60%;
-	margin-left:5%;
-	/*border-style:solid;*/
-}
-	.project-date {
-	margin:0% -30% 0% -30%;
-}
-	#bbc-date {
-			margin-top:10%;
+		position:relative;
+		width:80vw;
+		float:right;
+		height:83vh;
+		padding:3% 0px 0px 3%;
+		/* border-style:solid; */
+		color:black;
+		display:flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		overflow-y:scroll;
+		transition-duration: 0.4s;
+		/* visibility:visible; */
+		/* left:18%; */
+		transition: .5s ease-out;
+		
 		}
-	#retro-date {
-			margin-top:16%;
+		.project {
+			width:43%;
+			height:35vw;
+			margin: 0% 7% 0% 0%;
+			/* border-style:solid; */
+			padding-bottom:20%;
 		}
-	#poles-date {
-			margin-top:16%;
+		.project-title {
+			font-family:"GTPM-Regular";
+			font-size: 18px;
+			line-height:0.5;
+			color:red;
+			text-align: center;
+			margin-top:8%;
 		}
+		.project-category {
+			font-family:"GTPM-Regular";
+			margin-top:-4%;
+			font-size:14px;
+			text-align:center;
+		}
+
+		/* OTHER PAGE */
+		#other_page {
+			width:80vw;
+			height:83vh;
+			margin-left:0%;
+			position:absolute;
+			/* border-style:solid; */
+			transition-duration: 0.4s;
+			left:100%;
+			visibility:hidden;
+			padding:3% 0px 0px 3%;
+			color:red;
+			display:flex;
+			flex-direction:row;
+			transition:.5s ease-out;
+		}
+		.etc-category {
+			/* border-style:solid; */
+			width:80vw;
+			height:80vh;
+			display:flex;
+			flex-direction:row;
+			position:relative;
+			color:black;
+			margin:0% 3% 0% 0%;
+		}
+		.etc-category-title {
+			transform-origin:center;
+			-webkit-transform:rotate(270deg);
+			position:absolute;
+			font-family:"GTPM-Regular";
+			font-size:20px;
+			line-height:0.5;
+			/* color:red; */
+		}
+			#category-1 {
+				margin:40% 0% 0% -30%;
+			}
+			#category-2 {
+				margin:30% 0% 0% -20%;
+			}
+			#category-3 {
+				margin:18% 0% 0% -10%;
+			}
+			.etc-category-img {
+				/* border-style:solid; */
+				position:relative;
+				color:blue;
+				width:100%;
+				display:flex;
+				flex-direction:column;
+				margin:0% 0% 0% 14%;
+				padding:2% 2% 2% 2%;
+				overflow:scroll;
+			}
+
+			/* WORK BODY */
+			.hr1 {
+				position:absolute;
+				margin:0% 0% 0% 10%;
+				border-top:4px solid black;
+				align-content:left;
+				padding:0;
+			}
+
+			.project-body {
+				position:absolute;
+				width:97%;
+				height:80vh;
+				/* border-style:solid; */
+				margin:2% 0% 0% 2%;
+				padding:0% 30% 0% 0%;
+				overflow-y:scroll;
+				overflow-x:hidden;
+				
+			}
+			.project-overview {
+				width:25%;
+				height:200px;
+				margin:2% 0% 0% 72%;
+				position:absolute;
+				font-family:"GTPM-Light";
+				font-size:12px;
+				color:black;
+				/* border-style:solid; */
+			}
+
+
 }
+/* END TABLET */
+
 
 
 

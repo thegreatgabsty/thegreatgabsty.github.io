@@ -17,6 +17,10 @@ $(document).ready(function() {
 		});
 	})
 
+	
+
+	
+
 
 
 	$(function() {
@@ -178,6 +182,7 @@ var SpotTitle = document.getElementById('spot-title');
 var PidanTitle = document.getElementById('pidan-title');
 var TripsTitle = document.getElementById('3trips-title');
 var KvshTitle = document.getElementById('kvsh-title');
+var UkTitle = document.getElementById('uk-title');
 
 
 
@@ -196,7 +201,61 @@ var KvshHR = document.getElementById('kvsh-hr');
 
 // PROJECT TRIGGERS ////////////////////////////////////////////////////
 
+// UK
+
+
+$("#uk-cover").click(function() {
+
+	$("#all-work-page").removeClass('return-left').addClass('away-left');
+	$("#uk-project").removeClass('project-away').addClass('project-return');
+
+	$('.trans--grow').addClass('shrink');
+	$('.trans--grow').removeClass('grow');
+	UkTitle.style.left = "4%";
+	TripsHR.style.left = "53%";
+});
+
+$("#uk-body").scroll(function() {
+
+	var scrollUK = $("#uk-body").scrollTop();
+		
+			if ( scrollUK < 600) {
+				ukP1.style.display = "block"; 
+			} else {
+				ukP1.style.display = "none";
+			}
+			if (scrollUK > 600 && scrollUK < 1200) {
+				ukP2.style.display = "block";
+			} else {
+				ukP2.style.display = "none";
+			}
+			if (scrollUK > 1200 && scrollUK < 2400) {
+				ukP3.style.display = "block";
+			} else {
+				ukP3.style.display = "none";
+			}
+			if (scrollUK > 2400 && scrollUK < 5000) {
+				ukP4.style.display = "block";
+			} else {
+				ukP4.style.display = "none";
+			}
+			if (scrollUK > 5000 && scrollUK < 6800) {
+				ukP5.style.display = "block";
+			} else {
+				ukP5.style.display = "none";
+			}
+			if (scrollUK > 6800 && scrollUK < 7000) {
+				ukP6.style.display = "block";
+			} else {
+				ukP6.style.display = "none";
+			}
+			
+
+});
+
 // 3 TRIPS
+
+
 			$("#3trips-cover").click(function() {
 
 				$("#all-work-page").removeClass('return-left').addClass('away-left');
@@ -596,8 +655,8 @@ var KvshHR = document.getElementById('kvsh-hr');
 			$(BackToWork).click(function() {
 				$("#all-work-page").removeClass('away-left').addClass('return-left');
 
-				$("#kvsh-body").scrollTop(0);
-				$("#kvsh-project").removeClass('project-return').addClass('project-away');
+				$("#uk-body").scrollTop(0);
+				$("#uk-project").removeClass('project-return').addClass('project-away');
 
 				$("#trips-body").scrollTop(0);
 				$("#trips-project").removeClass('project-return').addClass('project-away');
@@ -616,6 +675,7 @@ var KvshHR = document.getElementById('kvsh-hr');
 
 				$('.trans--grow').addClass('grow');
 				$('.trans--grow').removeClass('shrink');
+				$('.trans--grow').removeClass('shrink2');
 				
 				OkayTitle.style.left = "100%";
 				OkayHR.style.left = "100%";
@@ -631,6 +691,8 @@ var KvshHR = document.getElementById('kvsh-hr');
 				
 				TripsTitle.style.left = "100%";
 				TripsHR.style.left = "100%";
+
+				UkTitle.style.left = "100%";
 				
 				PawsTitle.style.left = "100%";
 				PawsHR.style.left = "100%";
@@ -639,6 +701,113 @@ var KvshHR = document.getElementById('kvsh-hr');
 				KvshHR.style.left = "100%";
 
 			});
+
+// RESPONSIVE : TABLET ////////////////////////////
+
+
+			function myFunction(x) {
+				if (x.matches) { // If media query matches
+
+					// THREE TRIPS
+
+					$("#3trips-cover").click(function() {
+						$("#all-work-page").removeClass('return-left').addClass('away-left');
+						$("#trips-project").removeClass('project-away').addClass('project-return');
+		
+						$('.trans--grow').addClass('shrink2');
+						$('.trans--grow').removeClass('grow');
+						TripsTitle.style.left = "4%";
+						TripsHR.style.left = "45%";
+					});
+
+					$("#trips-body").scroll(function() {
+
+						var scrollTrips = $("#trips-body").scrollTop();
+							// console.log(scrollOkay);
+								if ( scrollTrips < 250) {
+									tripsP1.style.display = "block"; 
+								} else {
+									tripsP1.style.display = "none";
+								}
+								if (scrollTrips > 250 && scrollTrips < 450) {
+									tripsP2.style.display = "block";
+								} else {
+									tripsP2.style.display = "none";
+								}
+								if (scrollTrips > 450 && scrollTrips < 600) {
+									tripsP3.style.display = "block";
+								} else {
+									tripsP3.style.display = "none";
+								}
+								if (scrollTrips > 600 && scrollTrips < 2400) {
+									tripsP4.style.display = "block";
+								} else {
+									tripsP4.style.display = "none";
+								}
+								
+		
+					});
+
+					$(BackToWork).click(function() {
+						$("#all-work-page").removeClass('away-left').addClass('return-left');
+		
+						$("#kvsh-body").scrollTop(0);
+						$("#kvsh-project").removeClass('project-return').addClass('project-away');
+		
+						$("#trips-body").scrollTop(0);
+						$("#trips-project").removeClass('project-return').addClass('project-away');
+		
+						$("#pidan-body").scrollTop(0);
+						$("#pidan-project").removeClass('project-return').addClass('project-away');
+		
+						$("#okay-body").scrollTop(0);
+						$("#okay-project").removeClass('project-return').addClass('project-away');
+		
+						$("#hack2018-project").removeClass('project-return').addClass('project-away');
+						$("#hack2018-body").scrollTop(0);
+		
+						$("#hack2017-project").removeClass('project-return').addClass('project-away');
+						$("#hack2018-body").scrollTop(0);
+		
+						
+						$('.trans--grow').removeClass('shrink2');
+						$('.trans--grow').addClass('grow');
+						
+						OkayTitle.style.left = "100%";
+						OkayHR.style.left = "100%";
+		
+						Hack2018Title.style.left = "100%";
+						Hack2018HR.style.left = "100%";
+		
+						Hack2017Title.style.left = "100%";
+						Hack2017HR.style.left = "100%";
+						
+						PidanTitle.style.left = "100%";
+						PidanHR.style.left = "100%";
+						
+						TripsTitle.style.left = "100%";
+						TripsHR.style.left = "100%";
+
+						UkTitle.style.left = "100%";
+					
+						
+						PawsTitle.style.left = "100%";
+						PawsHR.style.left = "100%";
+		
+						KvshTitle.style.left = "100%";
+						KvshHR.style.left = "100%";
+		
+					});
+
+
+				} else {
+					
+				}
+			}
+			
+			var x = window.matchMedia("(max-width: 800px)")
+			myFunction(x) // Call listener function at run time
+			x.addListener(myFunction) // Attach listener function on state changes
 
 
 	
