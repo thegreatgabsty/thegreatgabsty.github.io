@@ -29,13 +29,16 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<link rel="stylesheet" href="widjajaja.css" type="text/css">
 	
-	<script type="text/javascript" src="ScrollMagic.js"></script>
 	<script type="text/javascript" src="jquery-3.1.1.js"></script> 
 	<script type="text/javascript" src="jquery.lazy.min.js"></script>
 		<script type="text/javascript" src="jquery.lazy.plugins.min.js"></script>
 
 <!-- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.6.0/lazyload.min.js"></script>
- -->	<script type="text/javascript" src="widjajaja.js"></script>
+		
+ -->	
+ <script src="ssm/dist/ssm.min.js"></script>
+ <script type="text/javascript" src="widjajaja.js"></script>
+
 	
 
 </head>
@@ -44,10 +47,10 @@
 
 <body>
 
-		<div id="dvNotify" class="notification">
+		<!-- <div id="dvNotify" class="notification">
 				<label>This website is currently undergoing some changes; please excuse the bugs!</label>
 				<a href="#" id="btnClose">[x]</a>
-			  </div>
+			  </div> -->
 			  <!-- <div style="text-align:center;">
 				<a href="#" id="btnShow">Show Notification</a>
 			  </div> -->
@@ -120,7 +123,14 @@
 		<h1 class="page-title" id="hack2017-title"><span style="color:red;">HACK@BROWN 2017</span></h1>
 		<hr class="hr2" id="hack2017-hr">
 
-		<h1 class="page-title" id="uk-title"><span style="color:red;">UNITED KINGDOM COUNTRY DATA</span></h1>
+		<h1 class="page-title" id="uk-title"><span style="color:red;">UK COUNTRY DATA</span></h1>
+
+		<h1 class="page-title" id="stripe-title"><span style="color:red;">STRIPE</span></h1>
+
+		<h1 class="page-title" id="pulang-title"><span style="color:red;">PULANG</span></h1>
+		<h1 class="page-title" id="retro-title"><span style="color:red;">RETRO RENAISSANCE</span></h1>
+
+		<h1 class="page-title" id="lamei-title"><span style="color:red;">LA MEI HOT POT</span></h1>
 		<!-- <hr class="hr2" id="kvsh-hr"> -->
 		
 		<!-- style3 -->
@@ -152,14 +162,41 @@
 
 				<div id="all-work-list">
 
-					
+					<!-- STRIPE -->
+					<div id="project-stripe" class="project hvr-grow">
+								
+							<a href="#"><img class="project-img shadow2" id="stripe-cover" src="projects/stripe/cover.jpg"></a>
+							<a href="#"><p class="project-title">STRIPE</p></a>
+							<p class="project-category">internship</p>
+					</div>
+
+					<!-- PUPPET -->
+					<!-- <div id="project-puppet" class="project hvr-grow">
+								
+						<a href="#"><img class="project-img shadow2" id="puppet-cover" src="projects/puppet/cover.jpg"></a>
+						<a href="#"><p class="project-title">PUPPET MUSEUM</p></a>
+						<p class="project-category">brand identity design</p>
+					</div> -->
+
+					<!-- CHUNGKING -->
+					<!-- <div id="project-chungking" class="project hvr-grow">
+								
+						<a href="#"><img class="project-img shadow2" id="chungking-cover" src="projects/chungking/cover.gif"></a>
+						<a href="#"><p class="project-title">CHUNGKING EXPRESS</p></a>
+						<p class="project-category">color study</p>
+					</div> -->
+
 					<!-- UNITED KINGDOM -->
 					<div id="project-uk" class="project hvr-grow">
 								
-							<a href="#"><img class="project-img shadow2" id="uk-cover" src="projects/uk/uk-cover.png"></a>
+							<a href="#"><img class="project-img shadow2" id="uk-cover" src="projects/uk/ukk.png"></a>
 							<a href="#"><p class="project-title">UNITED KINGDOM COUNTRY DATA</p></a>
 							<p class="project-category">infographic, illustration</p>
 					</div>
+
+					
+
+					
 
 					<!-- PIDAN -->
 					<div id="project-pidan" class="project hvr-grow">
@@ -169,20 +206,36 @@
 							<p class="project-category">infographic, illustration</p>
 					</div>
 
+					<!-- PULANG -->
+					<div id="project-pulang" class="project hvr-grow">
+								
+						<a href="#"><img class="project-img shadow2" id="pulang-cover" src="projects/pulang/01.jpg"></a>
+						<a href="#"><p class="project-title">PULANG</p></a>
+						<p class="project-category">pattern, illustration</p>
+				</div>
+
+					<!-- DOMINOTES
+					<div id="project-dominotes" class="project hvr-grow">
+								
+						<a href="#"><img class="project-img shadow2" id="dominotes-cover" src="projects/dominotes/dominotes.jpg"></a>
+						<a href="#"><p class="project-title">DOMINOTES</p></a>
+						<p class="project-category">pattern, illustration</p>
+					</div> -->
+
 					<!-- 3 TRIPS -->
 					<div id="project-3trips" class="project hvr-grow">
 								
 							<a href="#"><img class="project-img shadow2" id="3trips-cover" src="projects/3trips/3trips-cover-2.jpg"></a>
 							<a href="#"><p class="project-title">THREE TRIPS</p></a>
 							<p class="project-category">infographic, data visualization</p>
-						</div>
+					</div>
 					
 					
 					<!-- OKAY -->
 						<div id="project-okay" class="project hvr-grow">
 							
 								
-								<a href="#"><img class="project-img shadow2" id="okay-cover" src="projects/okay/images/bike.jpg"></a>
+								<a href="#"><img class="project-img shadow2" id="okay-cover" src="projects/okay/images/club.jpg"></a>
 								<a href="#"><p class="project-title">THE OKAY CLUB</p></a>
 								<p class="project-category">brand identity design</p>
 						</div>
@@ -209,27 +262,27 @@
 						</div>
 
 						<!-- KVSH -->
-						<div id="project-kvsh" class="project hvr-grow">
+						<!-- <div id="project-kvsh" class="project hvr-grow">
 							
 								
 								<a href="#"><img class="project-img shadow2" id="kvsh-cover" src="projects/kvsh/kvsh-green.png"></a>
 								<a href="#"><p class="project-title">KVSH CHOCOLATE</p></a>
 								<p class="project-category">brand identity, packaging design</p>
 							
-						</div>
+						</div> -->
 
 
 						<!-- RETRO RENAISSANCE -->
 						<div id="project-retro" class="project hvr-grow motion">
 							
-								<a href="#"><img class="project-img shadow2" src="images/carousel/archive-title.png"></a>
+								<a href="#"><img class="project-img shadow2" id="retro-cover" src="projects/retro/images/cover.png"></a>
 								<a href="#"><p class="project-title">RETRO RENAISSANCE</p></a>
 								<p class="project-category">print, digital, animation</p>
 						
 						</div>
 
 
-						<!-- BETWEEN TWO POLES -->
+						<!-- BETWEEN TWO POLES
 						<div id="project-poles" class="project hvr-grow design">
 							
 								
@@ -237,7 +290,7 @@
 								<a href="#"><p class="project-title">BETWEEN TWO POLES</p></a>
 								<p class="project-category">print, installation</p>
 						
-						</div>
+						</div> -->
 
 						<!-- NEW YORK TIMES-->
 						<!-- <div id="project-nyt" class="project hvr-grow design">
@@ -252,21 +305,21 @@
 						<div id="project-lamei" class="project hvr-grow design">
 							
 								
-								<a href="#"><img class="project-img" src="projects/lamei/images/lamei.jpg"></a>
+								<a href="#"><img class="project-img" id="lamei-cover" src="projects/lamei/images/lamei.jpg"></a>
 								<a href="#"><p class="project-title">LA MEI HOT POT</p></a>
 								<p class="project-category">typography, system design</p>
 							
 						</div>
 
 						<!-- SENTIMENT -->
-						<div id="project-sentiment" class="project hvr-grow design">
+						<!-- <div id="project-sentiment" class="project hvr-grow design">
 							
 								
 								<a href="#"><img class="project-img" src="projects/sentiment/blue-2.jpg"></a>
 								<a href="#"><p class="project-title">SENTIMENT CHOCOLATE</p></a>
 								<p class="project-category">color, packaging design</p>
 						
-						</div>
+						</div> -->
 
 						<!-- PAIK NAM JUNE -->
 						
@@ -343,6 +396,154 @@
 
 		<!-- ALL FULL PROJECTS -->
 
+		<!-- STRIPE -->
+		<div class="project-page project-away" id="stripe-project">
+				<div class="project-overview">
+					
+					
+					<!-- stripe DESCRIPTION -->
+					<div class="overview-module" id="stripeP1">
+						<p><span style="color:red;">This summer I had the amazing opportunity to be one of the first design interns at Stripe!</span><br><br>I was on the Brand & Communications team and worked on lots of consumer-facing brand assets as well as materials for internal company use.<br><br>Working at Stripe was truly one of the most life-changing experiences I have had thus far as a designer and as a person (not that the two are mutually exclusive).</p>
+					</div>
+					<div class="overview-module" id="stripeP2">
+						<p><span style="color:red;">Stripe Communities Rebrand</span><br><br>The first project I worked on was the rebrand of the Stripe Employee Resource Groups (ERGs) to Stripe Communities! For this project I was assigned to design 2 of the 9 logos (and later jumped on a third). I worked on the East & Southeast Asians logo and the Rainbows (LGBTQ) logo.</p>
+					</div>
+					<div class="overview-module" id="stripeP3">
+						<p><span style="color:red;">East & Southeast Asians</span><br><br>For this logo I did tons of research into "asian" symbolism and imagery. A huge potential issue I wanted to avoid with this logo was making it too specific to one type of Asian or making it too stereotypical (a dragon, a yin-yang sign, things that are too generically east asian).<br><br>My first few ideas were to approach the subject typographically, geographically, as an identity, or with food.</p>
+					</div>
+					<div class="overview-module" id="stripeP4">
+						<p><span style="color:red;">East & Southeast Asians</span><br><br>Then my epiphany hit. ESEA should be represented by an activity we all share: eating! Not just a graphical representation of food, but a symbol of community and eating together as a family or group. This is an important part of almost every asian culture, and I thought it best represented our entire community.<br><br>I initially had a sketch of two hands eating, but later added a third hand which spoke more to the community aspect. Each hand uses a different utensil (chopsticks and spoon are more east asian, and many southeast asians eat with their hands!).</p>
+					</div>
+					<div class="overview-module" id="stripeP5">
+							<p><span style="color:red;">East & Southeast Asians</span><br><br>This is the final version of the ESEA logo with color. The color really solidifies my concept of diversity and representation which I wanted to emphasize for this cultural community.<br><br>I was personally part of this ERG during my time at Stripe and actually was part of the organizing team that planned events and kept an agenda! Which basically means we ordered boba and Beard Papas for every meeting.</p>
+						</div>
+					<div class="overview-module" id="stripeP6">
+							<p><span style="color:red;">Rainbows</span><br><br>The Rainbows logo was much more straightforward and I came up with a few different graphic ideas.</p>
+					</div>
+					<div class="overview-module" id="stripeP7">
+						<p><span style="color:red;">Rainbows</span><br><br>After a few rounds of critique and consulting with the stakeholders (Rainbows lead members) I narrowed down to these two concepts!</p>
+					</div>
+					<div class="overview-module" id="stripeP8">
+						<p><span style="color:red;">Rainbows</span><br><br>This is the final version of the logo with color and scaled up and down in size! </p>
+					</div>
+					<div class="overview-module" id="stripeP9">
+						<p><span style="color:red;">Desi</span><br><br>I was also able to step in and help render the logo for the Desi ERG as well! The logo is a lotus flower and leaf which represents the national flower of India. </p>
+					</div>
+					<div class="overview-module" id="stripeP10">
+						<p><span style="color:red;">Stripe Communities Posters</span><br><br>After my partnered designer and I finished these logos, we created posters promoting the newly rebranded Stripe Communities. We even had a Stripe Communities fair event which I helped to plan and set up!</p>
+					</div>
+					<div class="overview-module" id="stripeP11">
+						<p><span style="color:red;">Intern Project 2: Increment</span><br><br>My second assignment was to help design spreads for the Stripe publication, Increment!</p>
+					</div>
+					<div class="overview-module" id="stripeP12">
+						<p><span style="color:red;">Increment Research & Ideation</span><br><br>This project was special to me because Increment was one of the reasons that prompted me to apply to Stripe in the first place!<br><br>I was supposed to lay out an interview piece for the publication. I started by researching different interview layouts and various ways of organizing information. For example, I tried a few different information hierarchies using color and indentation, to name a few.</p>
+					</div>
+					<div class="overview-module" id="stripeP13">
+						<p><span style="color:red;">Increment Research & Ideation</span><br><br>These are a few different early ideas and concepts I tried out by following the Increment grid and styleguide while exercising my own creative liberties.</p>
+					</div>
+					<div class="overview-module" id="stripeP14">
+						<p><span style="color:red;">Increment Final Version</span><br><br>Here is what the final version I handed off looked like! You can check out the rest of the interview piece in issue 6 of Increment on the importance of Documentation which was released in August 2018!</p>
+					</div>
+					<div class="overview-module" id="stripeP15">
+						<p><span style="color:red;">Belgium Launch Poster</span><br><br>My most fun project was to create a country launch poster. I chose to design one for our Belgium product launch which happened back in 2017! These are some initial sketches I created during the research stage. For inspiration, I looked at different aspects of Belgium such as the national flower, colors, monuments, famous features, artists, and so forth.</p>
+					</div>
+					<div class="overview-module" id="stripeP16">
+						<p><span style="color:red;">Belgium Launch Poster</span><br><br>My most intriguing idea was inspired by the crow-stepped gables of Belgium. They're basically recognizable buildings in Belgium that have roofs shaped like stairs!</p>
+					</div>
+					<div class="overview-module" id="stripeP17">
+						<p><span style="color:red;">Belgium Launch Poster</span><br><br>I came up with this early concept in a few different color schemes but these are the two that won.</p>
+					</div>
+					<div class="overview-module" id="stripeP18">
+						<p><span style="color:red;">Belgium Launch Poster</span><br><br>My manager suggested that I try a completely different approach and not get too committed to one style just yet, so I created a second version of the poster using a flat illustration style instead of isometric.</p>
+					</div>
+					<div class="overview-module" id="stripeP19">
+						<p><span style="color:red;">Belgium Launch Poster</span><br><br>The design team liked both versions but ultimately, I decided to go with the first one! For the final version I cropped the view a bit and tweaked the colors. This is one of my most favorite things I've ever made to date!</p>
+					</div>
+					<div class="overview-module" id="stripeP20">
+						<p><span style="color:red;">Stripe is Amazing!</span><br><br>The day I started my internship at Stripe, I had no idea what a tremendous journey I had ahead of myself both as a designer and as a human being. I have met some of the most insanely talented people at this company and this internship has been one of the most fulfilling and enriching experiences of my life!<br><br>Pictured is a small portion of the summer intern cohort! I love my Stripe family!</p>
+					</div>
+					<div class="overview-module" id="stripeP21">
+						<p><span style="color:red;">Stripe is Challenging!</span><br><br>The design team at Stripe is indescribably diligent and talented. This internship was one of the most challenging things I have faced as a junior designer and I have learned an invaluable amount from this team of wonderful human beings.</p>
+					</div>
+					<div class="overview-module" id="stripeP22">
+						<p><span style="color:red;">We Haven't Won Yet!</span><br><br>Stripe taught me what it truly means to work smart and work hard. I had the best mentorship and guidance thanks to my wonderful mentor Tatiana Van Campenhout! Stripe truly is a special place to work and I hope to see myself in some capacity here again in the future. :)</p>
+					</div>
+					
+				</div>
+	
+	
+				<!-- STRIPE IMAGES -->
+				<div class="project-body" id="stripe-body">
+					<img class="fullBleedImg" src="projects/stripe/cover.jpg">
+					<img class="fullBleedImg shadow" src="projects/stripe/erg.png">
+					<img class="fullBleedImg shadow" src="projects/stripe/esea-ideation.png">
+					<img class="fullBleedImg shadow" src="projects/stripe/esea-ideation2.png"> 
+					<img class="fullBleedImg shadow" src="projects/stripe/esea-ideation3.png">
+					
+					<img class="fullBleedImg shadow" src="projects/stripe/rainbows1.png">
+					<img class="fullBleedImg shadow" src="projects/stripe/rainbows2.png"> 
+					<img class="fullBleedImg shadow" src="projects/stripe/rainbows3.png"> 
+					<img class="fullBleedImg shadow" src="projects/stripe/desi.png"> 
+					<img class="fullBleedImg shadow" src="projects/stripe/posters.png"> 
+					<img class="fullBleedImg" src="projects/stripe/social.png"> 
+					<img class="fullBleedImg" src="projects/stripe/increment-sketches.png"> 
+					<img class="fullBleedImg shadow" src="projects/stripe/incrementA.png"> 
+					<img class="fullBleedImg shadow" src="projects/stripe/incrementB.png"> 
+					<img class="fullBleedImg shadow" src="projects/stripe/incrementC.png">
+					<img class="fullBleedImg shadow" src="projects/stripe/incrementD.png">  
+					<img class="fullBleedImg shadow" src="projects/stripe/belgium-sketch.png">
+					<img class="fullBleedImg shadow" src="projects/stripe/belgium-sketch2.png">
+					<img class="fullBleedImg shadow" src="projects/stripe/belgium-sketch3.png">
+					<img class="fullBleedImg shadow" src="projects/stripe/belgium-sketch4.png">
+					<img class="fullBleedImg shadow" src="projects/stripe/belgium-posters-A.png">
+					<img class="halfBleedImg shadow" src="projects/stripe/belgium2.png">
+					<img class="halfBleedImg shadow" src="projects/stripe/belgium.png">
+					<img class="fullBleedImg shadow" src="projects/stripe/interns.jpg">
+					<img class="fullBleedImg shadow" src="projects/stripe/haha.jpg">
+					<img class="halfBleedImg shadow" src="projects/stripe/tatiana.jpg">
+	
+				</div>
+	
+		</div>
+		<!-- END STRIPE -->
+
+		<!-- STRIPE MOBILE-->
+		<div class="project-page project-away" id="stripe-project-mobile">
+				<div class="project-mobile">
+
+						<img class="mobile-img" src="projects/stripe/cover.jpg">
+								<p class="mobile-description"><span style="color:red;">This summer I had the amazing opportunity to be one of the first design interns at Stripe!</span><br><br>I was on the Brand & Communications team and worked on lots of consumer-facing brand assets as well as materials for internal company use.<br><br>Working at Stripe was truly one of the most life-changing experiences I have had thus far as a designer and as a person (not that the two are mutually exclusive).<br><br>Here are some projects that I worked on!</p>
+						<img class="mobile-img shadow" src="projects/stripe/erg.png">
+								<p class="mobile-description"><span style="color:red;">Stripe Communities</span><br><br>The first project I worked on was the rebrand of the Stripe Employee Resource Groups (ERGs) to Stripe Communities! For this project I was assigned to design 2 of the 9 logos (and later jumped on a third). I worked on the East & Southeast Asians logo and the Rainbows (LGBTQ) logo.</p>
+						<img class="mobile-img shadow" src="projects/stripe/esea-ideation3.png">
+								<p class="mobile-description">East & Southeast Asians Logo</p>
+						<img class="mobile-img shadow" src="projects/stripe/rainbows3.png"> 
+						<p class="mobile-description">Rainbows Logo</p>
+						<img class="mobile-img shadow" src="projects/stripe/desi.png"> 
+						<p class="mobile-description">Desi Logo</p>
+						<img class="mobile-img shadow" src="projects/stripe/posters.png"> 
+						<p class="mobile-description">Stripe Communities posters!</p>
+						<img class="mobile-img shadow" src="projects/stripe/social.png"> 
+						<p class="mobile-description"><span style="color:red;">Increment</span><br><br>My second assignment was to help design spreads for the Stripe publication, Increment! I worked on issue 6 which is about the importance of documentation.</p>
+						<img class="mobile-img shadow" src="projects/stripe/incrementB.png"> 
+						<img class="mobile-img shadow" src="projects/stripe/incrementC.png">
+						<img class="mobile-img shadow" src="projects/stripe/incrementD.png"> 
+						<p class="mobile-description"><span style="color:red;">Increment Ideation</span><br><br>These were several concepts that I created for the interview I was assigned to layout. We ended up going with the last one. Check out the latest issue of Increment to see the whole piece!</p>
+						<img class="mobile-img shadow" src="projects/stripe/belgium-posters-A.png">
+						<p class="mobile-description"><span style="color:red;">Belgium Launch Poster</span><br><br>My most fun project was to create a country launch poster. I chose to design one for our Belgium product launch which happened back in 2017! These are some initial sketches I created during the research stage. For inspiration, I looked at different aspects of Belgium such as the national flower, colors, monuments, famous features, artists, and so forth.</p>
+							<img class="mobile-img2 shadow" src="projects/stripe/belgium2.png">
+							<img class="mobile-img2 shadow" src="projects/stripe/belgium.png">
+						<img class="mobile-img shadow" src="projects/stripe/interns.jpg">
+						<p class="mobile-description"><span style="color:red;">Stripe is Amazing!</span><br><br>The day I started my internship at Stripe, I had no idea what a tremendous journey I had ahead of myself both as a designer and as a human being. I have met some of the most insanely talented people at this company and this internship has been one of the most fulfilling and enriching experiences of my life!<br><br>Pictured is a small portion of the summer intern cohort! I love my Stripe family!</p>
+
+					
+					
+				</div>
+	
+		</div>
+
+		<!-- END STRIPE MOBILE -->
+
 		<!-- UK -->
 		<div class="project-page project-away" id="uk-project">
 				<div class="project-overview">
@@ -391,6 +592,88 @@
 	
 		</div>
 		<!-- END UK -->
+		<!-- UK MOBILE-->
+		<div class="project-page project-away" id="uk-project-mobile">
+				<div class="project-mobile">
+						
+					<img class="mobile-img" src="projects/uk/uk-cover.png">
+					<p class="mobile-description"><span style="color:red;">This is an infographic in the form of an accordion book which visualizes data about an assigned country; I got the United Kingdom!</span><br><br>For this assignment we had to show 30 different pieces of data about our given country (population, languages spoken in percentages, economy, etc) and organize them in some way.</p>
+					<img class="mobile-img" src="projects/uk/uk-29.jpg">
+					<img class="mobile-img" src="projects/uk/uk-9.jpg">
+					<img class="mobile-img" src="projects/uk/uk-32.jpg"> 
+					<img class="mobile-img" src="projects/uk/uk-36.jpg">
+					<img class="mobile-img" src="projects/uk/uk-38.jpg">
+					<img class="mobile-img" src="projects/uk/uk-39.jpg"> 
+					<img class="mobile-img" src="projects/uk/uk-41.jpg"> 
+					<img class="mobile-img" src="projects/uk/uk-42.jpg"> 
+					<img class="mobile-img" src="projects/uk/uk-21.jpg"> 
+					<img class="mobile-img" src="projects/uk/uk-22.jpg"> 
+					<img class="mobile-img" src="projects/uk/uk-46.jpg">
+					<p class="mobile-description"><span style="color:red;">Colophon</span><br><br>This project was created for Mapping Information under the instruction of Doug Scott during the Spring of 2018 at RISD.</p> 
+				</div>
+	
+		</div>
+
+		<!-- END UK MOBILE -->
+
+		<!-- PULANG -->
+		<div class="project-page project-away" id="pulang-project">
+			<div class="project-overview">
+				
+				
+				<!-- PULANG DESCRIPTION -->
+				<div class="overview-module" id="pulangP1">
+					<p><span style="color:red;">"Pulang" means "to return home" in Bahasa Indonesia.</span><br><br>I created these postcards which were inspired by Indonesian textiles called Batik.</p>
+				</div>
+				<div class="overview-module" id="pulangP2">
+					<p><span style="color:red;">Narrative</span><br><br>For this open-ended project, I explored my cultural heritage and the ways that it could influence my design practice. When I was young, my grandmother gave me a batik and I thought it was the ugliest piece of clothing in the world.</p>
+				</div>
+				<div class="overview-module" id="pulangP3">
+					<p><span style="color:red;">Narrative</span><br><br>Growing up, I felt my family had always despised the Indonesian side of our heritage and appreciated our Chinese ancestry much more. It was almost as if one was more attractive to identify with than the other.</p>
+				</div>
+				<div class="overview-module" id="pulangP4">
+					<p><span style="color:red;">Narrative</span><br><br>Now that I've grown, I have come to start embracing my neglected Indonesian heritage and celebrate its beauty. What I used to consider ugly is now one of the most beautiful and spectacular objects I know of. Batik have such intricate repetitive patternings that I never noticed until now.</p>
+				</div>
+				<div class="overview-module" id="pulangP5">
+						<p><span style="color:red;">Narrative</span><br><br>Truly, I have returned home (pulang) in more than one way. These postcards are meant to be sent to my relatives in Indonesia, especially my grandmother who originally gifted me the batik when I was young. I will be asking her for it back!</p>
+					</div>
+				
+			</div>
+
+
+			<!-- PULANG IMAGES -->
+			<div class="project-body" id="pulang-body">
+				<img class="fullBleedImg shadow" src="projects/pulang/01.jpg">
+				<img class="fullBleedImg shadow" src="projects/pulang/02.png">
+				<img class="fullBleedImg shadow" src="projects/pulang/03.png">
+				<img class="fullBleedImg" src="projects/pulang/cover2.jpg">
+				<img class="fullBleedImg" src="projects/pulang/doc.jpg">
+				
+
+			</div>
+
+	</div>
+	<!-- END PULANG -->
+	<!-- PULANG MOBILE-->
+	<div class="project-page project-away" id="pulang-project-mobile">
+			<div class="project-mobile">
+					<p class="mobile-description"><span style="color:red;">"Pulang" means "to return home" in Bahasa Indonesia.</span><br><br>I created these postcards which were inspired by Indonesian textiles called Batik.</p>
+				<img class="mobile-img shadow" src="projects/pulang/01.jpg">
+				<img class="mobile-img shadow" src="projects/pulang/02.png">
+				<img class="mobile-img shadow" src="projects/pulang/03.png">
+				<p class="mobile-description"><span style="color:red;">Narrative</span><br><br>For this open-ended project, I explored my cultural heritage and the ways that it could influence my design practice. When I was young, my grandmother gave me a batik and I thought it was the ugliest piece of clothing in the world.<br><br>Now that I've grown, I have come to start embracing my neglected Indonesian heritage and celebrate its beauty. What I used to consider ugly is now one of the most beautiful and spectacular objects I know of. Batik have such intricate repetitive patternings that I never noticed until now.</p>
+				<img class="mobile-img" src="projects/pulang/cover2.jpg">
+				<img class="mobile-img" src="projects/pulang/doc.jpg">
+				<p class="mobile-description">Real Indonesian Batik textiles from which I drew inspiration for my patterns.</p>
+				<img class="mobile-img shadow" src="projects/pulang/batik1.jpg">
+				<img class="mobile-img shadow" src="projects/pulang/batik2.jpg">
+				<img class="mobile-img shadow" src="projects/pulang/batik3.jpg">
+				
+				
+			</div>
+
+	</div>
+	<!-- END PULANG -->
 
 
 		<!-- 3 TRIPS -->
@@ -426,6 +709,19 @@
 
 	</div>
 	<!-- END 3 TRIPS -->
+	<!-- 3TRIPS MOBILE-->
+	<div class="project-page project-away" id="trips-project-mobile">
+			<div class="project-mobile">
+					<p class="mobile-description"><span style="color:red;">This project was created for Mapping Information at RISD under the instruction of Doug Scott during Spring 2018.</span><br><br>The Road Less Traveled is a series of infographic posters I created which visualizes three different travels that I've been on: from my college dorm to my Providence workspace, from my dorm to my hometown in California, and from my dorm to my grandpa's house in Indonesia.<br><br>In each of these posters I compare an "ideal trip" and an "actual trip" path; I have this habit of getting sidetracked and being late, which ends up being costly to me in time and money when I'm traveling. You can see just how much difference it makes in the comparisons on each poster!</p>
+					<img class="mobile-img shadow" src="projects/3trips/3trips-cover-2.jpg">
+					<img class="mobile-img shadow" src="projects/3trips/3trips-1.png">
+					<img class="mobile-img shadow" src="projects/3trips/3trips-2.png">
+					<img class="mobile-img shadow" src="projects/3trips/3trips-3.png">
+					
+			</div>
+
+	</div>
+	<!-- END 3 TRIPS MOBILE -->
 
 
 		<!-- THE OKAY CLUB -->
@@ -494,7 +790,31 @@
 
 		</div>
 		<!-- END OKAY CLUB -->
+		<!-- OKAY MOBILE-->
+<div class="project-page project-away" id="okay-project-mobile">
+		<div class="project-mobile">
+				<img class="mobile-img" id="bikeee" src="projects/okay/images/animation.gif">
+				<p class="mobile-description"><span style="color:red;">The Okay Club is a fictional non-profit organization that I designed which supports the intersectionality of mental health.</span><br><br> This entity would live primarily on digital media and provide resources and solidarity for marginalized individuals fighting mental illness--mainly people of color and lgbtq communities.</p>
+				<img class="mobile-img" src="projects/okay/images/bike.jpg">
+				<img class="mobile-img" src="projects/okay/images/triple.png">
+				<p class="mobile-description"><span style="color:red;">Why the Bike?</span><br><br>I had a sudden epiphany of using a bike as the logomark. On an unrelated note, I had recently watched a youtube video about the self-stablization mechanism of bikes. You see, when you push a bike forward without a rider on it, the bike may sway left and right, but ultimately given it has enough momentum it will stabilize itself.<br><br>I believe the same principle applies to people. When you're dealing with depression or anxiety, you may feel like you've lost control of the situation. You may lose your way, but as long as you keep moving forward you will not falter.</p>
+				<img class="mobile-img" src="projects/okay/images/physics.png">
+				<img class="mobile-img" src="projects/okay/images/bikesss.png">
+				<p class="mobile-description"><span style="color:red;">Final Concept</span><br><br>The final concept is a penny-farthing bicycle stylized to look like an "OK". The organic lines and typeface lend a human touch.</p>
+				<img class="mobile-img" src="projects/okay/images/final.jpeg">
+				<p class="mobile-description"><span style="color:red;">Infographic</span><br><br>The last step of the assignment was to create an infographic based on data relating to our organization. I created a short booklet about mental health and marginalized communities (a quick rundown on what it means, what obstacles they face, and how we can help the cause). The bicycle is used as a metaphor throughout the book.</p>
+				<img class="mobile-img" src="projects/okay/images/info1.png">
+				<img class="mobile-img" src="projects/okay/images/info2.png">
+				<img class="mobile-img" src="projects/okay/images/info3.png">
+				<p class="mobile-description">Brand Applications</p>
+				<img class="mobile-img" src="projects/okay/images/mustard-tshirt.png">
+				<img class="mobile-img" src="projects/okay/images/logo-mockup.png">
+				<img class="mobile-img" src="projects/okay/images/tote.png">
+				
+		</div>
 
+</div>
+<!-- END OKAY MOBILE -->
 
 
 
@@ -555,6 +875,31 @@
 		</div>
 
 		<!-- END HACK2018 -->
+		<!-- HACK2018 MOBILE-->
+	<div class="project-page project-away" id="hack2018-project-mobile">
+			<div class="project-mobile">
+					<p class="mobile-description"><span style="color:red;">Hack@Brown is the annual hackathon hosted by Brown University. We (the team) work to organize the event for most of the year!</span><br><br>I have been on the Hack@Brown Design team for two years now; this year I led the team, and together we made some awesome stuff!</p>
+					<img class="mobile-img" src="projects/hack2018/hack2018.png">
+					<img class="mobile-img" src="projects/hack2018/event.jpg">
+					<p class="mobile-description"><span style="color:red;">Hackathon Hackers Hack</span><br><br>Hack@Brown's mission statement is to host a hackathon that caters to beginners and newcomers--people who have never coded before.<br><br>Often times code is a rather intimidating concept to approach, so we strive to create a friendly environment that encourages people to try something new whether it's code, VR/AR or sick hardware!</p>
+					<img class="mobile-img" src="projects/hack2018/team2.jpg">
+					<p class="mobile-description"><span style="color:red;">Hack@Brown Design</span><br><br>The design team is tasked with designing and branding an event that is approachable and fun. Each year we do so by using cute illustrative styles and popping color palettes. We create everything from posters to apparel and nametags--anything that needs design.</p>
+					<img class="mobile-img" src="projects/hack2018/design2018.jpeg">
+					<p class="mobile-description"><span style="color:red;">Hack@Brown 2018 Style Guide</span></p>
+					<img class="mobile-img shadow" src="projects/hack2018/style.jpg">
+					<img class="mobile-img" src="projects/hack2018/flower.gif">
+					<p class="mobile-description"><span style="color:red;">2018 Landing Page</span></p>
+					<img class="mobile-img shadow" src="projects/hack2018/homepage.gif">
+					<p class="mobile-description"><span style="color:red;">2018 Application</span></p>
+					<img class="mobile-img shadow" src="projects/hack2018/application.gif">
+					<img class="mobile-img shadow" src="projects/hack2018/dashboard.png">
+					<p class="mobile-description"><span style="color:red;">Hack@Brown 2018 Design Team!</span><br><br>None of this would have been possible without our amazing design team! I'm so thankful to be part of such a collaborative and enriching organization. :-)</p>
+					<img class="mobile-img" src="projects/hack2018/design.jpg">
+					
+			</div>
+
+	</div>
+	<!-- END HACK 2018 MOBILE -->
 
 
 		<!-- HACK2017 -->
@@ -613,6 +958,35 @@
 
 		</div>
 		<!-- END HACK2017 -->
+		<!-- HACK2017 MOBILE-->
+	<div class="project-page project-away" id="hack2017-project-mobile">
+			<div class="project-mobile">
+					<p class="mobile-description"><span style="color:red;">Hack@Brown is the annual hackathon hosted by Brown University. We (the team) work to organize the event for most of the year!</span><br><br>This was my first year on the team! I joined as a sophomore at RISD.</p>
+					<img class="fullBleedImg" src="projects/hack2017/hack2017.png">
+					<p class="mobile-description"><span style="color:red;">Hackathon Hackers Hack</span><br><br>Hack@Brown's mission statement is to host a hackathon that caters to beginners and newcomers--people who have never coded before.<br><br>Often times code is a rather intimidating concept to approach, so we strive to create a friendly environment that encourages people to try something new whether it's code, VR/AR or sick hardware!</p>
+					<img class="fullBleedImg" src="projects/hack2017/images/dayof3.jpg">
+					<img class="fullBleedImg" src="projects/hack2017/images/dayof2.jpg">
+					<img class="fullBleedImg" src="projects/hack2017/images/dayof1.jpg">
+					<p class="mobile-description"><span style="color:red;">Hack@Brown Design</span><br><br>The design team is tasked with designing and branding an event that is approachable and fun. Each year we do so by using cute illustrative styles and popping color palettes. We create everything from posters to apparel and nametags--anything that needs design.<br><br>This is the website we designed for the 2017 Hackathon.</p>
+					<img class="fullBleedImg shadow" src="projects/hack2017/images/HomePage.gif">
+					<p class="mobile-description"><span style="color:red;">Hack@Brown 2017 Application</span></p>
+					<img class="fullBleedImg shadow" src="projects/hack2017/images/Application.gif">
+					<p class="mobile-description"><span style="color:red;">Day-of Pamphlet</span></p>
+					<img class="fullBleedImg" src="projects/hack2017/images/pamphlet.png">
+					<p class="mobile-description"><span style="color:red;">Hack@Brown 2017 Workshop Banners</span></p>
+					<img class="fullBleedImg shadow" src="projects/hack2017/images/android-02.jpg">
+					<img class="fullBleedImg shadow" src="projects/hack2017/images/chrome-02.jpg">
+					<img class="fullBleedImg shadow" src="projects/hack2017/images/mixer-02.jpg">
+					<p class="mobile-description"><span style="color:red;">Hack@Brown 2017 Apparel</span></p>
+					<img class="fullBleedImg" src="projects/hack2017/images/apparel.jpg">
+					<img class="fullBleedImg" src="projects/hack2017/images/sweatshirt2.JPG">
+					<p class="mobile-description"><span style="color:red;">That's a Wrap!</span><br><br>I'm beyond grateful that I've had the opportunity to be a part of such an amazing organization! I've met and worked with the most amazing human beings through Hack@Brown and together we put on such an awesome, impactful event!</p>
+					<img class="fullBleedImg" src="projects/hack2017/images/dayof4.jpg">
+					
+			</div>
+
+	</div>
+	<!-- END HACK2017 MOBILE -->
 
 
 
@@ -704,6 +1078,35 @@
 		</div>
 
 		<!-- END PIDAN -->
+		<!-- PIDAN MOBILE-->
+	<div class="project-page project-away" id="pidan-project-mobile">
+			<div class="project-mobile">
+					<p class="mobile-description"><span style="color:red;">This project was created for Mapping Information at RISD under the instruction of Doug Scott during Spring 2018.</span><br><br>I created a small accordion book detailing the process of do-it-yourself Century Eggs, or Pidan in Chinese.</p>
+					
+					<img class="mobile-img" src="projects/pidan/pidancover.png">
+					<p class="mobile-description"><span style="color:red;">What Are Century Eggs?!</span><br><br>Century eggs are duck eggs that are fermented in a caustic mixture and left for several weeks. The yolk turns creamy and green, and the whites turn gelatinous and brown. They are certainly an acquired taste for those unfamiliar with this asian delicacy! </p>
+					<img class="mobile-img" src="projects/pidan/pidan-4.jpg">
+					<img class="mobile-img" src="projects/pidan/real-1.jpg">
+					<img class="mobile-img" src="projects/pidan/pidan-14.jpg">
+					<img class="mobile-img" src="projects/pidan/pidan4.jpg">
+					<img class="mobile-img shadow" src="projects/pidan/pidancover.jpg">
+					<img class="mobile-img shadow" src="projects/pidan/pidaningredients.jpg">
+					<img class="mobile-img shadow" src="projects/pidan/pidan01.jpg">
+					<img class="mobile-img shadow" src="projects/pidan/pidan02.jpg">
+					<img class="mobile-img shadow" src="projects/pidan/pidan03.jpg">
+					<img class="mobile-img shadow" src="projects/pidan/pidan04.jpg">
+					<img class="mobile-img shadow" src="projects/pidan/pidan05.jpg">
+					<img class="mobile-img shadow" src="projects/pidan/pidan06.jpg">
+					<img class="mobile-img shadow" src="projects/pidan/pidan07.jpg">
+					<img class="mobile-img shadow" src="projects/pidan/pidan08.jpg">
+					<img class="mobile-img shadow" src="projects/pidan/pidan09.jpg">
+					<img class="mobile-img shadow" src="projects/pidan/pidan10.jpg">
+					<img class="mobile-img shadow" src="projects/pidan/pidanback.jpg">
+					
+			</div>
+
+	</div>
+	<!-- END PIDAN MOBILE -->
 
 
 
@@ -741,7 +1144,136 @@
 	</div>
 	<!-- END KVSH -->
 
+	<!-- RETRO -->
+	<div class="project-page project-away" id="retro-project">
+		<div class="project-overview">
+			
+			
+			<!-- RETRO DESCRIPTION -->
+			<div class="overview-module" id="retroP1">
+				<p><span style="color:red;">How does design make sense of so much stuff?</span><br><br>The digital age has shifted us into a condition where the foundation of graphic design cannot go untouched by the influence of the internet and its massive archives of data. How do we navigate this landscape of overwhelming accumulation of stuff?<br><br>By using editorial tools such as isolation, combination, juxtaposition and curation, we as designers can actively engage with found material in a new context and create powerful narratives.<br><br>This is the final stage animation of this project which encapsulates all my research on the wonderful web culture of Vaporwave and nostalgia.</p>
+			</div>
+			<div class="overview-module" id="retroP2">
+				<p><span style="color:red;">Project Objective</span><br><br>For this assignment we were to pick an interesting topic to research and synthesize two publications from our archive of material. I chose to research the internet phenomenon of Vaporwave, which entails a retro-futuristic aesthetic and a longing for a past that never existed.</p>
+			</div>
+			<div class="overview-module" id="retroP3">
+				<p><span style="color:red;">Retro Renaissance: The Open-Source Escape</span><br><br>One publication was to be informative, while the other would be abstract/poetic. The informative zine is a compilation of Reddit snippets and found articles analyzing the history and meaning of the Vaporwave phenomenon and why it has become relevant.</p>
+			</div>
+			<div class="overview-module" id="retroP4">
+				<p><span style="color:red;">It's Strange That</span><br><br>This zine was purely abstract and was more image-driven with bits of poetic text sprinkled in. The purpose of this publication was to give the user the nostalgic and melancholic feeling that Vaporwave gives off.</p>
+			</div>
+			<!-- <div class="overview-module" id="retroP5">
+					<p><span style="color:red;">Narrative</span><br><br>Truly, I have returned home (pulang) in more than one way. These postcards are meant to be sent to my relatives in Indonesia, especially my grandmother who originally gifted me the batik when I was young. I will be asking her for it back!</p>
+				</div> -->
+			
+		</div>
 
+
+		<!-- RETRO IMAGES -->
+		<div class="project-body" id="retro-body">
+				<iframe  src="https://player.vimeo.com/video/237321964" width="800" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				
+			<img class="fullBleedImg shadow" src="projects/retro/images/cover.png">
+			<img class="fullBleedImg" src="projects/retro/images/archive-5.png">
+			<img class="fullBleedImg" src="projects/retro/images/archive-15.png">
+			<img class="fullBleedImg" src="projects/retro/images/archive-37.png">
+			<img class="fullBleedImg" src="projects/retro/images/archive-39.png">
+			<img class="fullBleedImg" src="projects/retro/images/archive-40.png">
+			<img class="fullBleedImg" src="projects/retro/images/archive-20.png">
+			<img class="fullBleedImg" src="projects/retro/images/archive-25.png">
+			<img class="fullBleedImg" src="projects/retro/images/archive-26.png">
+			<img class="fullBleedImg" src="projects/retro/images/archive-50.png">
+			<img class="fullBleedImg" src="projects/retro/images/archive-48.png">
+			
+			
+
+		</div>
+
+</div>
+<!-- END RETRO -->
+<!-- RETRO MOBILE-->
+<div class="project-page project-away" id="retro-project-mobile">
+		<div class="project-mobile">
+				
+				<p class="mobile-description"><span style="color:red;">How does design make sense of so much stuff?</span><br><br>The digital age has shifted us into a condition where the foundation of graphic design cannot go untouched by the influence of the internet and its massive archives of data. How do we navigate this landscape of overwhelming accumulation of stuff?<br><br>By using editorial tools such as isolation, combination, juxtaposition and curation, we as designers can actively engage with found material in a new context and create powerful narratives.<br><br>This is the final stage animation of this project which encapsulates all my research on the wonderful web culture of Vaporwave and nostalgia.</p>
+				<iframe  src="https://player.vimeo.com/video/237321964" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+				<p class="mobile-description"><span style="color:red;">Project Objective</span><br><br>For this assignment we were to pick an interesting topic to research and synthesize two publications from our archive of material. I chose to research the internet phenomenon of Vaporwave, which entails a retro-futuristic aesthetic and a longing for a past that never existed.</p>
+				
+			<img class="mobile-img shadow" src="projects/retro/images/cover.png">
+			<img class="mobile-img" src="projects/retro/images/archive-5.png">
+			<img class="mobile-img" src="projects/retro/images/archive-15.png">
+			<img class="mobile-img" src="projects/retro/images/archive-37.png">
+			<img class="mobile-img" src="projects/retro/images/archive-39.png">
+			<img class="mobile-img" src="projects/retro/images/archive-40.png">
+			<img class="mobile-img" src="projects/retro/images/archive-20.png">
+			<img class="mobile-img" src="projects/retro/images/archive-25.png">
+			<img class="mobile-img" src="projects/retro/images/archive-26.png">
+			<img class="mobile-img" src="projects/retro/images/archive-50.png">
+			<img class="mobile-img" src="projects/retro/images/archive-48.png">
+				
+		</div>
+
+</div>
+<!-- END RETRO MOBILE -->
+
+
+
+<!-- LA MEI -->
+<div class="project-page project-away" id="lamei-project">
+		<div class="project-overview">
+			
+			
+			<!-- LA MEI DESCRIPTION -->
+			<div class="overview-module" id="lameiP1">
+				<p><span style="color:red;">Redesigned Menus</span><br><br>For Type II, we were to pick a restaurant in Providence and redesign a set of menus for them. I chose my favorite Providence restaurant, La Mei Hot Pot!</p>
+			</div>
+			<div class="overview-module" id="lameiP2">
+				<p><span style="color:red;">Details</span><br><br>I designed a set of three menus: food, drink, and dessert. The typefaces are Calibre (english) paired with Lantinghei (Chinese). Set on cream paper with cover paper and Japanese stab-bound with black waxed linen.</p>
+			</div>
+			
+		</div>
+
+
+		<!-- LA MEI IMAGES -->
+		<div class="project-body" id="lamei-body">
+			<img class="fullBleedImg" src="projects/lamei/images/lamei.jpg">
+			<div class="tiled-set">
+				<img class="tileImg" src="projects/lamei/images/menu1.jpg">
+				<img class="tileImg" src="projects/lamei/images/menu2.jpg">
+			</div>
+			<img class="tileImg" src="projects/lamei/images/menu3.jpg">
+			<img class="tileImg" src="projects/lamei/images/menu4.jpg">
+			<img class="tileImg" src="projects/lamei/images/drink1.jpg">
+			<img class="tileImg" src="projects/lamei/images/drink2.jpg">
+			<img class="tileImg" src="projects/lamei/images/dessert1.jpg">
+			<img class="tileImg" src="projects/lamei/images/dessert2.jpg">
+		
+			
+		</div>
+
+</div>
+<!-- END LAMEI -->
+<!-- LAMEI MOBILE-->
+<div class="project-page project-away" id="lamei-project-mobile">
+		<div class="project-mobile">
+				<img class="mobile-img" src="projects/lamei/images/lamei.jpg">
+				<p class="mobile-description"><span style="color:red;">Redesigned Menus</span><br><br>For Type II, we were to pick a restaurant in Providence and redesign a set of menus for them. I chose my favorite Providence restaurant, La Mei Hot Pot!</p>
+				<img class="mobile-img" src="projects/lamei/images/menu1.jpg">
+				<img class="mobile-img" src="projects/lamei/images/menu2.jpg">
+				<p class="mobile-description"><span style="color:red;">Details</span><br><br>I designed a set of three menus: food, drink, and dessert. The typefaces are Calibre (english) paired with Lantinghei (Chinese). Set on cream paper with cover paper and Japanese stab-bound with black waxed linen.</p>
+			<img class="mobile-img" src="projects/lamei/images/menu3.jpg">
+			<img class="mobile-img" src="projects/lamei/images/menu4.jpg">
+			<img class="mobile-img" src="projects/lamei/images/drink1.jpg">
+			<img class="mobile-img" src="projects/lamei/images/drink2.jpg">
+			<img class="mobile-img" src="projects/lamei/images/dessert1.jpg">
+			<img class="mobile-img" src="projects/lamei/images/dessert2.jpg">
+				
+				
+		</div>
+
+</div>
+<!-- END PIDAN MOBILE -->
 
 
 
