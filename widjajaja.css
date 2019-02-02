@@ -403,15 +403,27 @@ hr.style1 {
 				transition-duration: 0.4s;
 				left:100%;
 				visibility:hidden;
-				padding:3% 0px 0px 3%;
+				padding:3% 0px 0px 2%;
 				color:red;
 				display:flex;
 				flex-direction:row;
 				transition:.5s ease-out;
+				overflow-x:scroll;
+				flex-wrap:wrap;
 			}
+
+			.etc-imggg {
+				width:60;
+				height:60%;
+				margin:15px;
+			}
+
+			
+			
+			
 				
 				.etc-category {
-					/* border-style:solid; */
+					border-style:solid;
 					width:80vw;
 					height:70vh;
 					display:flex;

@@ -52,6 +52,9 @@ $(selector).on('click', function() {
 	$(this).addClass('active');
 })
 
+
+
+
 //nav menu
 
 //buttons
