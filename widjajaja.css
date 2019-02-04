@@ -173,8 +173,8 @@ body.fade-out {
 	/*float:right;*/
 }
 #home-picture {
-	width:60%;
-	height:60%;
+	width:55%;
+	height:55%;
 	margin-left:3%;
 
 	-webkit-animation: fadein 2s; 
