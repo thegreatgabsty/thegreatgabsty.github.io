@@ -374,17 +374,27 @@ ssm.addState({
 		$("#stripe-cover").click(function() {
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
-			$("#stripe-project-mobile").removeClass('project-away').addClass('project-return');
+			$("#stripe-project").removeClass('project-away').addClass('project-return');
 		
 			$('.trans--grow').addClass('shrink2');
 			$('.trans--grow').removeClass('grow');
 			StripeTitle.style.left = "4%";
 			TripsHR.style.left = "37%";
 		});
+		$("#puppet-cover").click(function() {
+
+			$("#all-work-page").removeClass('return-left').addClass('away-left');
+			$("#puppet-project").removeClass('project-away').addClass('project-return');
+		
+			$('.trans--grow').addClass('shrink2');
+			$('.trans--grow').removeClass('grow');
+			PuppetTitle.style.left = "4%";
+			TripsHR.style.left = "50%";
+		});
 		$("#uk-cover").click(function() {
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
-			$("#uk-project-mobile").removeClass('project-away').addClass('project-return');
+			$("#uk-project").removeClass('project-away').addClass('project-return');
 		
 			$('.trans--grow').addClass('shrink2');
 			$('.trans--grow').removeClass('grow');
@@ -394,7 +404,7 @@ ssm.addState({
 		$("#pulang-cover").click(function() {
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
-			$("#pulang-project-mobile").removeClass('project-away').addClass('project-return');
+			$("#pulang-project").removeClass('project-away').addClass('project-return');
 		
 			$('.trans--grow').addClass('shrink2');
 			$('.trans--grow').removeClass('grow');
@@ -404,7 +414,7 @@ ssm.addState({
 		$("#3trips-cover").click(function() {
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
-			$("#trips-project-mobile").removeClass('project-away').addClass('project-return');
+			$("#trips-project").removeClass('project-away').addClass('project-return');
 		
 			$('.trans--grow').addClass('shrink2');
 			$('.trans--grow').removeClass('grow');
@@ -414,7 +424,7 @@ ssm.addState({
 		$("#okay-cover").click(function() {
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
-			$("#okay-project-mobile").removeClass('project-away').addClass('project-return');
+			$("#okay-project").removeClass('project-away').addClass('project-return');
 		
 			$('.trans--grow').addClass('shrink2');
 			$('.trans--grow').removeClass('grow');
@@ -424,7 +434,7 @@ ssm.addState({
 		$("#hack2018-cover").click(function() {
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
-			$("#hack2018-project-mobile").removeClass('project-away').addClass('project-return');
+			$("#hack2018-project").removeClass('project-away').addClass('project-return');
 		
 			$('.trans--grow').addClass('shrink2');
 			$('.trans--grow').removeClass('grow');
@@ -434,7 +444,7 @@ ssm.addState({
 		$("#hack2017-cover").click(function() {
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
-			$("#hack2017-project-mobile").removeClass('project-away').addClass('project-return');
+			$("#hack2017-project").removeClass('project-away').addClass('project-return');
 		
 			$('.trans--grow').addClass('shrink2');
 			$('.trans--grow').removeClass('grow');
@@ -444,7 +454,7 @@ ssm.addState({
 		$("#pidan-cover").click(function() {
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
-			$("#pidan-project-mobile").removeClass('project-away').addClass('project-return');
+			$("#pidan-project").removeClass('project-away').addClass('project-return');
 		
 			$('.trans--grow').addClass('shrink2');
 			$('.trans--grow').removeClass('grow');
@@ -454,7 +464,7 @@ ssm.addState({
 		$("#retro-cover").click(function() {
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
-			$("#retro-project-mobile").removeClass('project-away').addClass('project-return');
+			$("#retro-project").removeClass('project-away').addClass('project-return');
 		
 			$('.trans--grow').addClass('shrink2');
 			$('.trans--grow').removeClass('grow');
@@ -464,7 +474,7 @@ ssm.addState({
 		$("#lamei-cover").click(function() {
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
-			$("#lamei-project-mobile").removeClass('project-away').addClass('project-return');
+			$("#lamei-project").removeClass('project-away').addClass('project-return');
 		
 			$('.trans--grow').addClass('shrink2');
 			$('.trans--grow').removeClass('grow');
