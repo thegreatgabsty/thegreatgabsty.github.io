@@ -515,17 +515,27 @@ ssm.addState({
 		$("#stripe-cover").click(function() {
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
-			$("#stripe-project-mobile").removeClass('project-away').addClass('project-return');
+			$("#stripe-project").removeClass('project-away').addClass('project-return');
 		
 			$('.trans--grow').addClass('shrink3');
 			$('.trans--grow').removeClass('grow');
 			StripeTitle.style.left = "3%";
 			TripsHR.style.left = "52%";
 		});
+		$("#puppet-cover").click(function() {
+
+			$("#all-work-page").removeClass('return-left').addClass('away-left');
+			$("#puppet-project").removeClass('project-away').addClass('project-return');
+		
+			$('.trans--grow').addClass('shrink3');
+			$('.trans--grow').removeClass('grow');
+			PuppetTitle.style.left = "3%";
+			TripsHR.style.left = "71%";
+		});
 		$("#uk-cover").click(function() {
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
-			$("#uk-project-mobile").removeClass('project-away').addClass('project-return');
+			$("#uk-project").removeClass('project-away').addClass('project-return');
 		
 			$('.trans--grow').addClass('shrink3');
 			$('.trans--grow').removeClass('grow');
@@ -535,7 +545,7 @@ ssm.addState({
 		$("#pulang-cover").click(function() {
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
-			$("#pulang-project-mobile").removeClass('project-away').addClass('project-return');
+			$("#pulang-project").removeClass('project-away').addClass('project-return');
 		
 			$('.trans--grow').addClass('shrink3');
 			$('.trans--grow').removeClass('grow');
@@ -545,7 +555,7 @@ ssm.addState({
 		$("#3trips-cover").click(function() {
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
-			$("#trips-project-mobile").removeClass('project-away').addClass('project-return');
+			$("#trips-project").removeClass('project-away').addClass('project-return');
 		
 			$('.trans--grow').addClass('shrink3');
 			$('.trans--grow').removeClass('grow');
@@ -565,7 +575,7 @@ ssm.addState({
 		$("#hack2018-cover").click(function() {
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
-			$("#hack2018-project-mobile").removeClass('project-away').addClass('project-return');
+			$("#hack2018-project").removeClass('project-away').addClass('project-return');
 		
 			$('.trans--grow').addClass('shrink3');
 			$('.trans--grow').removeClass('grow');
@@ -575,7 +585,7 @@ ssm.addState({
 		$("#hack2017-cover").click(function() {
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
-			$("#hack2017-project-mobile").removeClass('project-away').addClass('project-return');
+			$("#hack2017-project").removeClass('project-away').addClass('project-return');
 		
 			$('.trans--grow').addClass('shrink3');
 			$('.trans--grow').removeClass('grow');
@@ -585,7 +595,7 @@ ssm.addState({
 		$("#pidan-cover").click(function() {
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
-			$("#pidan-project-mobile").removeClass('project-away').addClass('project-return');
+			$("#pidan-project").removeClass('project-away').addClass('project-return');
 		
 			$('.trans--grow').addClass('shrink3');
 			$('.trans--grow').removeClass('grow');
