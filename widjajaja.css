@@ -27,9 +27,10 @@ body.fade-out {
 
 #header {
 	display:flex;
+	/* position:fixed; */
 	flex-direction:row;
 	padding:1.5%;
-	/*border-style:solid;*/
+	/* border-style:solid; */
 	border-color:blue;
 }
 
@@ -326,6 +327,7 @@ hr.style1 {
 							width:40%;
 							height:30vw;
 							margin: 0% 7% 0% 0%;
+							/* border-style:solid; */
 						}
 						.project-title-image {
 							width:100%;
