@@ -192,13 +192,17 @@ ssm.addState({
 
 // PROJECT TRIGGERS /////////////
 
+var myLazyLoad = new LazyLoad({
+    container: document.getElementById('all-work-list')
+});
+
 
 // STRIPE
 
 $("#stripe-cover").click(function() {
 
-	$("#all-work-page").removeClass('return-left').addClass('away-left');
-	$("#stripe-project").removeClass('project-away').addClass('project-return');
+	$("#all-work-list").removeClass('return-left').addClass('away-left');
+	// $("#stripe-project").removeClass('project-away').addClass('project-return');
 
 	$('.trans--grow').addClass('shrink');
 	$('.trans--grow').removeClass('grow');

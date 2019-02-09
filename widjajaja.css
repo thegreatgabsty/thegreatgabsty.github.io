@@ -2,6 +2,7 @@
 body {
 	opacity: 1;
 		transition: 1s opacity;
+	overflow-x:hidden;
 }
 
 body.fade-out {
@@ -27,11 +28,14 @@ body.fade-out {
 
 #header {
 	display:flex;
-	/* position:fixed; */
+	position:fixed;
 	flex-direction:row;
 	padding:1.5%;
-	/* border-style:solid; */
+	border-style:solid;
 	border-color:blue;
+	top:0;
+	background-color:white;
+	z-index:3;
 }
 
 
@@ -118,7 +122,9 @@ body.fade-out {
 	padding-left:35px;
 	font-family: "GTPM-Bold";
 	/* border-style:solid; */
-	position:relative;
+	margin:125px 0px 0px 0px;
+	position:fixed;
+	top:0;
 	overflow:hidden;
 }
 #recent a {
@@ -215,11 +221,11 @@ hr.style1 {
 /* ----------CONTAINS EVERYTHING!!! ----------*/
 #workbody {
 	width:100%;
-	height:77vh;
-	/* margin-top:10px; */
+	/* height:78vh; */
+	margin-top:160px;
 	/* padding:5px 0px 0px 0px; */
-	position:relative;
-	/* border-style:solid; */
+	position:static;
+	border-style:solid;
 	color:red;
 	display:flex;
 	flex-direction:row;
@@ -242,13 +248,19 @@ hr.style1 {
 	color:blue;
 	/* right:0%; */
 	transition-duration: 0.5s;
+	overflow-x:hidden;
+
+}
+
+.ghost {
+	display:none;
 }
 
 
 #work-nav {
 	width:12%;
 	margin-top:2%;
-	position:absolute;
+	position:fixed;
 	
 }
 #worknavbar {
@@ -275,9 +287,9 @@ hr.style1 {
 	display:flex;
 	flex-direction:row;
 	width:98vw;
-	height:76vh;
+	/* height:100vh; */
 	display:absolute;
-	/* border-style:solid; */
+	border-style:solid;
 	color:yellow;
 	margin:0% 0% 0% 0%;
 	overflow:hidden;
@@ -288,9 +300,9 @@ hr.style1 {
 			#all-work-list {
 				position:relative;
 				width:80vw;
-				height:75vh;
+				/* height:75vh; */
 				padding:3% 0px 0px 3%;
-				/* border-style:solid; */
+				border-style:solid;
 				color:black;
 				display:flex;
 				flex-direction:row;
@@ -300,7 +312,8 @@ hr.style1 {
 				/* visibility:visible; */
 				left:18%;
 				transition: .5s ease-out;
-				
+				overflow-x:hidden;
+
 			}
 
 			#gradient {
@@ -418,7 +431,7 @@ hr.style1 {
 				height:75vh;
 				margin-left:0%;
 				position:absolute;
-				/* border-style:solid; */
+				border-style:solid;
 				transition-duration: 0.4s;
 				left:100%;
 				visibility:hidden;
@@ -612,7 +625,7 @@ hr.style3 {
 									  width:8%;
 								  }
 								.hr1 {
-									position:absolute;
+									position:fixed;
 									margin:0% 0% 0% 6%;
 									border-top:4px solid black;
 									align-content:left;
