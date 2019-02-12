@@ -300,6 +300,7 @@ hr.style1 {
 				/* visibility:visible; */
 				left:18%;
 				transition: .5s ease-out;
+				-webkit-overflow-scrolling: touch;
 				
 			}
 
@@ -564,10 +565,10 @@ hr.style1 {
 }
 #about-blurb {
 	/*border-style:solid;*/
-	width:50%;
+	width:60%;
 	padding:10px 10px 10px 30px;
 	font-family:"GTPM-Light";
-	font-size:14px;
+	font-size:16px;
 	-webkit-animation: fadein 2s;
 }
 #about-blurb a {

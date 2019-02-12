@@ -192,6 +192,9 @@ ssm.addState({
 
 // PROJECT TRIGGERS /////////////
 
+var myLazyLoad = new LazyLoad({
+    container: document.getElementById('all-work-list')
+});
 
 // STRIPE
 
