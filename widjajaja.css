@@ -893,6 +893,13 @@ hr.style3 {
 				margin:0% 20% 5% 20%;
 				padding:0% 0% 0% 0%;
 			}
+			.headerImg {
+				display:block;
+				width:100%;
+				height:auto;
+				margin:0% 0% 3% 0%;
+				padding:0% 0% 0% 0%;
+			}
 			.wideBleedImg {
 				display:block;
 				width:70%;
