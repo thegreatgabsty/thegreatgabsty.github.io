@@ -17,9 +17,9 @@ $(document).ready(function() {
 		});
 	})
 
-	
 
-	
+
+
 
 
 
@@ -64,7 +64,7 @@ var Other = document.getElementById('other');
 var Sketchbook = document.getElementById('sketchbook');
 
 
-//pages 
+//pages
 var MainPage = document.getElementById('all-work-list');
 var OtherPage = document.getElementById('other_page');
 var SketchbookPage = document.getElementById('sketchbook_page');
@@ -87,7 +87,7 @@ $(Main).click(function() {
 	$("#sketchbook_page").removeClass('return').addClass('away');
 
 	console.log("main clicked");
-	
+
 
 });
 
@@ -113,7 +113,7 @@ $(Other).click(function() {
 //SKETCHBOOK TRIGGER
 
 $(Sketchbook).click(function() {
-	
+
 	$("#sketchbook_page").removeClass('away').addClass('return');
 	SketchbookPage.style.visibility = "visible";
 	SketchbookPage.style.left = "18%";
@@ -124,6 +124,30 @@ $(Sketchbook).click(function() {
 	OtherPage.style.left = "100%";
 	$("#other_page").removeClass('return').addClass('away');
 });
+
+var modal = document.querySelector(".modal");
+    var trigger = document.querySelector(".trigger");
+    var closeButton = document.querySelector(".close-button");
+
+    function toggleModal() {
+        modal.classList.toggle("show-modal");
+				console.log('clickety clack');
+    }
+
+    function windowOnClick(event) {
+        if (event.target === modal) {
+            toggleModal();
+        }
+    }
+		function sayHello() {
+			console.log('clack');
+		}
+
+    trigger.addEventListener("click", toggleModal);
+		trigger.addEventListener("click", sayHello);
+
+    closeButton.addEventListener("click", toggleModal);
+    window.addEventListener("click", windowOnClick);
 
 
 
@@ -145,7 +169,7 @@ var SpotProject = document.getElementById('spot-project');
 var PawsProject = document.getElementById('paws-project');
 
 
-//PROJECT TITLES 
+//PROJECT TITLES
 var OkayTitle = document.getElementById('okay-title');
 var Hack2018Title = document.getElementById('hack2018-title');
 var Hack2017Title = document.getElementById('hack2017-title');
@@ -190,7 +214,7 @@ ssm.addState({
     onEnter: function(){
 		console.log('enter desktop');
 
-    
+
 
 // PROJECT TRIGGERS /////////////
 
@@ -290,7 +314,7 @@ $("#elevate-cover").click(function() {
 				TripsHR.style.left = "35%";
 			});
 
-			
+
 // PIDAN
 			$("#pidan-cover").click(function() {
 
@@ -307,7 +331,7 @@ $("#elevate-cover").click(function() {
 // OKAY
 
 			$(Okay).click(function() {
-				
+
 				$("#all-work-page").removeClass('return-left').addClass('away-left');
 
 				$("#okay-project").removeClass('project-away').addClass('project-return');
@@ -347,7 +371,7 @@ $("#elevate-cover").click(function() {
 				Hack2017HR.style.left = "39%";
 			});
 
-		
+
 
 // RETRO
 
@@ -375,7 +399,7 @@ $("#elevate-cover").click(function() {
 				TripsHR.style.left = "38%";
 			});
 
-			
+
 
 		}
 });
@@ -393,7 +417,7 @@ ssm.addState({
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
 			$("#stripe-project").removeClass('project-away').addClass('project-return');
-		
+
 			$('.trans--grow').addClass('shrink2');
 			$('.trans--grow').removeClass('grow');
 			StripeTitle.style.left = "4%";
@@ -403,7 +427,7 @@ ssm.addState({
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
 			$("#lunchbox-project").removeClass('project-away').addClass('project-return');
-		
+
 			$('.trans--grow').addClass('shrink2');
 			$('.trans--grow').removeClass('grow');
 			LunchboxTitle.style.left = "4%";
@@ -413,7 +437,7 @@ ssm.addState({
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
 			$("#puppet-project").removeClass('project-away').addClass('project-return');
-		
+
 			$('.trans--grow').addClass('shrink2');
 			$('.trans--grow').removeClass('grow');
 			PuppetTitle.style.left = "4%";
@@ -423,7 +447,7 @@ ssm.addState({
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
 			$("#uk-project").removeClass('project-away').addClass('project-return');
-		
+
 			$('.trans--grow').addClass('shrink2');
 			$('.trans--grow').removeClass('grow');
 			UkTitle.style.left = "4%";
@@ -433,7 +457,7 @@ ssm.addState({
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
 			$("#pulang-project").removeClass('project-away').addClass('project-return');
-		
+
 			$('.trans--grow').addClass('shrink2');
 			$('.trans--grow').removeClass('grow');
 			PulangTitle.style.left = "4%";
@@ -443,7 +467,7 @@ ssm.addState({
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
 			$("#trips-project").removeClass('project-away').addClass('project-return');
-		
+
 			$('.trans--grow').addClass('shrink2');
 			$('.trans--grow').removeClass('grow');
 			TripsTitle.style.left = "4%";
@@ -453,7 +477,7 @@ ssm.addState({
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
 			$("#okay-project").removeClass('project-away').addClass('project-return');
-		
+
 			$('.trans--grow').addClass('shrink2');
 			$('.trans--grow').removeClass('grow');
 			OkayTitle.style.left = "4%";
@@ -463,7 +487,7 @@ ssm.addState({
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
 			$("#hack2018-project").removeClass('project-away').addClass('project-return');
-		
+
 			$('.trans--grow').addClass('shrink2');
 			$('.trans--grow').removeClass('grow');
 			Hack2018Title.style.left = "4%";
@@ -473,7 +497,7 @@ ssm.addState({
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
 			$("#hack2017-project").removeClass('project-away').addClass('project-return');
-		
+
 			$('.trans--grow').addClass('shrink2');
 			$('.trans--grow').removeClass('grow');
 			Hack2017Title.style.left = "4%";
@@ -483,7 +507,7 @@ ssm.addState({
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
 			$("#pidan-project").removeClass('project-away').addClass('project-return');
-		
+
 			$('.trans--grow').addClass('shrink2');
 			$('.trans--grow').removeClass('grow');
 			PidanTitle.style.left = "4%";
@@ -493,7 +517,7 @@ ssm.addState({
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
 			$("#retro-project").removeClass('project-away').addClass('project-return');
-		
+
 			$('.trans--grow').addClass('shrink2');
 			$('.trans--grow').removeClass('grow');
 			RetroTitle.style.left = "4%";
@@ -503,7 +527,7 @@ ssm.addState({
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
 			$("#lamei-project").removeClass('project-away').addClass('project-return');
-		
+
 			$('.trans--grow').addClass('shrink2');
 			$('.trans--grow').removeClass('grow');
 			LameiTitle.style.left = "4%";
@@ -544,7 +568,7 @@ ssm.addState({
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
 			$("#stripe-project").removeClass('project-away').addClass('project-return');
-		
+
 			$('.trans--grow').addClass('shrink3');
 			$('.trans--grow').removeClass('grow');
 			StripeTitle.style.left = "3%";
@@ -554,7 +578,7 @@ ssm.addState({
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
 			$("#puppet-project").removeClass('project-away').addClass('project-return');
-		
+
 			$('.trans--grow').addClass('shrink3');
 			$('.trans--grow').removeClass('grow');
 			PuppetTitle.style.left = "3%";
@@ -564,7 +588,7 @@ ssm.addState({
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
 			$("#uk-project").removeClass('project-away').addClass('project-return');
-		
+
 			$('.trans--grow').addClass('shrink3');
 			$('.trans--grow').removeClass('grow');
 			UkTitle.style.left = "3%";
@@ -574,7 +598,7 @@ ssm.addState({
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
 			$("#pulang-project").removeClass('project-away').addClass('project-return');
-		
+
 			$('.trans--grow').addClass('shrink3');
 			$('.trans--grow').removeClass('grow');
 			PulangTitle.style.left = "3%";
@@ -584,7 +608,7 @@ ssm.addState({
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
 			$("#trips-project").removeClass('project-away').addClass('project-return');
-		
+
 			$('.trans--grow').addClass('shrink3');
 			$('.trans--grow').removeClass('grow');
 			TripsTitle.style.left = "3%";
@@ -594,7 +618,7 @@ ssm.addState({
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
 			$("#okay-project-mobile").removeClass('project-away').addClass('project-return');
-		
+
 			$('.trans--grow').addClass('shrink3');
 			$('.trans--grow').removeClass('grow');
 			OkayTitle.style.left = "3%";
@@ -604,7 +628,7 @@ ssm.addState({
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
 			$("#hack2018-project").removeClass('project-away').addClass('project-return');
-		
+
 			$('.trans--grow').addClass('shrink3');
 			$('.trans--grow').removeClass('grow');
 			Hack2018Title.style.left = "3%";
@@ -614,7 +638,7 @@ ssm.addState({
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
 			$("#hack2017-project").removeClass('project-away').addClass('project-return');
-		
+
 			$('.trans--grow').addClass('shrink3');
 			$('.trans--grow').removeClass('grow');
 			Hack2017Title.style.left = "3%";
@@ -624,7 +648,7 @@ ssm.addState({
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
 			$("#pidan-project").removeClass('project-away').addClass('project-return');
-		
+
 			$('.trans--grow').addClass('shrink3');
 			$('.trans--grow').removeClass('grow');
 			PidanTitle.style.left = "3%";
@@ -634,7 +658,7 @@ ssm.addState({
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
 			$("#retro-project-mobile").removeClass('project-away').addClass('project-return');
-		
+
 			$('.trans--grow').addClass('shrink3');
 			$('.trans--grow').removeClass('grow');
 			RetroTitle.style.left = "3%";
@@ -644,7 +668,7 @@ ssm.addState({
 
 			$("#all-work-page").removeClass('return-left').addClass('away-left');
 			$("#lamei-project-mobile").removeClass('project-away').addClass('project-return');
-		
+
 			$('.trans--grow').addClass('shrink3');
 			$('.trans--grow').removeClass('grow');
 			LameiTitle.style.left = "3%";
@@ -683,10 +707,10 @@ ssm.addState({
 
 				$("#lunchbox-body").scrollTop(0);
 				$("#lunchbox-project").removeClass('project-return').addClass('project-away');
-				
+
 				$("#puppet-body").scrollTop(0);
 				$("#puppet-project").removeClass('project-return').addClass('project-away');
-				
+
 				$("#uk-body").scrollTop(0);
 				$("#uk-project").removeClass('project-return').addClass('project-away');
 
@@ -717,7 +741,7 @@ ssm.addState({
 				$('.trans--grow').addClass('grow');
 				$('.trans--grow').removeClass('shrink');
 				$('.trans--grow').removeClass('shrink2');
-				
+
 				OkayTitle.style.left = "100%";
 				OkayHR.style.left = "100%";
 
@@ -726,10 +750,10 @@ ssm.addState({
 
 				Hack2017Title.style.left = "100%";
 				Hack2017HR.style.left = "100%";
-				
+
 				PidanTitle.style.left = "100%";
 				PidanHR.style.left = "100%";
-				
+
 				TripsTitle.style.left = "100%";
 				TripsHR.style.left = "100%";
 
@@ -759,23 +783,3 @@ ssm.addState({
 setTimeout(function(){
         $('.trans--grow').addClass('grow');
 	}, 275);
-	
-
-	
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
